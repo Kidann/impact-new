@@ -25,6 +25,11 @@ the underlying logic of the menu.
     --header-background-blur-radius: 0px; /* Défini à 0 pour éviter le flou sur le fond blanc */
     --header-transparent-text-color: #000000; /* Texte noir pour les éléments transparents */
 
+    /* Ajustements pour les mobiles */
+    @media screen and (max-width: 699px) {
+      --header-padding-block: var(--spacing-2); /* Réduit le padding sur mobile */
+    }
+
     {%- if section.settings.logo != blank -%}
       --header-logo-width: {{ section.settings.logo_mobile_max_width }}px;
       --header-logo-height: {{ section.settings.logo_mobile_max_width | divided_by: section.settings.logo.aspect_ratio | round }}px;
@@ -43,6 +48,14 @@ the underlying logic of the menu.
   .header__logo .icon,
   .header__icon-list .tap-area .sr-only { /* Ajout de sr-only pour les textes d'accessibilité */
     color: #000000; /* Texte et icônes noirs */
+  }
+
+  /* Réduire la taille des icônes sur mobile */
+  @media screen and (max-width: 699px) {
+    .header__icon-list .tap-area .icon {
+      width: 20px; /* Taille réduite pour les icônes sur mobile */
+      height: 20px;
+    }
   }
 
   /* Assurez-vous que les états de survol/focus sont aussi noirs */
@@ -88,6 +101,13 @@ the underlying logic of the menu.
       {%- endif -%}
 
       --header-padding-block: {% if section.settings.reduce_padding %}var(--spacing-6){% else %}var(--spacing-8-5){% endif %}; /* Utilise le réglage reduce_padding */
+    }
+  }
+
+  /* Ajustements pour les petits écrans (téléphones) */
+  @media screen and (max-width: 699px) {
+    #shopify-section-{{ section.id }} {
+      --header-grid-template: "logo main-nav secondary-nav" / auto 1fr auto; /* Ajuste la grille pour mobile */
     }
   }
 
