@@ -47,9 +47,7 @@
     },
     "header": {
       "type": "header",
-      "custom_css": [
-        "header {padding: 5px 10px; background-color: white;}"
-      ],
+      "custom_css": [],
       "settings": {
         "enable_sticky": true,
         "hide_on_scroll": false,
