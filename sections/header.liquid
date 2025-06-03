@@ -1,5 +1,5 @@
 {%- comment -%}
-IMPLEMENTATION NOTE: Impact header with all the menu is is an extremely complex piece of code. Due to requirements from design
+IMPLEMENTATION NOTE: Impact header with all the menu is an extremely complex piece of code. Due to requirements from design
 team, we had to cover over hundred of potential combinations. As a consequence, this part (and all the menu snippets) are
 extremely sensitive code that should (if possible) not be touched unless you have spend enough time to study and understand
 the underlying logic of the menu.
@@ -19,10 +19,8 @@ the underlying logic of the menu.
   }
 
   #shopify-section-{{ section.id }} {
-    /* Nouvelle structure de grille inspirée du style fourni pour un centrage plus facile */
-    --header-grid-template: "menu-icon main-nav logo search-icon account-icon cart-icon" / auto minmax(0, 1fr) auto minmax(0, 1fr) auto auto auto;
-    /* Padding très réduit */
-    --header-padding-block: var(--spacing-4); /* Utilise une variable de spacing plus petite ou une valeur fixe comme 10px */
+    --header-grid-template: "main-nav logo secondary-nav" / minmax(0, 1fr) auto minmax(0, 1fr);
+    --header-padding-block: var(--spacing-20);
     --header-background-opacity: 1; /* Défini à 1 pour un fond blanc opaque */
     --header-background-blur-radius: 0px; /* Défini à 0 pour éviter le flou sur le fond blanc */
     --header-transparent-text-color: #000000; /* Texte noir pour les éléments transparents */
@@ -36,20 +34,15 @@ the underlying logic of the menu.
     top: 0;
     z-index: 10;
     background-color: #ffffff; /* **Fond blanc explicite ajouté ici** */
-    display: grid; /* Utilisation de la grille pour la disposition des éléments */
-    grid-template: var(--header-grid-template);
-    align-items: center;
-    padding-block: var(--header-padding-block);
   }
 
-  /* Styles généraux pour les liens et icônes pour qu'ils soient noirs */
+  /* Ajustements pour les couleurs de texte et d'icônes en noir */
   .header__link-list a,
   .header__icon-list .tap-area,
   .header__logo-text,
   .header__logo .icon,
   .header__icon-list .tap-area .sr-only { /* Ajout de sr-only pour les textes d'accessibilité */
     color: #000000; /* Texte et icônes noirs */
-    text-decoration: none; /* Enlever le soulignement par défaut */
   }
 
   /* Assurez-vous que les états de survol/focus sont aussi noirs */
@@ -58,158 +51,59 @@ the underlying logic of the menu.
   .link-faded-reverse:hover,
   .link-faded-reverse:focus,
   .reversed-link:hover,
-  .reversed-link:focus,
-  .header__menu-item:hover,
-  .header__menu-item:focus,
-  .header__icons .link:hover,
-  .header__icons .link:focus {
-    color: #000000; /* Maintenir la couleur noire au survol/focus */
+  .reversed-link:focus {
+    color: #000000;
   }
 
   /* Pour l'icône de panier et le nombre d'articles */
-  .header__cart-count {
-      position: absolute;
-      top: -6px; /* Ajuster la position */
-      right: -8px; /* Ajuster la position */
-      font-size: 0.8em;
-  }
-
   .header__cart-count .count-bubble {
     background-color: #000000; /* Fond noir pour la bulle */
     color: #ffffff; /* Texte blanc sur la bulle noire pour le contraste */
-    min-width: 20px; /* Taille minimale de la bulle */
-    height: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    padding: 2px;
   }
 
-  /* Assurez-vous que les icônes SVG intégrées restent noires */
+  /* Assurez-vous que les icônes rendues restent noires */
   .icon {
-    fill: currentColor; /* Permet à l'icône de prendre la couleur du texte parent */
+    color: #000000;
   }
 
-  /* Styles spécifiques pour le layout centré inspiré */
-  .header__wrapper {
-    display: contents; /* Permet aux enfants de s'étaler dans la grille du parent */
-  }
-
-  .header__main-nav {
-    grid-area: main-nav;
-    display: flex;
-    align-items: center;
-  }
-
-  .header__logo {
-    grid-area: logo;
-    justify-self: center; /* Centre le logo dans sa colonne */
-    display: flex; /* Pour centrer l'image ou le texte du logo */
-    align-items: center;
-    padding: 0 var(--spacing-4); /* Petit padding horizontal autour du logo */
-  }
-
-  .header__secondary-nav {
-    grid-area: secondary-nav; /* À ajuster si tu veux une nav secondaire en ligne */
-    display: flex;
-    justify-content: flex-end; /* Aligner les icônes à droite */
-    align-items: center;
-  }
-
-  .header__icon-list {
-    display: flex;
-    gap: var(--spacing-3); /* Espacement entre les icônes */
-    align-items: center;
-  }
-
-  /* Cache le menu principal desktop si le layout est 'drawer' */
-  .header__link-list.lg\:hidden {
-    display: none;
-  }
-
-  /* Styles mobiles inspirés du code fourni */
-  @media screen and (max-width: 699px) {
-    #shopify-section-{{ section.id }} {
-      --header-grid-template: "menu-icon logo cart-icon" / auto 1fr auto; /* Layout mobile simplifié */
-      padding-block: var(--spacing-3); /* Padding réduit pour mobile */
+  {%- if section.settings.enable_sticky -%}
+    .shopify-section--announcement-bar ~ #shopify-section-{{ section.id }} {
+      top: calc(var(--sticky-announcement-bar-enabled, 0) * var(--announcement-bar-height, 0px));
     }
+  {%- endif -%}
 
-    .header__main-nav {
-      grid-area: menu-icon;
-      justify-content: flex-start;
+  {%- if section.settings.opening_from == 'left' -%}
+    @media screen and (max-width: 699px) {
+      .navigation-drawer {
+        --drawer-content-max-height: calc(100vh - (var(--spacing-2) * 2));
+      }
     }
-
-    .header__logo {
-        padding: 0; /* Pas de padding spécifique sur mobile */
-    }
-
-    .header__secondary-nav {
-      grid-area: cart-icon; /* Positionne le panier à droite */
-      justify-content: flex-end;
-    }
-
-    .header__icon-list .sm\:hidden { /* Pour masquer la loupe de recherche sur mobile */
-        display: none !important;
-    }
-
-    .header__icon-list .hidden.sm\:block.shrink-0 { /* Masquer les sélecteurs de localisation sur mobile */
-        display: none !important;
-    }
-
-    .header__icon-list .hidden.tap-area.sm\:block { /* Masquer le compte sur mobile */
-        display: none !important;
-    }
-
-    .header__link-list { /* Masquer le menu de navigation inline sur mobile */
-      display: none;
-    }
-
-    .navigation-drawer { /* Ajustement pour le tiroir */
-      --drawer-content-max-height: calc(100vh - (var(--spacing-2) * 2));
-    }
-  }
+  {%- endif -%}
 
   @media screen and (min-width: 700px) {
     #shopify-section-{{ section.id }} {
-      --header-padding-block: {% if section.settings.reduce_padding %}var(--spacing-6){% else %}var(--spacing-8-5){% endif %};
-      /* Ajustement du template pour desktop en fonction du layout */
-      {%- if section.settings.layout == 'logo_left_navigation_inline' %}
-        --header-grid-template: "menu-icon logo main-nav secondary-nav" / auto auto 1fr auto;
-        .header__main-nav { justify-content: flex-start; } /* Ajusté pour l'alignement */
-      {%- elsif section.settings.layout == 'logo_left_navigation_center' %}
-        --header-grid-template: "menu-icon logo main-nav secondary-nav" / auto auto 1fr auto;
-        .header__main-nav { justify-content: center; } /* Centrer le menu principal */
-      {%- elsif section.settings.layout == 'logo_center_navigation_inline' %}
-        --header-grid-template: "main-nav logo secondary-nav" / 1fr auto 1fr; /* Logo au centre, navigation de chaque côté */
-        .header__main-nav { justify-content: flex-end; }
-        .header__secondary-nav { justify-content: flex-start; }
-      {%- elsif section.settings.layout == 'drawer' %}
-        --header-grid-template: "menu-icon logo secondary-nav" / auto 1fr auto; /* Tout dans le tiroir sauf logo et quelques icônes */
-        .header__link-list { display: none; } /* Cache le menu inline desktop */
+      {%- if section.settings.logo != blank -%}
+        --header-logo-width: {{ section.settings.logo_max_width }}px;
+        --header-logo-height: {{ section.settings.logo_max_width | divided_by: section.settings.logo.aspect_ratio | round }}px;
       {%- endif -%}
+
+      --header-padding-block: {% if section.settings.reduce_padding %}var(--spacing-6){% else %}var(--spacing-8-5){% endif %}; /* Utilise le réglage reduce_padding */
     }
   }
 
-  /* Ajustements pour les grandes tailles d'écran comme dans l'exemple */
-  @media screen and (min-width: 1150px) {
-    #shopify-section-{{ section.id }} {
-      {%- if section.settings.layout contains 'logo_left' -%}
+  {%- if section.settings.layout contains 'logo_left' -%}
+    @media screen and (min-width: 1150px) {
+      {%- if section.settings.secondary_menu != blank or will_show_country_selector or will_show_locale_selector -%}
+        {%- assign max_percent = '55%' -%}
+      {%- else -%}
         {%- assign max_percent = '70%' -%}
-        {%- if section.settings.secondary_menu != blank or will_show_country_selector or will_show_locale_selector -%}
-          {%- assign max_percent = '55%' -%}
-        {%- endif -%}
-
-        /* Disposition spécifique si le logo est à gauche et la navigation inline/centrée */
-        {% if section.settings.layout == 'logo_left_navigation_inline' %}
-            --header-grid-template: "logo main-nav secondary-nav" / auto minmax(0, 1fr) minmax(0, max-content);
-            .header__main-nav { padding-left: var(--spacing-8); } /* Ajustement pour espacer */
-        {%- elsif section.settings.layout == 'logo_left_navigation_center' %}
-            --header-grid-template: "logo main-nav secondary-nav" / auto minmax(0, {{ max_percent }}) minmax(0, 1fr);
-        {%- endif -%}
       {%- endif -%}
+
+      #shopify-section-{{ section.id }} {
+        --header-grid-template: "logo main-nav secondary-nav" / {% if section.settings.layout == 'logo_left_navigation_inline' %}auto minmax(0, 1fr) minmax(0, max-content){% else %}minmax(0, 1fr) fit-content({{ max_percent }}) minmax(0, 1fr){% endif %};
+      }
     }
-  }
+  {%- endif -%}
 </style>
 
 <height-observer variable="header">
@@ -217,104 +111,116 @@ the underlying logic of the menu.
     <div class="header__wrapper">
       {%- comment -%}
       --------------------------------------------------------------------------------------------------------------------
-      MAIN NAV AREA (inclut le bouton menu hamburger)
+      MAIN NAV AREA
       --------------------------------------------------------------------------------------------------------------------
       {%- endcomment -%}
 
       <div class="header__main-nav">
-        <button type="button" class="tap-area {% if section.settings.layout != 'drawer' %}lg:hidden{% endif %}" aria-controls="header-sidebar-menu">
-          <span class="sr-only">{{ 'header.general.open_menu' | t }}</span>
-          <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" class="icon icon-hamburger" fill="none" viewBox="0 0 18 16">
-            <path d="M1 .5a.5.5 0 100 1h15.71a.5.5 0 000-1H1zM.5 8a.5.5 0 01.5-.5h15.71a.5.5 0 010 1H1A.5.5 0 01.5 8zm0 7a.5.5 0 01.5-.5h15.71a.5.5 0 010 1H1a.5.5 0 01-.5-.5z" fill="currentColor"></path>
-          </svg>
-        </button>
+        <div class="header__icon-list">
+          <button type="button" class="tap-area {% if section.settings.layout != 'drawer' %}lg:hidden{% endif %}" aria-controls="header-sidebar-menu">
+            <span class="sr-only">{{ 'header.general.open_menu' | t }}</span>
+            {%- render 'icon' with 'hamburger' -%}
+          </button>
 
-        {%- if section.settings.layout != 'drawer' and section.settings.menu.links.size > 0 -%}
-          <nav class="header__link-list {% if section.settings.layout == 'logo_left_navigation_center' %}justify-center{% endif %} wrap" role="navigation">
-            <ul class="contents" role="list">
-              {%- for link in section.settings.menu.links -%}
-                {% liquid
-                  assign link_title_downcase = link.title | strip | downcase
-                  assign mega_menu_block = ''
+          <a href="{{ routes.search_url }}" class="tap-area sm:hidden" aria-controls="search-drawer">
+            <span class="sr-only">{{ 'header.general.open_search' | t }}</span>
+            {%- render 'icon' with 'search' -%}
+          </a>
 
-                  for block in section.blocks
-                    assign menu_item_downcase = block.settings.menu_item | strip | downcase
+          {%- if section.settings.layout != 'drawer' and section.settings.menu.links.size > 0 -%}
+            <nav class="header__link-list {% if section.settings.layout == 'logo_left_navigation_center' %}justify-center{% endif %} wrap" role="navigation">
+              <ul class="contents" role="list">
+                {%- for link in section.settings.menu.links -%}
+                  {% liquid
+                    assign link_title_downcase = link.title | strip | downcase
+                    assign mega_menu_block = ''
 
-                    if menu_item_downcase == link_title_downcase
-                      assign mega_menu_block = block
-                      break
-                    endif
+                    for block in section.blocks
+                      assign menu_item_downcase = block.settings.menu_item | strip | downcase
 
-                  endfor
-                %}
+                      if menu_item_downcase == link_title_downcase
+                        assign mega_menu_block = block
+                        break
+                      endif
 
-                <li>
-                  {%- if link.levels == 0 and mega_menu_block == '' -%}
-                    <a href="{{ link.url }}" class="bold link-faded-reverse header__menu-item" {% if link.current %}aria-current="page"{% endif %}><span>{{- link.title -}}</span></a>
-                  {%- else -%}
-                    {%- if mega_menu_block != '' -%}
-                      {%- unless mega_menu_block.settings.layout == 'drawer' -%}
-                        <details is="mega-menu-disclosure" trigger="{{ section.settings.menu_open_trigger | escape }}" {{ mega_menu_block.shopify_attributes }}>
-                          <summary class="text-with-icon gap-2.5 bold link-faded-reverse header__menu-item" {% if link.url != '#' %}data-url="{{ link.url | escape }}"{% endif %}>
-                            <span>{{- link.title -}}</span> {%- render 'icon' with 'chevron-bottom' -%}
-                          </summary>
-                         {%- render 'mega-menu-horizontal', link: link, mega_menu_block: mega_menu_block -%}
-                        </details>
-                      {%- else -%}
-                        <button aria-controls="navigation-drawer-{{ forloop.index }}" aria-expanded="false" class="text-with-icon gap-2.5 bold link-faded-reverse header__menu-item">
-                          <span>{{- link.title -}}</span> {%- render 'icon' with 'chevron-bottom' -%}
-                        </button>
+                    endfor
+                  %}
 
-                        <navigation-drawer class="navigation-drawer drawer lg-max:hidden" id="navigation-drawer-{{ forloop.index }}" open-from="left" mega-menu>
-                          {%- render 'navigation-panel', navigation_layout: section.settings.layout, main_menu: link, is_mega_menu: true, mega_menu_block: mega_menu_block -%}
-                        </navigation-drawer>
-                      {%- endunless -%}
+                  <li>
+                    {%- if link.levels == 0 and mega_menu_block == '' -%}
+                      <a href="{{ link.url }}" class="bold link-faded-reverse" {% if link.current %}aria-current="page"{% endif %}>{{- link.title -}}</a>
                     {%- else -%}
-                      <details class="relative" is="dropdown-disclosure" trigger="{{ section.settings.menu_open_trigger | escape }}">
-                        <summary class="text-with-icon gap-2.5 bold link-faded-reverse header__menu-item" {% if link.url != '#' %}data-url="{{ link.url | escape }}"{% endif %}>
-                          <span>{{- link.title -}}</span> {%- render 'icon' with 'chevron-bottom' -%}
-                        </summary>
+                      {%- if mega_menu_block != '' -%}
+                        {%- comment -%}
+                        Implementation note: the designers had the desire to show a lot of different kind of menus in Impact: one standard
+                        mega menu but also a kind of "sidebar" mode when the mega-menu appears in a drawer. Unfortunately, this comes with
+                        a lot of extra complexity as we have to go through two different code path: a "details" element for the standard
+                        menu, and a full drawer for the other one.
+                        {%- endcomment -%}
+                        {%- unless mega_menu_block.settings.layout == 'drawer' -%}
+                          <details is="mega-menu-disclosure" trigger="{{ section.settings.menu_open_trigger | escape }}" {{ mega_menu_block.shopify_attributes }}>
+                            <summary class="text-with-icon gap-2.5 bold link-faded-reverse" {% if link.url != '#' %}data-url="{{ link.url | escape }}"{% endif %}>
+                              {{- link.title -}} {%- render 'icon' with 'chevron-bottom' -%}
+                            </summary>
 
-                        <div class="dropdown-menu {% if link.levels <= 1 %}dropdown-menu--restrictable{% endif %}">
-                          <ul class="contents" role="list">
-                            {%- for sub_link in link.links -%}
-                              <li>
-                                {%- if sub_link.levels == 0 -%}
-                                  <a href="{{ sub_link.url }}" class="dropdown-menu__item group" {% if sub_link.current %}aria-current="page"{% endif %}>
-                                    <span><span class="reversed-link">{{ sub_link.title }}</span></span>
-                                  </a>
-                                {%- else -%}
-                                  <details class="relative" is="dropdown-disclosure" trigger="{{ section.settings.menu_open_trigger | escape }}">
-                                    <summary class="dropdown-menu__item group" {% if sub_link.url != '#' %}data-url="{{ sub_link.url | escape }}"{% endif %}>
-                                      <span><span class="reversed-link">{{- sub_link.title -}}</span></span>
-                                      {%- render 'icon' with 'chevron-right' -%}
-                                    </summary>
+                           {%- render 'mega-menu-horizontal', link: link, mega_menu_block: mega_menu_block -%}
+                          </details>
+                        {%- else -%}
+                          <button aria-controls="navigation-drawer-{{ forloop.index }}" aria-expanded="false" class="text-with-icon gap-2.5 bold link-faded-reverse">
+                            {{- link.title -}} {%- render 'icon' with 'chevron-bottom' -%}
+                          </button>
 
-                                    <div class="dropdown-menu">
-                                      <ul class="contents" role="list">
-                                        {%- for sub_sub_link in sub_link.links -%}
-                                          <li>
-                                            <a href="{{ sub_sub_link.url }}" class="dropdown-menu__item group" {% if sub_sub_link.current %}aria-current="page"{% endif %}>
-                                              <span><span class="reversed-link">{{ sub_sub_link.title }}</span></span>
-                                            </a>
-                                          </li>
-                                        {%- endfor -%}
-                                      </ul>
-                                    </div>
-                                  </details>
-                                {%- endif -%}
-                              </li>
-                            {%- endfor -%}
-                          </ul>
-                        </div>
-                      </details>
+                          <navigation-drawer class="navigation-drawer drawer lg-max:hidden" id="navigation-drawer-{{ forloop.index }}" open-from="left" mega-menu>
+                            {%- render 'navigation-panel', navigation_layout: section.settings.layout, main_menu: link, is_mega_menu: true, mega_menu_block: mega_menu_block -%}
+                          </navigation-drawer>
+                        {%- endunless -%}
+                      {%- else -%}
+                        <details class="relative" is="dropdown-disclosure" trigger="{{ section.settings.menu_open_trigger | escape }}">
+                          <summary class="text-with-icon gap-2.5 bold link-faded-reverse" {% if link.url != '#' %}data-url="{{ link.url | escape }}"{% endif %}>
+                            {{- link.title -}} {%- render 'icon' with 'chevron-bottom' -%}
+                          </summary>
+
+                          <div class="dropdown-menu {% if link.levels <= 1 %}dropdown-menu--restrictable{% endif %}">
+                            <ul class="contents" role="list">
+                              {%- for sub_link in link.links -%}
+                                <li>
+                                  {%- if sub_link.levels == 0 -%}
+                                    <a href="{{ sub_link.url }}" class="dropdown-menu__item group" {% if sub_link.current %}aria-current="page"{% endif %}>
+                                      <span><span class="reversed-link">{{ sub_link.title }}</span></span>
+                                    </a>
+                                  {%- else -%}
+                                    <details class="relative" is="dropdown-disclosure" trigger="{{ section.settings.menu_open_trigger | escape }}">
+                                      <summary class="dropdown-menu__item group" {% if sub_link.url != '#' %}data-url="{{ sub_link.url | escape }}"{% endif %}>
+                                        <span><span class="reversed-link">{{- sub_link.title -}}</span></span>
+                                        {%- render 'icon' with 'chevron-right' -%}
+                                      </summary>
+
+                                      <div class="dropdown-menu">
+                                        <ul class="contents" role="list">
+                                          {%- for sub_sub_link in sub_link.links -%}
+                                            <li>
+                                              <a href="{{ sub_sub_link.url }}" class="dropdown-menu__item group" {% if sub_sub_link.current %}aria-current="page"{% endif %}>
+                                                <span><span class="reversed-link">{{ sub_sub_link.title }}</span></span>
+                                              </a>
+                                            </li>
+                                          {%- endfor -%}
+                                        </ul>
+                                      </div>
+                                    </details>
+                                  {%- endif -%}
+                                </li>
+                              {%- endfor -%}
+                            </ul>
+                          </div>
+                        </details>
+                      {%- endif -%}
                     {%- endif -%}
-                  {%- endif -%} {# <-- HERE WAS THE MISSING endif #}
-                </li>
-              {%- endfor -%}
-            </ul>
-          </nav>
-        {%- endif -%}
+                  </li>
+                {%- endfor -%}
+              </ul>
+            </nav>
+          {%- endif -%}
+        </div>
       </div>
 
       {%- comment -%}
@@ -380,28 +286,20 @@ the underlying logic of the menu.
 
           <a href="{{ routes.search_url }}" class="hidden tap-area sm:block" aria-controls="search-drawer">
             <span class="sr-only">{{ 'header.general.open_search' | t }}</span>
-            <svg class="icon icon-search" aria-hidden="true" focusable="false" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M11.667 12.333a6.833 6.833 0 10-1.637-1.637l4.851 4.851a.833.833 0 001.179 0 .833.833 0 000-1.179l-4.851-4.851zM8.167 1C4.28 1 1 4.28 1 8.167s3.28 7.166 7.167 7.166 7.166-3.28 7.166-7.166S12.054 1 8.167 1z" fill="currentColor"/>
-            </svg>
+            {%- render 'icon' with 'search' -%}
           </a>
           
           {%- if shop.customer_accounts_enabled -%}
             <a href="{% if customer %}{{ routes.account_url }}{% else %}{{ routes.account_login_url }}{% endif %}" class="hidden tap-area sm:block">
               <span class="sr-only">{{ 'header.general.open_account' | t }}</span>
-              <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" class="icon icon-account" fill="none" viewBox="0 0 18 19">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M6 4.5a3 3 0 116 0 3 3 0 01-6 0zm3-4a4 4 0 100 8 4 4 0 000-8zm5.58 12.15c1.12.82 1.83 2.24 1.91 4.85H1.51c.08-2.6.79-4.03 1.9-4.85C4.66 11.75 6.5 11.5 9 11.5s4.35.26 5.58 1.15zM9 10.5c-2.5 0-4.65.24-6.17 1.35C1.27 12.98.5 14.93.5 18v.5h17V18c0-3.07-.77-5.02-2.33-6.15-1.52-1.1-3.67-1.35-6.17-1.35z" fill="currentColor"></path>
-              </svg>
+              {%- render 'icon' with 'account' -%}
             </a>
           {%- endif -%}
 
           <a href="{{ routes.cart_url }}" data-no-instant class="relative tap-area" {% if settings.cart_type != 'page' and request.page_type != 'cart' %}aria-controls="cart-drawer"{% endif %}>
             <span class="sr-only">{{ 'header.general.open_cart' | t }}</span>
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 53.98 45.23" class="icon icon-cart" aria-hidden="true" focusable="false" fill="none">
-              <polyline stroke="currentColor" points="1.5 1.5 10.04 2.06 15.09 27.94 45.39 27.94 52.48 6.79 18.25 6.65" style="fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:3px"></polyline>
-              <circle stroke="currentColor" cx="20.58" cy="39.74" r="3.99" style="fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:3px"></circle>
-              <circle stroke="currentColor" cx="40.02" cy="39.74" r="3.99" style="fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:3px"></circle>
-              <polyline stroke="currentColor" points="45.42 35.75 14.49 35.75 17.21 27.94" style="fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:3px"></polyline>
-            </svg>
+            {%- render 'icon' with 'cart' -%}
+
             <div class="header__cart-count">
               <cart-count class="count-bubble {% if cart.item_count == 0 %}opacity-0{% endif %}" aria-hidden="true">
                 {{- cart.item_count -}}
@@ -426,9 +324,7 @@ the underlying logic of the menu.
 {%- if main_menu.links.size > 0 or secondary_menu.links.size > 0 -%}
   <navigation-drawer mobile-opening="{{ section.settings.opening_from }}" open-from="left" id="header-sidebar-menu" class="navigation-drawer drawer {% if section.settings.layout != 'drawer' %}lg:hidden{% endif %}" {% if request.design_mode %}handle-section-events{% endif %}>
     <button is="close-button" aria-label="{{ 'general.accessibility.close' | t | escape }}" {%- if section.settings.opening_from == 'bottom' -%}class="sm-max:hidden"{%- endif -%}>
-      <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" class="icon icon-close" fill="none" viewBox="0 0 18 17">
-        <path d="M.865 15.978a.5.5 0 00.707.707l7.433-7.431 7.579 7.282a.501.501 0 00.846-.37.5.5 0 00-.153-.351L9.712 8.546l7.417-7.416a.5.5 0 10-.707-.708L8.991 7.853 1.413.573a.5.5 0 10-.693.72l7.563 7.268-7.418 7.417z" fill="currentColor"></path>
-      </svg>
+      {%- render 'icon' with 'close', width: 19, height: 19 -%}
     </button>
 
     {%- render 'navigation-panel',
@@ -553,7 +449,7 @@ the underlying logic of the menu.
           "label": "Left"
         }
       ],
-      "default": "left" /* Souvent 'left' pour les tiroirs de menu */
+      "default": "bottom"
     },
     {
       "type": "header",
@@ -582,7 +478,7 @@ the underlying logic of the menu.
           "label": "Drawer"
         }
       ],
-      "default": "logo_center_navigation_inline" /* Un layout centré est plus proche de l'exemple */
+      "default": "logo_left_navigation_inline"
     },
     {
       "type": "header",
