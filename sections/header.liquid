@@ -20,11 +20,10 @@ the underlying logic of the menu.
 
   #shopify-section-{{ section.id }} {
     --header-grid-template: "main-nav logo secondary-nav" / minmax(0, 1fr) auto minmax(0, 1fr);
-    --header-padding-block: var(--spacing-2); /* padding réduit */
-    --header-background-opacity: 1; /* opacité du fond à 100% */
+    --header-padding-block: {% if section.settings.reduce_padding %}var(--spacing-3){% else %}var(--spacing-4-5){% endif %};
+    --header-background-opacity: {{ section.settings.background_opacity | divided_by: 100.0 }};
     --header-background-blur-radius: {{ section.settings.background_blur_radius }}px;
     --header-transparent-text-color: {{ section.settings.transparent_header_text_color.rgb }};
-    background-color: #ffffff; /* fond blanc */
 
     {%- if section.settings.logo != blank -%}
       --header-logo-width: {{ section.settings.logo_mobile_max_width }}px;
@@ -57,7 +56,7 @@ the underlying logic of the menu.
         --header-logo-height: {{ section.settings.logo_max_width | divided_by: section.settings.logo.aspect_ratio | round }}px;
       {%- endif -%}
 
-      --header-padding-block: var(--spacing-3); /* padding réduit aussi sur desktop */
+      --header-padding-block: {% if section.settings.reduce_padding %}var(--spacing-6){% else %}var(--spacing-8-5){% endif %};
     }
   }
 
