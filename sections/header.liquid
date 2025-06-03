@@ -21,9 +21,9 @@ the underlying logic of the menu.
   #shopify-section-{{ section.id }} {
     --header-grid-template: "main-nav logo secondary-nav" / minmax(0, 1fr) auto minmax(0, 1fr);
     --header-padding-block: var(--spacing-20);
-    --header-background-opacity: {{ section.settings.background_opacity | divided_by: 100.0 }};
-    --header-background-blur-radius: {{ section.settings.background_blur_radius }}px;
-    --header-transparent-text-color: {{ section.settings.transparent_header_text_color.rgb }};
+    --header-background-opacity: 1; /* Défini à 1 pour un fond blanc opaque */
+    --header-background-blur-radius: 0px; /* Défini à 0 pour éviter le flou sur le fond blanc */
+    --header-transparent-text-color: #000000; /* Texte noir pour les éléments transparents */
 
     {%- if section.settings.logo != blank -%}
       --header-logo-width: {{ section.settings.logo_mobile_max_width }}px;
@@ -33,6 +33,37 @@ the underlying logic of the menu.
     position: {% if section.settings.enable_sticky %}sticky{% else %}relative{% endif %};
     top: 0;
     z-index: 10;
+    background-color: #ffffff; /* **Fond blanc explicite ajouté ici** */
+  }
+
+  /* Ajustements pour les couleurs de texte et d'icônes en noir */
+  .header__link-list a,
+  .header__icon-list .tap-area,
+  .header__logo-text,
+  .header__logo .icon,
+  .header__icon-list .tap-area .sr-only { /* Ajout de sr-only pour les textes d'accessibilité */
+    color: #000000; /* Texte et icônes noirs */
+  }
+
+  /* Assurez-vous que les états de survol/focus sont aussi noirs */
+  .header__link-list a:hover,
+  .header__link-list a:focus,
+  .link-faded-reverse:hover,
+  .link-faded-reverse:focus,
+  .reversed-link:hover,
+  .reversed-link:focus {
+    color: #000000;
+  }
+
+  /* Pour l'icône de panier et le nombre d'articles */
+  .header__cart-count .count-bubble {
+    background-color: #000000; /* Fond noir pour la bulle */
+    color: #ffffff; /* Texte blanc sur la bulle noire pour le contraste */
+  }
+
+  /* Assurez-vous que les icônes rendues restent noires */
+  .icon {
+    color: #000000;
   }
 
   {%- if section.settings.enable_sticky -%}
@@ -56,7 +87,7 @@ the underlying logic of the menu.
         --header-logo-height: {{ section.settings.logo_max_width | divided_by: section.settings.logo.aspect_ratio | round }}px;
       {%- endif -%}
 
-      --header-padding-block: {% if section.settings.reduce_padding %}var(--spacing-6){% else %}var(--spacing-8-5){% endif %};
+      --header-padding-block: {% if section.settings.reduce_padding %}var(--spacing-6){% else %}var(--spacing-8-5){% endif %}; /* Utilise le réglage reduce_padding */
     }
   }
 
@@ -503,7 +534,7 @@ the underlying logic of the menu.
       "type": "color",
       "id": "transparent_header_text_color",
       "label": "Text color",
-      "default": "#ffffff"
+      "default": "#000000" /* Défini à noir */
     },
     {
       "type": "image_picker",
@@ -519,7 +550,7 @@ the underlying logic of the menu.
       "type": "checkbox",
       "id": "reduce_padding",
       "label": "Reduce padding",
-      "default": false
+      "default": true /* Défini à vrai pour un rembourrage réduit par défaut */
     },
     {
       "type": "range",
@@ -529,7 +560,7 @@ the underlying logic of the menu.
       "step": 1,
       "unit": "%",
       "label": "Background opacity",
-      "default": 1
+      "default": 100 /* Défini à 100% pour un fond entièrement opaque */
     },
     {
       "type": "range",
@@ -539,7 +570,7 @@ the underlying logic of the menu.
       "step": 2,
       "unit": "px",
       "label": "Background blur radius",
-      "default": 4
+      "default": 0 /* Défini à 0 pour enlever le flou */
     }
   ],
   "blocks": [
