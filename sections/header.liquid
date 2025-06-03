@@ -66,18 +66,18 @@ the underlying logic of the menu.
     color: #000000; /* Maintenir la couleur noire au survol/focus */
   }
 
-  /* For the cart count bubble */
+  /* Pour l'icône de panier et le nombre d'articles */
   .header__cart-count {
       position: absolute;
-      top: -6px; /* Adjust position */
-      right: -8px; /* Adjust position */
+      top: -6px; /* Ajuster la position */
+      right: -8px; /* Ajuster la position */
       font-size: 0.8em;
   }
 
   .header__cart-count .count-bubble {
-    background-color: #000000; /* Black background for the bubble */
-    color: #ffffff; /* White text for contrast on the black bubble */
-    min-width: 20px; /* Minimum bubble size */
+    background-color: #000000; /* Fond noir pour la bulle */
+    color: #ffffff; /* Texte blanc sur la bulle noire pour le contraste */
+    min-width: 20px; /* Taille minimale de la bulle */
     height: 20px;
     display: flex;
     justify-content: center;
@@ -86,14 +86,14 @@ the underlying logic of the menu.
     padding: 2px;
   }
 
-  /* Ensure embedded SVG icons remain black */
+  /* Assurez-vous que les icônes SVG intégrées restent noires */
   .icon {
-    fill: currentColor; /* Allows the icon to inherit the parent text color */
+    fill: currentColor; /* Permet à l'icône de prendre la couleur du texte parent */
   }
 
-  /* Specific styles for the centered layout inspired */
+  /* Styles spécifiques pour le layout centré inspiré */
   .header__wrapper {
-    display: contents; /* Allows children to span across the parent's grid */
+    display: contents; /* Permet aux enfants de s'étaler dans la grille du parent */
   }
 
   .header__main-nav {
@@ -104,35 +104,35 @@ the underlying logic of the menu.
 
   .header__logo {
     grid-area: logo;
-    justify-self: center; /* Centers the logo in its column */
-    display: flex; /* For centering the logo image or text */
+    justify-self: center; /* Centre le logo dans sa colonne */
+    display: flex; /* Pour centrer l'image ou le texte du logo */
     align-items: center;
-    padding: 0 var(--spacing-4); /* Small horizontal padding around the logo */
+    padding: 0 var(--spacing-4); /* Petit padding horizontal autour du logo */
   }
 
   .header__secondary-nav {
-    grid-area: secondary-nav; /* Adjust if you want an inline secondary nav */
+    grid-area: secondary-nav; /* À ajuster si tu veux une nav secondaire en ligne */
     display: flex;
-    justify-content: flex-end; /* Align icons to the right */
+    justify-content: flex-end; /* Aligner les icônes à droite */
     align-items: center;
   }
 
   .header__icon-list {
     display: flex;
-    gap: var(--spacing-3); /* Spacing between icons */
+    gap: var(--spacing-3); /* Espacement entre les icônes */
     align-items: center;
   }
 
-  /* Hide the desktop main menu if the layout is 'drawer' */
+  /* Cache le menu principal desktop si le layout est 'drawer' */
   .header__link-list.lg\:hidden {
     display: none;
   }
 
-  /* Mobile styles inspired by the provided code */
+  /* Styles mobiles inspirés du code fourni */
   @media screen and (max-width: 699px) {
     #shopify-section-{{ section.id }} {
-      --header-grid-template: "menu-icon logo cart-icon" / auto 1fr auto; /* Simplified mobile layout */
-      padding-block: var(--spacing-3); /* Reduced padding for mobile */
+      --header-grid-template: "menu-icon logo cart-icon" / auto 1fr auto; /* Layout mobile simplifié */
+      padding-block: var(--spacing-3); /* Padding réduit pour mobile */
     }
 
     .header__main-nav {
@@ -141,31 +141,31 @@ the underlying logic of the menu.
     }
 
     .header__logo {
-        padding: 0; /* No specific padding on mobile */
+        padding: 0; /* Pas de padding spécifique sur mobile */
     }
 
     .header__secondary-nav {
-      grid-area: cart-icon; /* Positions the cart to the right */
+      grid-area: cart-icon; /* Positionne le panier à droite */
       justify-content: flex-end;
     }
 
-    .header__icon-list .sm\:hidden { /* To hide the search icon on mobile */
+    .header__icon-list .sm\:hidden { /* Pour masquer la loupe de recherche sur mobile */
         display: none !important;
     }
 
-    .header__icon-list .hidden.sm\:block.shrink-0 { /* Hide localization selectors on mobile */
+    .header__icon-list .hidden.sm\:block.shrink-0 { /* Masquer les sélecteurs de localisation sur mobile */
         display: none !important;
     }
 
-    .header__icon-list .hidden.tap-area.sm\:block { /* Hide account on mobile */
+    .header__icon-list .hidden.tap-area.sm\:block { /* Masquer le compte sur mobile */
         display: none !important;
     }
 
-    .header__link-list { /* Hide inline navigation menu on mobile */
+    .header__link-list { /* Masquer le menu de navigation inline sur mobile */
       display: none;
     }
 
-    .navigation-drawer { /* Adjustments for the drawer */
+    .navigation-drawer { /* Ajustement pour le tiroir */
       --drawer-content-max-height: calc(100vh - (var(--spacing-2) * 2));
     }
   }
@@ -173,25 +173,25 @@ the underlying logic of the menu.
   @media screen and (min-width: 700px) {
     #shopify-section-{{ section.id }} {
       --header-padding-block: {% if section.settings.reduce_padding %}var(--spacing-6){% else %}var(--spacing-8-5){% endif %};
-      /* Adjust template for desktop based on layout */
+      /* Ajustement du template pour desktop en fonction du layout */
       {%- if section.settings.layout == 'logo_left_navigation_inline' %}
         --header-grid-template: "menu-icon logo main-nav secondary-nav" / auto auto 1fr auto;
-        .header__main-nav { justify-content: flex-start; } /* Adjusted for alignment */
+        .header__main-nav { justify-content: flex-start; } /* Ajusté pour l'alignement */
       {%- elsif section.settings.layout == 'logo_left_navigation_center' %}
         --header-grid-template: "menu-icon logo main-nav secondary-nav" / auto auto 1fr auto;
-        .header__main-nav { justify-content: center; } /* Center the main menu */
+        .header__main-nav { justify-content: center; } /* Centrer le menu principal */
       {%- elsif section.settings.layout == 'logo_center_navigation_inline' %}
-        --header-grid-template: "main-nav logo secondary-nav" / 1fr auto 1fr; /* Logo in center, navigation on each side */
+        --header-grid-template: "main-nav logo secondary-nav" / 1fr auto 1fr; /* Logo au centre, navigation de chaque côté */
         .header__main-nav { justify-content: flex-end; }
         .header__secondary-nav { justify-content: flex-start; }
       {%- elsif section.settings.layout == 'drawer' %}
-        --header-grid-template: "menu-icon logo secondary-nav" / auto 1fr auto; /* Everything in drawer except logo and some icons */
-        .header__link-list { display: none; } /* Hide inline desktop menu */
+        --header-grid-template: "menu-icon logo secondary-nav" / auto 1fr auto; /* Tout dans le tiroir sauf logo et quelques icônes */
+        .header__link-list { display: none; } /* Cache le menu inline desktop */
       {%- endif -%}
     }
   }
 
-  /* Adjustments for large screen sizes as in the example */
+  /* Ajustements pour les grandes tailles d'écran comme dans l'exemple */
   @media screen and (min-width: 1150px) {
     #shopify-section-{{ section.id }} {
       {%- if section.settings.layout contains 'logo_left' -%}
@@ -200,10 +200,10 @@ the underlying logic of the menu.
           {%- assign max_percent = '55%' -%}
         {%- endif -%}
 
-        /* Specific layout if logo is left and navigation inline/centered */
+        /* Disposition spécifique si le logo est à gauche et la navigation inline/centrée */
         {% if section.settings.layout == 'logo_left_navigation_inline' %}
             --header-grid-template: "logo main-nav secondary-nav" / auto minmax(0, 1fr) minmax(0, max-content);
-            .header__main-nav { padding-left: var(--spacing-8); } /* Adjustment for spacing */
+            .header__main-nav { padding-left: var(--spacing-8); } /* Ajustement pour espacer */
         {%- elsif section.settings.layout == 'logo_left_navigation_center' %}
             --header-grid-template: "logo main-nav secondary-nav" / auto minmax(0, {{ max_percent }}) minmax(0, 1fr);
         {%- endif -%}
@@ -309,7 +309,7 @@ the underlying logic of the menu.
                         </div>
                       </details>
                     {%- endif -%}
-                  {%- endif -%}
+                  {%- endif -%} {# <-- HERE WAS THE MISSING endif #}
                 </li>
               {%- endfor -%}
             </ul>
@@ -553,7 +553,7 @@ the underlying logic of the menu.
           "label": "Left"
         }
       ],
-      "default": "left" /* Often 'left' for menu drawers */
+      "default": "left" /* Souvent 'left' pour les tiroirs de menu */
     },
     {
       "type": "header",
@@ -582,7 +582,7 @@ the underlying logic of the menu.
           "label": "Drawer"
         }
       ],
-      "default": "logo_center_navigation_inline" /* A centered layout is closer to the example */
+      "default": "logo_center_navigation_inline" /* Un layout centré est plus proche de l'exemple */
     },
     {
       "type": "header",
@@ -638,7 +638,7 @@ the underlying logic of the menu.
       "type": "color",
       "id": "transparent_header_text_color",
       "label": "Text color",
-      "default": "#000000" /* Set to black */
+      "default": "#000000" /* Défini à noir */
     },
     {
       "type": "image_picker",
@@ -654,7 +654,7 @@ the underlying logic of the menu.
       "type": "checkbox",
       "id": "reduce_padding",
       "label": "Reduce padding",
-      "default": true /* Set to true for reduced padding by default */
+      "default": true /* Défini à vrai pour un rembourrage réduit par défaut */
     },
     {
       "type": "range",
@@ -664,7 +664,7 @@ the underlying logic of the menu.
       "step": 1,
       "unit": "%",
       "label": "Background opacity",
-      "default": 100 /* Set to 100% for a fully opaque background */
+      "default": 100 /* Défini à 100% pour un fond entièrement opaque */
     },
     {
       "type": "range",
@@ -674,7 +674,7 @@ the underlying logic of the menu.
       "step": 2,
       "unit": "px",
       "label": "Background blur radius",
-      "default": 0 /* Set to 0 to remove blur */
+      "default": 0 /* Défini à 0 pour enlever le flou */
     }
   ],
   "blocks": [
