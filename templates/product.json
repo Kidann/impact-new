@@ -154,7 +154,7 @@
         "full_width": true,
         "remove_vertical_spacing": false,
         "remove_horizontal_spacing": false,
-        "html": "<div class=\"ticker\">\n  <div class=\"track\">\n    <span>Brighten Your Smile, Naturally!</span>\n    <span>Get ready to flash your brightest smile yet!</span>\n    <span>Brighten Your Smile, Naturally!</span>\n    <span>Get ready to flash your brightest smile yet!</span>\n    <span>Brighten Your Smile, Naturally!</span>\n    <span>Get ready to flash your brightest smile yet!</span>\n  </div>\n</div>",
+        "html": "<div class=\"ticker-wrapper\">\n  <div class=\"ticker-track\">\n    <span>Offre limitée - Livraison gratuite aujourd'hui seulement !</span>\n    <span>Retour gratuit pendant 30 jours</span>\n    <span>Satisfait ou remboursé</span>\n    <span>Offre limitée - Livraison gratuite aujourd'hui seulement !</span>\n    <span>Retour gratuit pendant 30 jours</span>\n    <span>Satisfait ou remboursé</span>\n  </div>\n</div>",
         "background": "",
         "background_gradient": "",
         "text_color": ""
