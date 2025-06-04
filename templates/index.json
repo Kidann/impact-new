@@ -122,7 +122,7 @@
         "testimonial_WipeTg": {
           "type": "testimonial",
           "settings": {
-            "rating": 5,
+            "rating": 4.7,
             "text": "Après des années de taches dues au café et à la cigarette, j'ai vu une amélioration notable de la blancheur de mes dents après seulement quelques jours d'utilisation de ce produit.",
             "author": "Sarah M.",
             "verified": "ACHAT VÉRIFIÉ"
@@ -131,7 +131,7 @@
         "testimonial_FAwWa6": {
           "type": "testimonial",
           "settings": {
-            "rating": 4.5,
+            "rating": 5,
             "text": "Lumora a visiblement blanchi mes dents après seulement quelques utilisations, et j'adore à quel point il est facile à appliquer sans provoquer de sensibilité.",
             "author": "Thomas V.",
             "verified": "ACHAT VÉRIFIÉ"
