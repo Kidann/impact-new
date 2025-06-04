@@ -10079,7 +10079,7 @@ shopify-accelerated-checkout, shopify-accelerated-checkout-cart {
 .ticker-track {
   display: inline-block;
   white-space: nowrap;
-  animation: ticker 30s linear infinite;
+  animation: ticker 40s linear infinite;
 }
 
 .ticker-track span {
@@ -10087,7 +10087,7 @@ shopify-accelerated-checkout, shopify-accelerated-checkout-cart {
   margin-right: 3rem;
   color: #fff;
   font-style: italic;
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 
 @keyframes ticker {
