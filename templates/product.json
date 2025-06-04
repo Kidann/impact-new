@@ -43,7 +43,7 @@
         "buy_buttons_x3BD6E": {
           "type": "buy_buttons",
           "settings": {
-            "show_payment_button": false,
+            "show_payment_button": true,
             "show_gift_card_recipient": true,
             "atc_button_background": "#1261a9",
             "atc_button_text_color": "",
@@ -56,6 +56,10 @@
           "settings": {
             "liquid": "<ul class=\"icon-with-text list-unstyled\" style=\"display: flex; justify-content: center; gap: 60px; padding: 0; margin: 30px 0;\">\n  <li class=\"icon-with-text__item\" style=\"display: flex; flex-direction: column; align-items: center; text-align: center;\">\n    <img src=\"//brightsmileltd.store/cdn/shop/files/fast_shipping.png?v=1743409701\" alt=\"Livraison rapide\" style=\"width: 40px; height: 40px; margin-bottom: 8px;\">\n    <span style=\"font-weight: bold; font-size: 16px;\">Livraison rapide</span>\n  </li>\n  <li class=\"icon-with-text__item\" style=\"display: flex; flex-direction: column; align-items: center; text-align: center;\">\n    <img src=\"//brightsmileltd.store/cdn/shop/files/return.png?v=1743409701\" alt=\"Retour facile\" style=\"width: 40px; height: 40px; margin-bottom: 8px;\">\n    <span style=\"font-weight: bold; font-size: 16px;\">Retour facile</span>\n  </li>\n  <li class=\"icon-with-text__item\" style=\"display: flex; flex-direction: column; align-items: center; text-align: center;\">\n    <img src=\"//brightsmileltd.store/cdn/shop/files/payment.png?v=1743409701\" alt=\"Paiement sécurisé\" style=\"width: 40px; height: 40px; margin-bottom: 8px;\">\n    <span style=\"font-weight: bold; font-size: 16px;\">Paiement sécurisé</span>\n  </li>\n</ul>"
           }
+        },
+        "separator_FEKayr": {
+          "type": "separator",
+          "settings": {}
         }
       },
       "block_order": [
@@ -65,7 +69,8 @@
         "liquid_xx4UzF",
         "quantity_selector_Yxmk7w",
         "buy_buttons_x3BD6E",
-        "liquid_CNaxQp"
+        "liquid_CNaxQp",
+        "separator_FEKayr"
       ],
       "settings": {
         "full_width": true,
@@ -83,6 +88,20 @@
         "text_color": "",
         "input_background": "rgba(0,0,0,0)",
         "input_text_color": ""
+      }
+    },
+    "custom_liquid_YVzHkK": {
+      "type": "custom-liquid",
+      "custom_css": [],
+      "name": "Custom Liquid",
+      "settings": {
+        "full_width": false,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "liquid": "<style>\n.accordion-summary {\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  padding: 12px 0;\n  border-bottom: 1px solid #eee;\n  font-weight: bold;\n  font-size: 16px;\n  cursor: pointer;\n}\n.accordion-summary svg.icon-check {\n  margin-right: 8px;\n  flex-shrink: 0;\n  color: #007bff; /* Bleu */\n}\n.accordion-title {\n  display: flex;\n  align-items: center;\n}\n.accordion-content {\n  padding: 10px 0;\n  font-size: 15px;\n  color: #333;\n}\ndetails[open] summary .icon-caret {\n  transform: rotate(180deg);\n}\n.icon-caret {\n  transition: transform 0.3s ease;\n}\n</style>\n\n<div class=\"product__accordion accordion quick-add-hidden\">\n  <details>\n    <summary class=\"accordion-summary\">\n      <span class=\"accordion-title\">\n        <svg class=\"icon-check\" xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" viewBox=\"0 0 24 24\"><polyline points=\"20 6 9 17 4 12\"/></svg>\n        Comment l'utiliser\n      </span>\n      <svg class=\"icon-caret\" xmlns=\"http://www.w3.org/2000/svg\" width=\"12\" height=\"12\" viewBox=\"0 0 10 6\"><path fill=\"currentColor\" d=\"M9.354.646a.5.5 0 0 0-.708 0L5 4.293 1.354.646a.5.5 0 1 0-.708.708l4 4a.5.5 0 0 0 .708 0l4-4a.5.5 0 0 0 0-.708z\"/></svg>\n    </summary>\n    <div class=\"accordion-content\">\n      <ul>\n        <li>Appliquez du dentifrice 🪥</li>\n        <li>Ajoutez la poudre <strong>Bright Smile</strong> ✨</li>\n        <li>Humidifiez la brosse à dents 💧</li>\n      </ul>\n      <p>Brossez-vous les dents comme d’habitude et ressentez la magie ! ✨😁</p>\n    </div>\n  </details>\n\n  <details>\n    <summary class=\"accordion-summary\">\n      <span class=\"accordion-title\">\n        <svg class=\"icon-check\" xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" viewBox=\"0 0 24 24\"><polyline points=\"20 6 9 17 4 12\"/></svg>\n        Pas satisfait(e) ?\n      </span>\n      <svg class=\"icon-caret\" xmlns=\"http://www.w3.org/2000/svg\" width=\"12\" height=\"12\" viewBox=\"0 0 10 6\"><path fill=\"currentColor\" d=\"M9.354.646a.5.5 0 0 0-.708 0L5 4.293 1.354.646a.5.5 0 1 0-.708.708l4 4a.5.5 0 0 0 .708 0l4-4a.5.5 0 0 0 0-.708z\"/></svg>\n    </summary>\n    <div class=\"accordion-content\">\n      <p>Notre produit est conçu avec soin pour répondre aux normes de qualité les plus élevées. 😊 Si vous n’êtes pas satisfait, nous offrons une garantie de remboursement de 30 jours. 💯💸 Votre bonheur est notre priorité. 🙌✨</p>\n    </div>\n  </details>\n\n  <details>\n    <summary class=\"accordion-summary\">\n      <span class=\"accordion-title\">\n        <svg class=\"icon-check\" xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" viewBox=\"0 0 24 24\"><polyline points=\"20 6 9 17 4 12\"/></svg>\n        Infos importantes\n      </span>\n      <svg class=\"icon-caret\" xmlns=\"http://www.w3.org/2000/svg\" width=\"12\" height=\"12\" viewBox=\"0 0 10 6\"><path fill=\"currentColor\" d=\"M9.354.646a.5.5 0 0 0-.708 0L5 4.293 1.354.646a.5.5 0 1 0-.708.708l4 4a.5.5 0 0 0 .708 0l4-4a.5.5 0 0 0 0-.708z\"/></svg>\n    </summary>\n    <div class=\"accordion-content\">\n      <p>Conçu par des dentistes 🦷 et sans sensibilité 💖</p>\n    </div>\n  </details>\n</div>",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
       }
     },
     "related-products": {
@@ -110,6 +129,7 @@
   },
   "order": [
     "main",
+    "custom_liquid_YVzHkK",
     "related-products"
   ]
 }
