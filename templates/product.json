@@ -146,12 +146,26 @@
         "product_card_background": "",
         "product_card_text_color": ""
       }
+    },
+    "custom_html_agkhmC": {
+      "type": "custom-html",
+      "name": "Custom HTML",
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "html": "<div class=\"ticker\">\n  <div class=\"track\">\n    <span>Brighten Your Smile, Naturally!</span>\n    <span>Get ready to flash your brightest smile yet!</span>\n    <span>Brighten Your Smile, Naturally!</span>\n    <span>Get ready to flash your brightest smile yet!</span>\n    <span>Brighten Your Smile, Naturally!</span>\n    <span>Get ready to flash your brightest smile yet!</span>\n  </div>\n</div>",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
     }
   },
   "order": [
     "main",
     "custom_liquid_YVzHkK",
     "custom_html_ACa3TF",
-    "related-products"
+    "related-products",
+    "custom_html_agkhmC"
   ]
 }
