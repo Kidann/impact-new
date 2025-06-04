@@ -104,5 +104,31 @@ NOTE TO DEVELOPERS: welcome to Impact theme! We hope that you will enjoy editing
         {%- sections 'footer-group' -%}
       {%- endif -%}
     </main>
+    <style>
+  .ticker-wrapper {
+    overflow: hidden;
+    background: #2f74b3;
+    padding: 10px 0;
+  }
+
+  .ticker-track {
+    display: inline-block;
+    white-space: nowrap;
+    animation: ticker 30s linear infinite;
+  }
+
+  .ticker-track span {
+    display: inline-block;
+    margin-right: 3rem;
+    color: #fff;
+    font-style: italic;
+    font-size: 1.2rem;
+  }
+
+  @keyframes ticker {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+  }
+</style>
   </body>
 </html>
