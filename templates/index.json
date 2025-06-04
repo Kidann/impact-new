@@ -116,7 +116,7 @@
         "image_qHyEEt": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/2_465619a7-1bd6-4d40-be9b-8b8271bc15f1_1.jpg"
+            "image": "shopify://shop_images/1_a73f7a93-407a-40b0-b849-b26d07676c18_1_1.jpg"
           }
         },
         "testimonial_WipeTg": {
@@ -133,7 +133,7 @@
           "settings": {
             "rating": 4.5,
             "text": "Lumora a visiblement blanchi mes dents après seulement quelques utilisations, et j'adore à quel point il est facile à appliquer sans provoquer de sensibilité.",
-            "author": "Chloe K.",
+            "author": "Thomas V.",
             "verified": "ACHAT VÉRIFIÉ"
           }
         },
@@ -142,7 +142,7 @@
           "settings": {
             "rating": 5,
             "text": "Lumora a fait des merveilles sur mes dents, les rendant visiblement plus blanches après seulement une semaine d'utilisation, et je n'ai ressenti aucun inconfort.",
-            "author": "Hans B.",
+            "author": "Camille A.",
             "verified": "ACHAT VÉRIFIÉ"
           }
         },
@@ -167,8 +167,8 @@
       "name": "SS - Testimonials #7",
       "settings": {
         "hide_images": true,
-        "heading": "<h2> Customers are thrilled with their 'glow-up bedtime' routine.</h2>",
-        "heading_custom": false,
+        "heading": "<h4>Nos clients sont ravis de voir leur sourire s'illuminer jour après jour.</h4>",
+        "heading_custom": true,
         "heading_font": "josefin_sans_n4",
         "heading_size": 36,
         "heading_size_mobile": 30,
@@ -205,8 +205,8 @@
         "testimonial_text_mt": 8,
         "testimonial_author_custom": false,
         "testimonial_author_font": "josefin_sans_n4",
-        "testimonial_author_size": 14,
-        "testimonial_author_size_mobile": 14,
+        "testimonial_author_size": 10,
+        "testimonial_author_size_mobile": 10,
         "testimonial_author_height": 150,
         "testimonial_author_mt": 12,
         "testimonial_verified_custom": false,
