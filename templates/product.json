@@ -152,9 +152,42 @@
       "name": "Custom HTML",
       "settings": {
         "full_width": true,
-        "remove_vertical_spacing": true,
+        "remove_vertical_spacing": false,
         "remove_horizontal_spacing": true,
         "html": "<div class=\"ticker-wrapper\">\n  <div class=\"ticker-track\">\n    <span>Préparez-vous à afficher votre plus beau sourire !</span>\n    <span>Illuminez votre sourire, naturellement !</span>\n    <span>Préparez-vous à afficher votre plus beau sourire !</span>\n    <span>Illuminez votre sourire, naturellement !</span>\n    <span>Préparez-vous à afficher votre plus beau sourire !</span>\n  </div>\n</div>",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "rich_text_6QKxPG": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_znkAnQ": {
+          "type": "heading",
+          "settings": {
+            "text": "Éliminez les taches tenaces, révélez votre plus beau sourire !",
+            "heading_tag": "h2",
+            "text_color": "",
+            "gradient": ""
+          }
+        },
+        "richtext_RUUfNy": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>Dites adieu aux taches tenaces de café ☕ et de cigarettes 🚬, et bonjour à un sourire éclatant et confiant 😁 avec la poudre blanchissante Lumoria !</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_znkAnQ",
+        "richtext_RUUfNy"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "full_width": true,
+        "content_width": "small",
+        "text_position": "center",
         "background": "",
         "background_gradient": "",
         "text_color": ""
@@ -166,6 +199,7 @@
     "custom_liquid_YVzHkK",
     "custom_html_ACa3TF",
     "related-products",
-    "custom_html_agkhmC"
+    "custom_html_agkhmC",
+    "rich_text_6QKxPG"
   ]
 }
