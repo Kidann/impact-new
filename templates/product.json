@@ -104,6 +104,27 @@
         "text_color": ""
       }
     },
+    "custom_html_ACa3TF": {
+      "type": "custom-html",
+      "custom_css": [
+        ".custom-carousel {overflow: hidden; max-width: 600px; margin: auto;}",
+        ".carousel-track {display: flex; gap: 16px; overflow-x: auto; scroll-snap-type: x mandatory; padding: 1rem;}",
+        ".review-item {flex: 0 0 85%; scroll-snap-align: center; background: #fff; padding: 1rem; border-radius: 1rem; box-shadow: 0 0 8px #ccc; display: flex; gap: 1rem;}",
+        ".review-item img {width: 60px; height: 60px; border-radius: 50%; object-fit: cover;}",
+        ".stars {color: #f5b50a;}",
+        ".dot {display: inline-block; width: 8px; height: 8px; border-radius: 50%; background: #ccc; margin: 0 4px;}"
+      ],
+      "name": "Custom HTML",
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "html": "<div class=\"custom-carousel\">\n  <div class=\"carousel-track\">\n    <div class=\"review-item\">\n      <img src=\"//brightsmileltd.store/cdn/shop/files/anothersmile_1d903ce3-86d6-41f5-8739-efa27ed024d8.jpg?v=1742718924\" alt=\"Salma H.\">\n      <div>\n        <p><strong>« Au-delà de mes attentes ! »</strong></p>\n        <p>Mon sourire est bien plus éclatant. Traitement rapide et simple.</p>\n        <p class=\"author\"><strong>Salma H.</strong> <span class=\"stars\">★★★★★</span></p>\n      </div>\n    </div>\n    <div class=\"review-item\">\n      <img src=\"//brightsmileltd.store/cdn/shop/files/review_1.jpg\" alt=\"Amelia Z.\">\n      <div>\n        <p><strong>« Mon mari n’arrêtait pas de complimenter mon sourire ! »</strong></p>\n        <p>Le blanchiment a super bien marché.</p>\n        <p class=\"author\"><strong>Amelia Z.</strong> <span class=\"stars\">★★★★★</span></p>\n      </div>\n    </div>\n    <div class=\"review-item\">\n      <img src=\"//brightsmileltd.store/cdn/shop/files/mane_tamer_33bec9a2-5750-4cd3-afdd-c00c71c2c61e.jpg?v=1742718924\" alt=\"Chris P.\">\n      <div>\n        <p><strong>« Super content du résultat ! »</strong></p>\n        <p>Mes dents sont plus blanches et c’était rapide.</p>\n        <p class=\"author\"><strong>Chris P.</strong> <span class=\"stars\">★★★★★</span></p>\n      </div>\n    </div>\n  </div>\n\n  <div class=\"slideshow__controls slider-buttons no-js-hidden slideshow__controls--border-radius-mobile\">\n    <button onclick=\"scrollCarousel(-1)\" class=\"slider-button slider-button--prev\" aria-label=\"Slide précédente\">\n      <svg aria-hidden=\"true\" focusable=\"false\" class=\"icon icon-caret\" viewbox=\"0 0 10 6\"><path fill=\"currentColor\" d=\"M9.354.646a.5.5 0 0 0-.708 0L5 4.293 1.354.646a.5.5 0 0 0-.708.708l4 4a.5.5 0 0 0 .708 0l4-4a.5.5 0 0 0 0-.708z\"></path></svg>\n    </button>\n\n    <div class=\"slider-counter slider-counter--dots\">\n      <div class=\"slideshow__control-wrapper\">\n        <span class=\"dot\" onclick=\"goToSlide(0)\"></span>\n        <span class=\"dot\" onclick=\"goToSlide(1)\"></span>\n        <span class=\"dot\" onclick=\"goToSlide(2)\"></span>\n      </div>\n    </div>\n\n    <button onclick=\"scrollCarousel(1)\" class=\"slider-button slider-button--next\" aria-label=\"Slide suivante\">\n      <svg aria-hidden=\"true\" focusable=\"false\" class=\"icon icon-caret\" viewbox=\"0 0 10 6\"><path fill=\"currentColor\" d=\"M9.354.646a.5.5 0 0 0-.708 0L5 4.293 1.354.646a.5.5 0 0 0-.708.708l4 4a.5.5 0 0 0 .708 0l4-4a.5.5 0 0 0 0-.708z\"></path></svg>\n    </button>\n  </div>\n</div>",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
     "related-products": {
       "type": "related-products",
       "settings": {
@@ -130,6 +151,7 @@
   "order": [
     "main",
     "custom_liquid_YVzHkK",
+    "custom_html_ACa3TF",
     "related-products"
   ]
 }
