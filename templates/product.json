@@ -152,8 +152,8 @@
       "name": "Custom HTML",
       "settings": {
         "full_width": true,
-        "remove_vertical_spacing": false,
-        "remove_horizontal_spacing": false,
+        "remove_vertical_spacing": true,
+        "remove_horizontal_spacing": true,
         "html": "<div class=\"ticker-wrapper\">\n  <div class=\"ticker-track\">\n    <span>Offre limitée - Livraison gratuite aujourd'hui seulement !</span>\n    <span>Retour gratuit pendant 30 jours</span>\n    <span>Satisfait ou remboursé</span>\n    <span>Offre limitée - Livraison gratuite aujourd'hui seulement !</span>\n    <span>Retour gratuit pendant 30 jours</span>\n    <span>Satisfait ou remboursé</span>\n  </div>\n</div>",
         "background": "",
         "background_gradient": "",
