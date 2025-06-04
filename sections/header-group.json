@@ -49,11 +49,11 @@
       "type": "header",
       "custom_css": [],
       "settings": {
-        "enable_sticky": true,
+        "enable_sticky": false,
         "hide_on_scroll": true,
-        "logo": "shopify://shop_images/shine-removebg-preview.png",
-        "logo_max_width": 120,
-        "logo_mobile_max_width": 55,
+        "logo": "shopify://shop_images/Sans_titre-4.png",
+        "logo_max_width": 85,
+        "logo_mobile_max_width": 110,
         "menu": "main-menu",
         "sidebar_menu": "",
         "secondary_menu": "",
@@ -67,7 +67,7 @@
         "show_country_name": false,
         "transparent_header_text_color": "#ffffff",
         "reduce_padding": true,
-        "background_opacity": 0,
+        "background_opacity": 100,
         "background_blur_radius": 0
       }
     }
