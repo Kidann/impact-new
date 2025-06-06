@@ -274,6 +274,19 @@
         "drag_cursor_background": "#ffffff",
         "drag_cursor_color": "#000000"
       }
+    },
+    "custom_liquid_nBgi7Q": {
+      "type": "custom-liquid",
+      "name": "Custom Liquid",
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "liquid": "<div class=\"clinical-results-section\">\n  <div class=\"results-grid\">\n    <div class=\"results-image\">\n      <img src=\"//brightsmileltd.store/cdn/shop/files/2_465619a7-1bd6-4d40-be9b-8b8271bc15f1_1.jpg?v=1742718924\" alt=\"Avant et après blanchiment\" />\n    </div>\n\n    <div class=\"results-text\">\n      <h2>SOUTENU PAR DES ÉTUDES CLINIQUES.</h2>\n    </div>\n\n    <div class=\"results-item\">\n      <div class=\"circle\"><span>98%</span></div>\n      <p>ont constaté des dents visiblement plus blanches</p>\n    </div>\n\n    <div class=\"results-item\">\n      <div class=\"circle\"><span>96%</span></div>\n      <p>ont obtenu des résultats plus rapides avec Lumora™</p>\n    </div>\n\n    <div class=\"results-item\">\n      <div class=\"circle\"><span>92%</span></div>\n      <p>ont remarqué une blancheur durable</p>\n    </div>\n\n    <div class=\"results-text\">\n      <p class=\"caption\">Résultats basés sur un échantillon de 1020 participants. Les pourcentages ont été arrondis pour plus de clarté.</p>\n    </div>\n  </div>\n</div>",
+        "background": "#2f74b3",
+        "background_gradient": "",
+        "text_color": ""
+      }
     }
   },
   "order": [
@@ -287,6 +300,7 @@
     "custom_liquid_4PbpzA",
     "custom_liquid_ieqFB7",
     "custom_html_prUmae",
-    "before_after_image_qhUFL4"
+    "before_after_image_qhUFL4",
+    "custom_liquid_nBgi7Q"
   ]
 }
