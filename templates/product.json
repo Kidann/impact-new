@@ -287,6 +287,172 @@
         "background_gradient": "",
         "text_color": ""
       }
+    },
+    "custom_liquid_TebmcM": {
+      "type": "custom-liquid",
+      "name": "Custom Liquid",
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": true,
+        "remove_horizontal_spacing": true,
+        "liquid": "<div class=\"faq-wrapper\">\n  <div class=\"faq-subtitle\">QUESTIONS FRÉQUENTES</div>\n  <div class=\"faq-title\">Vos questions, nos réponses</div>\n\n  <div class=\"faq-accordion\">\n    <details>\n      <summary><span>Ce produit est-il sûr pour les dents sensibles ?</span><span class=\"arrow\">⌄</span></summary>\n      <div class=\"content\">Oui ! 🌿 Notre formule est <strong>sans peroxyde</strong>, donc aucun produit chimique agressif ni irritation — juste un <strong>blanchiment doux et efficace</strong>.</div>\n    </details>\n    <details>\n      <summary><span>Y a-t-il des effets secondaires ?</span><span class=\"arrow\">⌄</span></summary>\n      <div class=\"content\">La formule Lumora™ est conçue pour être douce 😌. Une mauvaise utilisation ou une surutilisation peut entraîner une légère sensibilité. Suivez les instructions 📋. En cas d'inconfort, stoppez et consultez un dentiste 🦷.</div>\n    </details>\n    <details>\n      <summary><span>Combien de temps pour voir les résultats ?</span><span class=\"arrow\">⌄</span></summary>\n      <div class=\"content\">De nombreux utilisateurs constatent un <strong>sourire plus éclatant après quelques utilisations</strong>, avec des résultats complets en <strong>1 à 2 semaines</strong>.</div>\n    </details>\n    <details>\n      <summary><span>À quelle fréquence dois-je l’utiliser ?</span><span class=\"arrow\">⌄</span></summary>\n      <div class=\"content\">Pour des résultats optimaux, utilisez-le <strong>2 à 3 fois par semaine</strong> dans votre routine d’hygiène dentaire.</div>\n    </details>\n    <details>\n      <summary><span>Mes dents seront-elles rugueuses ou abîmées ?</span><span class=\"arrow\">⌄</span></summary>\n      <div class=\"content\">Non ! Notre formule <strong>respectueuse de l’émail</strong> polit en douceur sans endommager ni rendre les dents rugueuses.</div>\n    </details>\n    <details>\n      <summary><span>Délai de livraison ?</span><span class=\"arrow\">⌄</span></summary>\n      <div class=\"content\">En raison de la forte demande 📦, la livraison prend entre <strong>12 à 16 jours</strong> (en moyenne 14 jours 🚚).</div>\n    </details>\n    <details>\n      <summary><span>Comment nous contacter ?</span><span class=\"arrow\">⌄</span></summary>\n      <div class=\"content\">Rendez-vous sur la <strong>page Contact</strong> via le menu 📄 ou utilisez le <strong>chat en bas à gauche</strong> 💬.</div>\n    </details>\n  </div>\n</div>",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "avisenbas_DWpCX7": {
+      "type": "avisenbas",
+      "blocks": {
+        "image_Qawktr": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/1_a73f7a93-407a-40b0-b849-b26d07676c18_1_1.jpg"
+          }
+        },
+        "image_8qTyYX": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/551E064E-3007-4E29-87D0-002C6226E20C_1_1.jpg"
+          }
+        },
+        "testimonial_dadCWX": {
+          "type": "testimonial",
+          "settings": {
+            "rating": 4.7,
+            "text": "Après des années de taches dues au café et à la cigarette, j'ai vu une amélioration notable de la blancheur de mes dents après seulement quelques jours d'utilisation de ce produit.",
+            "author": "Sarah M.",
+            "verified": "ACHAT VÉRIFIÉ"
+          }
+        },
+        "testimonial_pWdBGJ": {
+          "type": "testimonial",
+          "settings": {
+            "rating": 4.6,
+            "text": "Lumora a visiblement blanchi mes dents après seulement quelques utilisations, et j'adore à quel point il est facile à appliquer sans provoquer de sensibilité.",
+            "author": "Thomas V.",
+            "verified": "ACHAT VÉRIFIÉ"
+          }
+        },
+        "testimonial_rzmbYR": {
+          "type": "testimonial",
+          "settings": {
+            "rating": 5,
+            "text": "Lumora a fait des merveilles sur mes dents, les rendant visiblement plus blanches après seulement une semaine d'utilisation, et je n'ai ressenti aucun inconfort.",
+            "author": "Camille A.",
+            "verified": "ACHAT VÉRIFIÉ"
+          }
+        },
+        "testimonial_FjBnHp": {
+          "type": "testimonial",
+          "settings": {
+            "rating": 4.5,
+            "text": "En quelques jours seulement, j’ai retrouvé un sourire éclatant. Le produit est simple à utiliser et doux, même pour mes dents sensibles. Je recommande vivement !",
+            "author": "Stephanie As.",
+            "verified": "ACHAT VÉRIFIÉ"
+          }
+        }
+      },
+      "block_order": [
+        "image_Qawktr",
+        "image_8qTyYX",
+        "testimonial_dadCWX",
+        "testimonial_pWdBGJ",
+        "testimonial_rzmbYR",
+        "testimonial_FjBnHp"
+      ],
+      "name": "SS - Testimonials #7",
+      "settings": {
+        "hide_images": true,
+        "heading": "<h4>Nos clients sont ravis de voir leur sourire s'illuminer jour après jour.</h4>",
+        "heading_custom": true,
+        "heading_font": "josefin_sans_n4",
+        "heading_size": 36,
+        "heading_size_mobile": 30,
+        "heading_height": 150,
+        "heading_align": "center",
+        "heading_align_mobile": "center",
+        "layout": "image_testimonial",
+        "layout_mobile": "image_testimonial",
+        "layout_gap": 24,
+        "layout_gap_mobile": 24,
+        "layout_mt": 36,
+        "image_row": "2",
+        "image_row_mobile": "2",
+        "image_gap": 12,
+        "image_gap_mobile": 12,
+        "image_radius": 8,
+        "image_border_thickness": 0,
+        "image_ratio": "square",
+        "testimonials_style_mobile": "grid",
+        "testimonials_row": "2",
+        "testimonials_row_mobile": "2",
+        "testimonials_gap": 12,
+        "testimonials_gap_mobile": 12,
+        "testimonial_padding_vertical": 12,
+        "testimonial_padding_horizontal": 12,
+        "testimonial_radius": 8,
+        "testimonial_border_thickness": 1,
+        "stars_size": 24,
+        "testimonial_text_custom": false,
+        "testimonial_text_font": "josefin_sans_n4",
+        "testimonial_text_size": 14,
+        "testimonial_text_size_mobile": 14,
+        "testimonial_text_height": 150,
+        "testimonial_text_mt": 8,
+        "testimonial_author_custom": false,
+        "testimonial_author_font": "josefin_sans_n4",
+        "testimonial_author_size": 14,
+        "testimonial_author_size_mobile": 14,
+        "testimonial_author_height": 150,
+        "testimonial_author_mt": 12,
+        "testimonial_verified_custom": false,
+        "testimonial_verified_font": "josefin_sans_n4",
+        "testimonial_verified_size": 10,
+        "testimonial_verified_size_mobile": 10,
+        "testimonial_verified_height": 150,
+        "button": "SHOP NOW",
+        "button_url": "",
+        "button_use_icon": false,
+        "button_custom": false,
+        "button_font": "josefin_sans_n4",
+        "button_size": 18,
+        "button_size_mobile": 16,
+        "button_height": 100,
+        "button_align": "center",
+        "button_align_mobile": "center",
+        "button_mt": 24,
+        "button_padding_vertical": 16,
+        "button_padding_horizontal": 50,
+        "button_radius": 12,
+        "button_border_thickness": 2,
+        "heading_color": "#120A0A",
+        "background_color": "#F4F4F4",
+        "background_gradient": "",
+        "border_color": "#000000",
+        "button_color": "#000000",
+        "button_hover_color": "#000000",
+        "button_bg_color": "#FFFFFF",
+        "button_bg_hover_color": "#FFFFFF",
+        "button_border_color": "#000000",
+        "button_border_hover_color": "#000000",
+        "image_border_color": "#000000",
+        "testimonial_bg_color": "#FFFFFF",
+        "testimonial_border_color": "#F7DC5A",
+        "stars_color": "#F7DC5A",
+        "testimonial_text_color": "#000000",
+        "testimonial_author_color": "#000000",
+        "testimonial_verified_color": "#999999",
+        "testimonial_pagination_color": "#000000",
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "padding_top": 96,
+        "padding_bottom": 96,
+        "padding_horizontal": 5,
+        "padding_horizontal_mobile": 1.5,
+        "content_width": 140,
+        "border_thickness": 0
+      }
     }
   },
   "order": [
@@ -301,6 +467,8 @@
     "custom_liquid_ieqFB7",
     "custom_html_prUmae",
     "before_after_image_qhUFL4",
-    "custom_liquid_nBgi7Q"
+    "custom_liquid_nBgi7Q",
+    "custom_liquid_TebmcM",
+    "avisenbas_DWpCX7"
   ]
 }
