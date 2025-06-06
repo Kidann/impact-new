@@ -10303,45 +10303,45 @@ shopify-accelerated-checkout, shopify-accelerated-checkout-cart {
     font-size: 0.9rem;
   }
 }
-/* Conteneur global */
 .before-after-section {
   padding: 3rem 1rem;
+  background: #fff;
   text-align: center;
   font-family: Poppins, sans-serif;
-  background: #f9fbff;
 }
 
-/* Titre principal */
-.before-after-section h2 {
-  font-size: 2rem;
-  font-weight: 700;
+.before-after-title {
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: #121212;
   margin-bottom: 1rem;
-  color: #2f74b3;
 }
 
-/* Texte descriptif */
-.before-after-section p {
-  font-size: 1rem;
-  color: #333;
-  line-height: 1.6;
+.before-after-desc {
   max-width: 600px;
-  margin: 0 auto 1.5rem;
+  margin: 0 auto 2rem;
+  font-size: 1rem;
+  color: #444;
+  line-height: 1.6;
 }
 
-/* Texte "Before / After" sur l'image */
-.before-after-section .twentytwenty-before-label,
-.before-after-section .twentytwenty-after-label {
-  font-weight: 700 !important;
-  font-size: 1rem !important;
-  text-shadow: 0 1px 2px rgba(0,0,0,0.2);
-  text-transform: uppercase;
-}
-
-/* Pour l'image elle-même si besoin */
-.before-after-section .twentytwenty-container {
-  border-radius: 12px;
-  overflow: hidden;
+.before-after-wrapper {
   max-width: 600px;
   margin: 0 auto;
-  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling des labels "Before / After" intégrés par twentytwenty.js */
+.twentytwenty-before-label,
+.twentytwenty-after-label {
+  font-size: 0.9rem !important;
+  font-weight: 600 !important;
+  text-transform: uppercase;
+  background: #2f74b3 !important;
+  color: #fff !important;
+  padding: 0.3em 0.7em;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.15);
 }

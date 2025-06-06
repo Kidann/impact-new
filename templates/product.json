@@ -233,6 +233,34 @@
         "background_gradient": "",
         "text_color": ""
       }
+    },
+    "before_after_image_qhUFL4": {
+      "type": "before-after-image",
+      "custom_css": [],
+      "name": "Before/after image",
+      "settings": {
+        "full_width": true,
+        "subheading": "",
+        "title": "Avant & Après : Un sourire plus éclatant !",
+        "content": "<p><strong>Admirez la différence incroyable ! </strong>D’un sourire terne à un éclat éblouissant, notre traitement blanchissant offre des résultats visibles dès la première séance. </p><p>Voyez par vous-même à quelle vitesse vous pouvez obtenir un sourire plus blanc et plus confiant !</p>",
+        "before_image": "shopify://shop_images/Capture_d_ecran_2025-03-26_013123.png",
+        "before_image_mobile": "shopify://shop_images/Capture_d_ecran_2025-03-26_013123.png",
+        "after_image": "shopify://shop_images/Capture_d_ecran_2025-03-26_013131.png",
+        "after_image_mobile": "shopify://shop_images/Capture_d_ecran_2025-03-26_013131.png",
+        "expand_image": false,
+        "text_position": "center",
+        "before_after_text_position": "top",
+        "before_text": "Before",
+        "after_text": "After",
+        "drag_initial_position": 50,
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "before_text_color": "#ffffff",
+        "after_text_color": "#ffffff",
+        "drag_cursor_background": "#ffffff",
+        "drag_cursor_color": "#000000"
+      }
     }
   },
   "order": [
@@ -244,6 +272,7 @@
     "rich_text_6QKxPG",
     "custom_liquid_VCVdWN",
     "custom_liquid_4PbpzA",
-    "custom_liquid_ieqFB7"
+    "custom_liquid_ieqFB7",
+    "before_after_image_qhUFL4"
   ]
 }
