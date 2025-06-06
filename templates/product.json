@@ -193,6 +193,19 @@
         "text_color": ""
       }
     },
+    "custom_liquid_VCVdWN": {
+      "type": "custom-liquid",
+      "name": "Custom Liquid",
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": true,
+        "remove_horizontal_spacing": true,
+        "liquid": "<div class=\"comparison-section\">\n  <h2 class=\"comparison-title\">Pourquoi choisir Lumora™ ?</h2>\n  <table class=\"comparison-table\">\n    <thead>\n      <tr>\n        <th></th>\n        <th class=\"brand\">Lumora™</th>\n        <th>Autres</th>\n      </tr>\n    </thead>\n    <tbody>\n      <tr>\n        <td>Testé cliniquement</td>\n        <td class=\"check\">✔</td>\n        <td class=\"cross\">✘</td>\n      </tr>\n      <tr>\n        <td>Sans sensibilité</td>\n        <td class=\"check\">✔</td>\n        <td class=\"cross\">✘</td>\n      </tr>\n      <tr>\n        <td>Sans effets secondaires</td>\n        <td class=\"check\">✔</td>\n        <td class=\"cross\">✘</td>\n      </tr>\n      <tr>\n        <td>Prix abordable</td>\n        <td class=\"check\">✔</td>\n        <td class=\"cross\">✘</td>\n      </tr>\n    </tbody>\n  </table>\n</div>",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
     "custom_liquid_4PbpzA": {
       "type": "custom-liquid",
       "custom_css": [],
@@ -229,6 +242,7 @@
     "related-products",
     "custom_html_agkhmC",
     "rich_text_6QKxPG",
+    "custom_liquid_VCVdWN",
     "custom_liquid_4PbpzA",
     "custom_liquid_ieqFB7"
   ]
