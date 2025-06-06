@@ -10421,78 +10421,79 @@ shopify-accelerated-checkout, shopify-accelerated-checkout-cart {
     font-size: 0.75rem;
   }
 }
-.faq-wrapper {
-  max-width: 720px;
-  margin: auto;
-  padding: 2.5rem 1rem;
-  font-family: "Poppins", sans-serif;
-}
-
-.faq-header {
-  text-align: center;
-  margin-bottom: 2.5rem;
-}
-
-.faq-subtitle {
-  font-size: 0.9rem;
-  text-transform: uppercase;
-  color: #2f74b3;
-  font-weight: 600;
-  letter-spacing: 1px;
-  margin-bottom: 0.3rem;
-}
-
-.faq-title {
-  font-size: 2.1rem;
-  font-weight: 700;
-  margin: 0;
-  line-height: 1.3;
-}
-
 .faq-accordion details {
-  background: #2f74b3;
-  color: white;
-  margin-bottom: 1.1rem;
+  transition: all 0.3s ease-in-out;
   border-radius: 18px;
   overflow: hidden;
-  transition: all 0.3s ease-in-out;
-  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1.1rem;
+  background: #2f74b3;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.08);
 }
 
-.faq-accordion summary {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem 1.3rem;
-  cursor: pointer;
-  font-weight: 600;
-  font-size: 1rem;
-  list-style: none;
-  transition: background 0.3s ease-in-out;
-}
-
-.faq-accordion summary:hover {
-  background-color: #2764a3;
-}
-
-.faq-accordion details[open] summary {
-  background-color: #1e5a91;
-}
-
-.faq-accordion .arrow {
-  width: 16px;
-  height: 16px;
+.faq-accordion summary .arrow {
+  transition: transform 0.3s ease;
   transform: rotate(0deg);
-  transition: transform 0.3s ease-in-out;
-  fill: white;
 }
-
-.faq-accordion details[open] .arrow {
+.faq-accordion details[open] summary .arrow {
   transform: rotate(180deg);
 }
 
+.faq-accordion summary span {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: #fff;
+  margin-right: 0.8rem;
+  line-height: 1.4;
+}
+
 .faq-accordion .content {
-  padding: 0 1.3rem 1rem;
+  color: #f1f1f1;
   font-size: 0.95rem;
-  line-height: 1.6;
+  padding: 0 1.3rem 1rem;
+  animation: fadeDown 0.4s ease;
+  line-height: 1.7;
+}
+
+@keyframes fadeDown {
+  from { opacity: 0; transform: translateY(-10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.faq-accordion summary {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.1rem 1.3rem;
+  cursor: pointer;
+  background: #2f74b3;
+  transition: background 0.3s ease;
+}
+
+.faq-accordion summary:hover {
+  background: #2764a3;
+}
+
+.faq-wrapper {
+  padding: 2rem 1rem;
+  max-width: 720px;
+  margin: auto;
+  font-family: 'Poppins', sans-serif;
+}
+
+.faq-title {
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 0.3rem;
+}
+
+.faq-subtitle {
+  text-align: center;
+  color: #2f74b3;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-bottom: 0.4rem;
+  letter-spacing: 1px;
 }
