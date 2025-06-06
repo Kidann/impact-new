@@ -192,6 +192,20 @@
         "background_gradient": "",
         "text_color": ""
       }
+    },
+    "custom_liquid_4PbpzA": {
+      "type": "custom-liquid",
+      "custom_css": [],
+      "name": "Custom Liquid",
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "liquid": "<div class=\"image-text-vertical\">\n  <div class=\"media\">\n    <img\n      src=\"//brightsmileltd.store/cdn/shop/files/0222-ezgif.com-optimize_1_f26fc25c-14f5-48a1-8e2d-f86a16d6d095.gif?v=1742718926&width=1500\"\n      alt=\"Blanchiment dentaire\"\n      class=\"rounded-img\"\n    />\n  </div>\n  <div class=\"text\">\n    <p class=\"stars\">⭐⭐⭐⭐⭐ <span>NOTÉ 4.9/5 PAR 10 000+ CLIENTS</span></p>\n    <h2>Blanchiment Approuvé par les Stars</h2>\n    <p>\n      Notre <strong>formule PAP innovante</strong> est une <strong>révolution</strong> du blanchiment ! 🌟 Contrairement au peroxyde,\n      <strong>le PAP blanchit sans libérer de radicaux libres</strong>, protégeant <strong>l’émail et les gencives</strong> tout en offrant des\n      <strong>résultats brillants</strong>. Devenu <strong>viral</strong>, il est adoré par les <strong>célébrités</strong> !\n    </p>\n    <a href=\"/products/lumora™-poudre-de-blanchiment-des-dents\" class=\"cta\">ESSAYER MAINTENANT</a>\n  </div>\n</div>",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
     }
   },
   "order": [
@@ -200,6 +214,7 @@
     "custom_html_ACa3TF",
     "related-products",
     "custom_html_agkhmC",
-    "rich_text_6QKxPG"
+    "rich_text_6QKxPG",
+    "custom_liquid_4PbpzA"
   ]
 }
