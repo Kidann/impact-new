@@ -10303,3 +10303,45 @@ shopify-accelerated-checkout, shopify-accelerated-checkout-cart {
     font-size: 0.9rem;
   }
 }
+/* Conteneur global */
+.before-after-section {
+  padding: 3rem 1rem;
+  text-align: center;
+  font-family: Poppins, sans-serif;
+  background: #f9fbff;
+}
+
+/* Titre principal */
+.before-after-section h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #2f74b3;
+}
+
+/* Texte descriptif */
+.before-after-section p {
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.6;
+  max-width: 600px;
+  margin: 0 auto 1.5rem;
+}
+
+/* Texte "Before / After" sur l'image */
+.before-after-section .twentytwenty-before-label,
+.before-after-section .twentytwenty-after-label {
+  font-weight: 700 !important;
+  font-size: 1rem !important;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.2);
+  text-transform: uppercase;
+}
+
+/* Pour l'image elle-même si besoin */
+.before-after-section .twentytwenty-container {
+  border-radius: 12px;
+  overflow: hidden;
+  max-width: 600px;
+  margin: 0 auto;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
