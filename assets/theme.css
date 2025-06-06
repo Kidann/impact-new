@@ -10310,75 +10310,68 @@ shopify-accelerated-checkout, shopify-accelerated-checkout-cart {
 }
 
 .results-grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2rem;
-  align-items: center;
-  justify-content: center;
-  max-width: 1200px;
+  max-width: 700px;
   margin: 0 auto;
 }
 
-.results-image img {
-  max-width: 100%;
-  border-radius: 8px;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.05);
-}
-
-.results-text {
-  flex: 1;
-  min-width: 280px;
-}
-
 .results-text h2 {
-  font-size: 1.8rem;
+  font-size: 1.3rem;
   font-weight: 700;
-  margin-bottom: 1.5rem;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
   color: #121212;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 0.8rem;
 }
 
 .results-item {
   display: flex;
   align-items: center;
   gap: 1rem;
-  margin-bottom: 1.2rem;
+  padding: 1.2rem 0;
+  border-bottom: 1px solid #eee;
 }
 
 .results-item .circle {
   width: 60px;
   height: 60px;
   border-radius: 50%;
-  background: #2f74b3;
-  color: #fff;
-  font-weight: 700;
-  font-size: 1.1rem;
+  border: 5px solid #2f74b3;
+  border-top-color: transparent;
   display: flex;
   align-items: center;
   justify-content: center;
+  font-weight: 700;
+  font-size: 1rem;
+  color: #2f74b3;
+  transform: rotate(135deg);
   flex-shrink: 0;
+  background: #f7fafd;
 }
 
 .results-item p {
   margin: 0;
-  font-size: 1rem;
-  color: #333;
+  font-size: 0.95rem;
   font-weight: 500;
+  color: #333;
 }
 
 .results-text .caption {
-  font-size: 0.85rem;
-  color: #555;
-  margin-top: 1.5rem;
+  font-size: 0.8rem;
+  color: #666;
+  margin-top: 1rem;
   line-height: 1.4;
 }
 
-@media (max-width: 768px) {
-  .results-grid {
-    flex-direction: column;
-    text-align: center;
+@media (max-width: 600px) {
+  .results-item {
+    flex-direction: row;
+    align-items: center;
   }
 
-  .results-item {
-    justify-content: center;
+  .results-item .circle {
+    width: 50px;
+    height: 50px;
+    font-size: 0.9rem;
   }
 }
