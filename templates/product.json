@@ -234,6 +234,19 @@
         "text_color": ""
       }
     },
+    "custom_html_prUmae": {
+      "type": "custom-html",
+      "name": "Custom HTML",
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "html": "",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
     "before_after_image_qhUFL4": {
       "type": "before-after-image",
       "custom_css": [],
@@ -273,6 +286,7 @@
     "custom_liquid_VCVdWN",
     "custom_liquid_4PbpzA",
     "custom_liquid_ieqFB7",
+    "custom_html_prUmae",
     "before_after_image_qhUFL4"
   ]
 }
