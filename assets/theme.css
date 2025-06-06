@@ -10099,3 +10099,82 @@ shopify-accelerated-checkout, shopify-accelerated-checkout-cart {
   }
 }
 
+.image-text-vertical {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 1rem;
+  margin: 0 auto;
+  max-width: 1000px;
+  font-family: Poppins, sans-serif;
+  text-align: left;
+}
+
+.image-text-vertical .media {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.image-text-vertical .rounded-img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 20px; /* Tu peux changer en 12px, 50%, etc. */
+  object-fit: cover;
+}
+
+.image-text-vertical .text {
+  flex: 1;
+  color: #121212;
+  padding-top: 1.5rem;
+}
+
+.image-text-vertical .stars {
+  font-size: 0.8rem;
+  color: #555;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.image-text-vertical h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0.5rem 0 1rem;
+}
+
+.image-text-vertical p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.image-text-vertical .cta {
+  display: inline-block;
+  margin-top: 1.5rem;
+  padding: 0.7em 1.5em;
+  font-size: 1rem;
+  border-radius: 14px;
+  border: 2px solid #2f74b3;
+  color: #2f74b3;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.2s ease-in-out;
+}
+
+.image-text-vertical .cta:hover {
+  background-color: #2f74b3;
+  color: #fff;
+}
+
+@media (min-width: 768px) {
+  .image-text-vertical {
+    flex-direction: row;
+    gap: 2rem;
+  }
+  .image-text-vertical .text {
+    padding-top: 0;
+  }
+}
