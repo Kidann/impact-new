@@ -411,7 +411,7 @@
         "testimonial_verified_size": 10,
         "testimonial_verified_size_mobile": 10,
         "testimonial_verified_height": 150,
-        "button": "SHOP NOW",
+        "button": "",
         "button_url": "",
         "button_use_icon": false,
         "button_custom": false,
