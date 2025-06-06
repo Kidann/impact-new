@@ -10303,3 +10303,82 @@ shopify-accelerated-checkout, shopify-accelerated-checkout-cart {
     font-size: 0.9rem;
   }
 }
+.clinical-results-section {
+  padding: 3rem 1rem;
+  font-family: Poppins, sans-serif;
+  background: #fff;
+}
+
+.results-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.results-image img {
+  max-width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+}
+
+.results-text {
+  flex: 1;
+  min-width: 280px;
+}
+
+.results-text h2 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: #121212;
+}
+
+.results-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.2rem;
+}
+
+.results-item .circle {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: #2f74b3;
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.results-item p {
+  margin: 0;
+  font-size: 1rem;
+  color: #333;
+  font-weight: 500;
+}
+
+.results-text .caption {
+  font-size: 0.85rem;
+  color: #555;
+  margin-top: 1.5rem;
+  line-height: 1.4;
+}
+
+@media (max-width: 768px) {
+  .results-grid {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .results-item {
+    justify-content: center;
+  }
+}
