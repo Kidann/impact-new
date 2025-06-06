@@ -10497,3 +10497,47 @@ shopify-accelerated-checkout, shopify-accelerated-checkout-cart {
   margin-bottom: 0.4rem;
   letter-spacing: 1px;
 }
+/* HEADER CLEAN ALIGNEMENT */
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: #fff;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.site-header .main-menu {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.site-header .main-menu li a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.site-header .logo {
+  text-align: center;
+  flex-grow: 1;
+}
+
+.site-header .logo img {
+  max-height: 40px;
+  margin: 0 auto;
+}
+
+.site-header .menu-right {
+  display: flex;
+  gap: 20px;
+}
+
+.site-header .menu-right a {
+  font-size: 20px;
+  color: #000;
+}
