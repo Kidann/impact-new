@@ -10304,35 +10304,31 @@ shopify-accelerated-checkout, shopify-accelerated-checkout-cart {
   }
 }
 .clinical-results-section {
-  padding: 4rem 1rem;
+  padding: 3rem 1rem;
   font-family: 'Poppins', sans-serif;
   background-color: #ffffff;
   color: #1a1a1a;
 }
 
 .results-grid {
-  max-width: 960px;
+  max-width: 800px;
   margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
 }
 
 .results-text h2 {
-  font-size: 1.8rem;
-  font-weight: 800;
+  font-size: 1.6rem;
+  font-weight: 700;
   text-transform: uppercase;
   margin-bottom: 2rem;
-  border-bottom: 2px solid #e0e0e0;
-  padding-bottom: 0.8rem;
-  letter-spacing: 0.03em;
   color: #121212;
+  border-bottom: 2px solid #e0e0e0;
+  padding-bottom: 0.5rem;
 }
 
 .results-item {
   display: flex;
   align-items: center;
-  gap: 1.5rem;
+  gap: 1.2rem;
   padding: 1.2rem 0;
   border-bottom: 1px solid #eaeaea;
 }
@@ -10348,57 +10344,61 @@ shopify-accelerated-checkout, shopify-accelerated-checkout-cart {
   border: 6px solid #2f74b3;
   border-top-color: transparent;
   transform: rotate(135deg);
+  background: #f4faff;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #f4faff;
   font-weight: 700;
-  font-size: 1rem;
+  font-size: 1.2rem;
   color: #2f74b3;
-  box-shadow: inset 0 0 0 4px #fff;
+  position: relative;
+}
+
+.results-item .circle span {
+  transform: rotate(-135deg);
+  display: block;
 }
 
 .results-item p {
   margin: 0;
   font-size: 1rem;
   font-weight: 500;
-  line-height: 1.4;
   color: #333333;
-  max-width: 85%;
+  line-height: 1.4;
 }
 
 .results-text .caption {
   font-size: 0.85rem;
-  color: #777;
+  color: #666;
   margin-top: 1.5rem;
   line-height: 1.5;
   font-style: italic;
+  text-align: center;
 }
 
-/* Responsive Styles */
-@media (max-width: 768px) {
+/* Mobile responsive */
+@media (max-width: 600px) {
   .results-item {
     flex-direction: row;
     align-items: flex-start;
-    gap: 1rem;
   }
 
   .results-item .circle {
-    width: 54px;
-    height: 54px;
+    width: 52px;
+    height: 52px;
     font-size: 0.9rem;
-  }
-
-  .results-text h2 {
-    font-size: 1.4rem;
-    text-align: center;
   }
 
   .results-item p {
     font-size: 0.95rem;
   }
 
-  .results-text .caption {
+  .results-text h2 {
     text-align: center;
+    font-size: 1.4rem;
+  }
+
+  .results-text .caption {
+    font-size: 0.75rem;
   }
 }
