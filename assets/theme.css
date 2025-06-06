@@ -10234,7 +10234,6 @@ shopify-accelerated-checkout, shopify-accelerated-checkout-cart {
 .comparison-section {
   background: #2f74b3;
   padding: 3rem 1rem;
-  color: #fff;
   text-align: center;
   font-family: Poppins, sans-serif;
 }
@@ -10250,13 +10249,11 @@ shopify-accelerated-checkout, shopify-accelerated-checkout-cart {
   width: 100%;
   max-width: 600px;
   margin: 0 auto;
-  border-collapse: separate;
-  border-spacing: 0;
-  border-radius: 16px;
+  border-collapse: collapse;
   overflow: hidden;
+  border-radius: 16px;
   background: #fff;
-  color: #000;
-  box-shadow: 0 0 20px rgba(0,0,0,0.1);
+  box-shadow: 0 5px 25px rgba(0,0,0,0.08);
 }
 
 .comparison-table thead th {
@@ -10264,10 +10261,11 @@ shopify-accelerated-checkout, shopify-accelerated-checkout-cart {
   padding: 1rem;
   font-weight: 700;
   font-size: 1rem;
+  color: #2f74b3;
 }
 
-.comparison-table thead .brand {
-  color: #2f74b3;
+.comparison-table thead th:last-child {
+  color: #222;
 }
 
 .comparison-table td {
@@ -10280,19 +10278,22 @@ shopify-accelerated-checkout, shopify-accelerated-checkout-cart {
 
 .comparison-table td:first-child {
   text-align: left;
-  background: #ecf5ff;
   font-weight: 600;
+  background: #f4f9ff;
+}
+
+.comparison-table tr:nth-child(even) td:first-child {
+  background: #e8f2ff;
 }
 
 .check {
-  color: #53af01;
-  font-size: 1.5rem;
+  color: #34c759;
+  font-size: 1.3rem;
 }
 
 .cross {
-  color: #000;
+  color: #e74c3c;
   font-size: 1.3rem;
-  font-weight: bold;
 }
 
 @media (max-width: 600px) {
