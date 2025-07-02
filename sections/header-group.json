@@ -17,14 +17,14 @@
         "message": {
           "type": "message",
           "settings": {
-            "text": "LIVRAISON OFFERTE",
+            "text": "ENVÍO GRATUITO",
             "url": ""
           }
         },
         "message_XiTGzz": {
           "type": "message",
           "settings": {
-            "text": "SATISFAIT OU REMBOURSÉ",
+            "text": "SATISFECHO O REEMBOLSADO",
             "url": ""
           }
         }
@@ -40,7 +40,7 @@
         "text_size": "text-xs",
         "navigation_mode": "scrolling",
         "scrolling_speed": 17,
-        "background": "#2f74b3",
+        "background": "#bd4d25",
         "background_gradient": "",
         "text_color": "#ffffff"
       }
@@ -51,12 +51,12 @@
       "settings": {
         "enable_sticky": false,
         "hide_on_scroll": true,
-        "logo": "shopify://shop_images/Sans_titre-4.png",
+        "logo": "shopify://shop_images/Sans_titre-1.jpg",
         "logo_max_width": 85,
         "logo_mobile_max_width": 95,
         "menu": "main-menu",
         "sidebar_menu": "",
-        "secondary_menu": "main-menu",
+        "secondary_menu": "",
         "menu_open_trigger": "hover",
         "opening_from": "left",
         "layout": "logo_center_navigation_inline",
