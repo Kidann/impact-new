@@ -30,6 +30,12 @@
             "liquid": "<style>\n  .custom-rating {\n    display: flex;\n    align-items: center;\n    font-family: 'Segoe UI', Roboto, sans-serif;\n    font-size: 14px;\n    font-weight: 500;\n    color: #222;\n    gap: 6px;\n  }\n\n  .custom-rating svg {\n    width: 16px;\n    height: 16px;\n    fill: #f6c104; /* jaune doré */\n  }\n\n  .custom-rating strong {\n    margin-left: 4px;\n  }\n\n  .custom-rating .rating-text {\n    margin-left: 4px;\n    color: #444;\n  }\n\n  @media screen and (max-width: 480px) {\n    .custom-rating {\n      font-size: 13px;\n      gap: 4px;\n    }\n\n    .custom-rating svg {\n      width: 14px;\n      height: 14px;\n    }\n  }\n</style>\n\n<div class=\"custom-rating\">\n  {% for i in (1..5) %}\n    <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 576 512\">\n      <path d=\"M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 \n        171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 \n        113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 \n        128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 \n        12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 \n        7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z\"/>\n    </svg>\n  {% endfor %}\n  <span class=\"rating-text\"><strong>4.8</strong> | 12,647+ Opiniones de confianza</span>\n</div>"
           }
         },
+        "liquid_WW47pi": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "<!-- Charge la police Material Symbols (obligatoire une seule fois sur ta boutique) -->\n<link href=\"https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined\" rel=\"stylesheet\">\n\n<ul style=\"list-style: none; padding: 0; margin: 0;\">\n  <li style=\"display: flex; align-items: center; margin-bottom: 8px;\">\n    <span class=\"material-symbols-outlined\" style=\"font-size: 18px; color: #bd4d25; margin-right: 8px;\">\n      verified\n    </span>\n    <span>Reduce significativamente la caída del cabello</span>\n  </li>\n  <li style=\"display: flex; align-items: center; margin-bottom: 8px;\">\n    <span class=\"material-symbols-outlined\" style=\"font-size: 18px; color: #bd4d25; margin-right: 8px;\">\n      verified\n    </span>\n    <span>Favorece un crecimiento más grueso y largo del cabello</span>\n  </li>\n  <li style=\"display: flex; align-items: center;\">\n    <span class=\"material-symbols-outlined\" style=\"font-size: 18px; color: #bd4d25; margin-right: 8px;\">\n      verified\n    </span>\n    <span>Clínicamente probado para resultados duraderos</span>\n  </li>\n</ul>"
+          }
+        },
         "kaching_bundles_app_block_GwcqVQ": {
           "type": "shopify://apps/kaching-bundles/blocks/app-block/6c637362-a106-4a32-94ac-94dcfd68cdb8",
           "settings": {
@@ -62,6 +68,7 @@
         "liquid_aNjRGX",
         "title",
         "liquid_yR7RNP",
+        "liquid_WW47pi",
         "kaching_bundles_app_block_GwcqVQ",
         "buy_buttons_x3BD6E",
         "liquid_CNaxQp",
