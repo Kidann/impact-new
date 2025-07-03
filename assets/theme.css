@@ -10541,3 +10541,40 @@ shopify-accelerated-checkout, shopify-accelerated-checkout-cart {
   font-size: 20px;
   color: #000;
 }
+
+<!-- À inclure dans le <head> de ton thème -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+
+<style>
+  .product__text-container {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--bg-color, #f3f3f3);
+    padding: var(--padding, 1em);
+    margin-top: var(--margin-top, 1.5rem);
+    margin-bottom: var(--margin-bottom, 1.5rem);
+    border-radius: var(--corner-radius, 0.4em);
+    border: var(--border-size, 0px) solid var(--border-color, #b7b7b7);
+    gap: var(--row-gap, 0.6em);
+  }
+
+  .product__text {
+    display: flex;
+    align-items: center;
+    gap: var(--column-gap, 1em);
+    font-size: var(--mobile-text-size, 1rem);
+    color: var(--text-color, #121212);
+  }
+
+  .product__text .material-icon {
+    font-size: calc(1em * var(--icon-scale, 1.5));
+    color: var(--icon-color, #bd4d25);
+  }
+
+  @media (min-width: 768px) {
+    .product__text {
+      font-size: var(--desktop-text-size, 1.6rem);
+    }
+  }
+</style>
+
