@@ -10592,87 +10592,109 @@ shopify-accelerated-checkout, shopify-accelerated-checkout-cart {
 
 /* faq */
 
+<style>
 /* Conteneur principal */
 .collapsible-content__wrapper {
-  max-width: 700px;
+  max-width: 720px;
   margin: 0 auto;
-  padding: 20px 15px;
+  padding: 40px 20px;
   font-family: 'Helvetica Neue', sans-serif;
-  color: #222;
+  color: #111;
 }
 
 /* En-tête */
-.collapsible-content__heading {
-  font-size: 28px;
-  font-weight: bold;
-  text-transform: uppercase;
-  margin-bottom: 10px;
+.collapsible-content__header {
+  text-align: center;
+  margin-bottom: 30px;
 }
-
+.collapsible-content__heading {
+  font-size: 32px;
+  font-weight: 700;
+  color: #222;
+  text-transform: none;
+  margin: 0;
+}
 .caption-with-letter-spacing {
   font-size: 14px;
-  letter-spacing: 1.2px;
+  letter-spacing: 1.4px;
   color: #888;
   text-transform: uppercase;
   margin-bottom: 5px;
 }
 
-/* Accordéon global */
+/* Accordéon */
 .accordion {
-  border-top: 1px solid #ddd;
+  border-top: 1px solid #e3e3e3;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  overflow: hidden;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.05);
 }
 
-/* Résumé (titre de la question) */
 .accordion__summary {
   cursor: pointer;
-  padding: 15px 0;
+  padding: 18px 20px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  transition: background-color 0.3s ease;
+}
+.accordion__summary:hover {
+  background-color: #f1f1f1;
 }
 
 .accordion__title {
-  font-size: 18px;
+  font-size: 17px;
   font-weight: 600;
   margin: 0;
+  color: #222;
 }
 
-/* Flèche */
+/* Icône flèche */
 .accordion__summary svg {
   width: 14px;
   height: 14px;
   transition: transform 0.3s ease;
 }
 
-/* Rotation de la flèche quand ouvert */
 details[open] .accordion__summary svg {
   transform: rotate(180deg);
 }
 
-/* Contenu caché/déployé */
 .accordion__content-wrapper {
-  overflow: hidden;
   transition: all 0.3s ease;
 }
 
 .accordion__content {
-  padding: 10px 0 20px 0;
-  font-size: 16px;
+  padding: 15px 20px 20px 20px;
+  font-size: 15px;
   line-height: 1.6;
   color: #444;
+}
+
+.accordion__content p,
+.accordion__content ul {
+  margin: 0 0 10px;
+}
+.accordion__content ul {
+  padding-left: 18px;
 }
 
 /* Responsive */
 @media screen and (max-width: 480px) {
   .collapsible-content__heading {
-    font-size: 22px;
+    font-size: 24px;
   }
-
   .accordion__title {
     font-size: 16px;
   }
-
+  .accordion__summary {
+    padding: 14px 16px;
+  }
   .accordion__content {
-    font-size: 15px;
+    padding: 12px 16px 16px;
+    font-size: 14px;
   }
 }
+</style>
