@@ -10543,11 +10543,22 @@ shopify-accelerated-checkout, shopify-accelerated-checkout-cart {
 }
 /* 04/07/25 */
 
+.avis-wrapper {
+  font-family: sans-serif;
+  text-align: center;
+  padding: 8px 0;
+}
+
+.avis-header {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
 .avis-carousel {
   overflow-x: auto;
   scroll-snap-type: x mandatory;
   -webkit-overflow-scrolling: touch;
-  padding: 8px 0;
 }
 
 .avis-track {
@@ -10560,33 +10571,36 @@ shopify-accelerated-checkout, shopify-accelerated-checkout-cart {
   flex: 0 0 85%;
   scroll-snap-align: center;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   background: #f9f9f9;
   border-radius: 10px;
-  padding: 8px 10px;
+  padding: 10px;
   box-sizing: border-box;
+  text-align: left;
+  max-width: 280px;
 }
 
 .avis-avatar {
-  width: 40px;
-  height: 40px;
+  width: 42px;
+  height: 42px;
   border-radius: 50%;
   object-fit: cover;
   margin-right: 10px;
   flex-shrink: 0;
 }
 
-.avis-content {
+.avis-content p {
   font-size: 13px;
-  text-align: left;
   line-height: 1.4;
+  margin: 0 0 6px;
+  word-break: break-word;
 }
 
 .avis-content span {
   display: block;
   font-size: 12px;
   color: #777;
-  margin-top: 4px;
+  font-style: italic;
 }
 
 .stars {
@@ -10599,7 +10613,7 @@ shopify-accelerated-checkout, shopify-accelerated-checkout-cart {
   display: flex;
   justify-content: center;
   gap: 6px;
-  margin-top: 8px;
+  margin-top: 10px;
 }
 
 .avis-dots span {
