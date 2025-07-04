@@ -135,40 +135,33 @@
         "full_width": true,
         "remove_vertical_spacing": false,
         "remove_horizontal_spacing": true,
-        "html": "<div class=\"ticker-wrapper\">\n  <div class=\"ticker-track\">\n    <span>Préparez-vous à afficher votre plus beau sourire !</span>\n    <span>Illuminez votre sourire, naturellement !</span>\n    <span>Préparez-vous à afficher votre plus beau sourire !</span>\n    <span>Illuminez votre sourire, naturellement !</span>\n    <span>Préparez-vous à afficher votre plus beau sourire !</span>\n  </div>\n</div>",
+        "html": "<div class=\"ticker-wrapper\">\n  <div class=\"ticker-track\">\n    <span>¡Detén la caída del cabello naturalmente!</span>\n    <span>Cabello más fuerte y con más volumen en semanas</span>\n    <span>¡Resultados visibles o te devolvemos el dinero!</span>\n    <span>Tu mejor versión empieza con un cuero cabelludo sano</span>\n    <span>Descubre el poder del aceite de semilla de calabaza</span>\n  </div>\n</div>",
         "background": "",
         "background_gradient": "",
         "text_color": ""
       }
     },
-    "rich_text_6QKxPG": {
-      "type": "rich-text",
-      "blocks": {
-        "heading_znkAnQ": {
-          "type": "heading",
-          "settings": {
-            "text": "Éliminez les taches tenaces, révélez votre plus beau sourire !",
-            "heading_tag": "h2",
-            "text_color": "",
-            "gradient": ""
-          }
-        },
-        "richtext_RUUfNy": {
-          "type": "richtext",
-          "settings": {
-            "content": "<p>Dites adieu aux taches tenaces de café ☕ et de cigarettes 🚬, et bonjour à un sourire éclatant et confiant 😁 avec la poudre blanchissante Lumoria !</p>"
-          }
-        }
-      },
-      "block_order": [
-        "heading_znkAnQ",
-        "richtext_RUUfNy"
-      ],
-      "name": "Rich text",
+    "custom_liquid_xRjiAb": {
+      "type": "custom-liquid",
+      "name": "Custom Liquid",
       "settings": {
         "full_width": true,
-        "content_width": "small",
-        "text_position": "center",
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "liquid": "<img src=\"https://cdn.shopify.com/s/files/1/0681/1290/8348/files/gyrtsdrify.jpg?v=1751664310\"\n     alt=\"Antes y después Lumoria\"\n     style=\"width: 100%; border-radius: 12px;\" />",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "custom_liquid_Ur6bp9": {
+      "type": "custom-liquid",
+      "name": "Custom Liquid",
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "liquid": "<h2 style=\"font-size: 1.4rem; font-weight: 800; text-align: center;\">\n  ¡Detén la caída del cabello con cápsulas fáciles de tragar!\n</h2>\n<p style=\"text-align: center; font-size: 1rem;\">\n  <strong>Si no detienes</strong> el adelgazamiento y la caída del cabello, <strong>seguirá empeorando</strong>. \n  Nuestro aceite de semilla de calabaza y las cápsulas de saw palmetto son \n  <strong>la mezcla perfecta de ingredientes naturales</strong> para <strong>proteger</strong> tu cabello y \n  <strong>ayudarte a sentirte joven y hermosa nuevamente</strong>.\n</p>",
         "background": "",
         "background_gradient": "",
         "text_color": ""
@@ -441,7 +434,8 @@
     "custom_html_ACa3TF",
     "related-products",
     "custom_html_agkhmC",
-    "rich_text_6QKxPG",
+    "custom_liquid_xRjiAb",
+    "custom_liquid_Ur6bp9",
     "custom_liquid_VCVdWN",
     "custom_liquid_4PbpzA",
     "custom_liquid_ieqFB7",
