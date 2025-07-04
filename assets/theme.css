@@ -10459,18 +10459,23 @@ shopify-accelerated-checkout, shopify-accelerated-checkout-cart {
 
 /* TESTIMONIAL */
 
+@import url('https://fonts.googleapis.com/css2?family=Segoe+UI:wght@400;700&display=swap');
+
 .testimonial-carousel {
   max-width: 420px;
   margin: auto;
-  background-color: #ffffff; /* fond blanc comme dans la 2e image */
+  background-color: #f6f6f6;
   border-radius: 18px;
   overflow: hidden;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
-  font-family: sans-serif;
+  font-family: 'Segoe UI', sans-serif;
+  position: relative;
 }
 
 .testimonial-slide {
   display: none;
+  transition: transform 0.3s ease;
+  touch-action: pan-y;
 }
 
 .testimonial-slide.active {
@@ -10478,9 +10483,11 @@ shopify-accelerated-checkout, shopify-accelerated-checkout-cart {
 }
 
 .testimonial-box {
+  background-color: #f0f0f0;
   text-align: center;
+  padding-bottom: 25px;
   position: relative;
-  background-color: #ffffff;
+  border-radius: 18px;
 }
 
 .testimonial-img-container {
@@ -10493,12 +10500,11 @@ shopify-accelerated-checkout, shopify-accelerated-checkout-cart {
   height: auto;
   display: block;
   object-fit: cover;
-  border-radius: 0; /* plus de coins arrondis en haut */
 }
 
 .quote-bubble {
   position: absolute;
-  bottom: 10px; /* en bas de la photo */
+  bottom: 10px;
   right: 10px;
   background-color: #c44b2f;
   color: #fff2ec;
