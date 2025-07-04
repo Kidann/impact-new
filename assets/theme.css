@@ -10543,5 +10543,73 @@ shopify-accelerated-checkout, shopify-accelerated-checkout-cart {
 }
 /* 04/07/25 */
 
+.review-items-container {
+  max-width: 620px;
+  margin: 0 auto;
+  font-family: 'Segoe UI', sans-serif;
+  text-align: center;
+}
+
+.review-title {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.review-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  text-align: left;
+  padding: 10px;
+}
+
+.review-item__image img {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #fff;
+  box-shadow: 0 0 4px rgba(0,0,0,0.1);
+}
+
+.review-item__text p {
+  font-size: 14px;
+  color: #333;
+  margin: 0 0 5px;
+  line-height: 1.4;
+}
+
+.review-item__author {
+  font-size: 13px;
+  color: #888;
+  font-style: italic;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.rating-stars__container {
+  font-size: 14px;
+  color: #ffcc00;
+}
+
+.splide__pagination {
+  margin-top: 10px;
+  justify-content: center;
+}
+
+.splide__pagination__page {
+  width: 8px;
+  height: 8px;
+  background-color: #ccc;
+  border-radius: 50%;
+  margin: 0 4px;
+  border: none;
+}
+
+.splide__pagination__page.is-active {
+  background-color: #000;
+}
 
 
