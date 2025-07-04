@@ -10469,12 +10469,14 @@ shopify-accelerated-checkout, shopify-accelerated-checkout-cart {
 .testimonial-slider {
   display: flex;
   transition: transform 0.4s ease-in-out;
+  width: 100%;
 }
 
 .testimonial-slide {
   min-width: 100%;
   box-sizing: border-box;
 }
+
 
 .testimonial-box {
   background: #f2f2f2;
