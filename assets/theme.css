@@ -10543,74 +10543,73 @@ shopify-accelerated-checkout, shopify-accelerated-checkout-cart {
 }
 /* 04/07/25 */
 
-.carousel-wrapper {
-  max-width: 100%;
-  overflow: hidden;
-  position: relative;
-  padding: 10px 0;
+.avis-carousel {
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  padding: 8px 0;
 }
 
-.carousel {
+.avis-track {
   display: flex;
-  transition: transform 0.4s ease;
-  will-change: transform;
+  gap: 12px;
+  width: max-content;
 }
 
-.slide {
-  min-width: 100%;
-  flex-shrink: 0;
+.avis-slide {
+  flex: 0 0 85%;
+  scroll-snap-align: center;
   display: flex;
   align-items: center;
-  gap: 10px;
-  padding: 10px;
+  background: #f9f9f9;
+  border-radius: 10px;
+  padding: 8px 10px;
   box-sizing: border-box;
 }
 
-.avatar {
+.avis-avatar {
   width: 40px;
   height: 40px;
   border-radius: 50%;
   object-fit: cover;
+  margin-right: 10px;
   flex-shrink: 0;
 }
 
-.review {
-  text-align: left;
+.avis-content {
   font-size: 13px;
+  text-align: left;
+  line-height: 1.4;
 }
 
-.review span {
+.avis-content span {
+  display: block;
   font-size: 12px;
   color: #777;
-}
-
-.stars {
-  font-size: 14px;
-  color: #ffc107;
   margin-top: 4px;
 }
 
-.dots {
+.stars {
+  color: #ffcc00;
+  font-size: 14px;
+  margin-top: 4px;
+}
+
+.avis-dots {
   display: flex;
   justify-content: center;
   gap: 6px;
   margin-top: 8px;
 }
 
-.dots span {
+.avis-dots span {
   width: 6px;
   height: 6px;
   background: #ccc;
   border-radius: 50%;
   display: inline-block;
-  transition: 0.3s;
 }
 
-.dots .active {
-  width: 10px;
-  height: 10px;
-  background: #000;
-}
 
 
 
