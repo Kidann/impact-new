@@ -119,40 +119,43 @@ NOTE TO DEVELOPERS: welcome to Impact theme! We hope that you will enjoy editing
       });
     </script>
     <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        const slides = document.querySelectorAll(".testimonial-slide");
-        const dots = document.querySelectorAll(".dot");
-        const leftArrow = document.querySelector(".arrow.left");
-        const rightArrow = document.querySelector(".arrow.right");
+    let startX = 0;
+    let currentSlide = 0;
+    const slides = document.querySelectorAll('.testimonial-slide');
+    const dots = document.querySelectorAll('.dot');
     
-        let currentIndex = 0;
-    
-        function showSlide(index) {
-          slides.forEach((slide, i) => {
-            slide.classList.toggle("active", i === index);
-            dots[i].classList.toggle("active", i === index);
-          });
-        }
-    
-        leftArrow.addEventListener("click", () => {
-          currentIndex = (currentIndex - 1 + slides.length) % slides.length;
-          showSlide(currentIndex);
-        });
-    
-        rightArrow.addEventListener("click", () => {
-          currentIndex = (currentIndex + 1) % slides.length;
-          showSlide(currentIndex);
-        });
-    
-        dots.forEach((dot, i) => {
-          dot.addEventListener("click", () => {
-            currentIndex = i;
-            showSlide(currentIndex);
-          });
-        });
-    
-        showSlide(currentIndex);
+    function showSlide(index) {
+      slides.forEach((slide, i) => {
+        slide.classList.toggle('active', i === index);
+        dots[i].classList.toggle('active', i === index);
       });
+      currentSlide = index;
+    }
+    
+    function nextSlide() {
+      const next = (currentSlide + 1) % slides.length;
+      showSlide(next);
+    }
+    
+    function prevSlide() {
+      const prev = (currentSlide - 1 + slides.length) % slides.length;
+      showSlide(prev);
+    }
+    
+    function goToSlide(index) {
+      showSlide(index);
+    }
+    
+    // Swipe mobile
+    document.querySelector('.testimonial-carousel').addEventListener('touchstart', (e) => {
+      startX = e.touches[0].clientX;
+    });
+    
+    document.querySelector('.testimonial-carousel').addEventListener('touchend', (e) => {
+      let diff = e.changedTouches[0].clientX - startX;
+      if (diff > 50) prevSlide();
+      else if (diff < -50) nextSlide();
+    });
     </script>
   </body>
 </html>
