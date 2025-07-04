@@ -106,8 +106,8 @@ NOTE TO DEVELOPERS: welcome to Impact theme! We hope that you will enjoy editing
     </main>
     <script>
       document.addEventListener("DOMContentLoaded", function () {
-        const slides = document.querySelectorAll(".slide");
-        const dotsContainer = document.querySelector(".dots");
+        const slides = document.querySelectorAll(".custom-review-slider .slide");
+        const dotsContainer = document.querySelector(".custom-review-slider .dots");
     
         if (!slides.length || !dotsContainer) return;
     
@@ -117,8 +117,8 @@ NOTE TO DEVELOPERS: welcome to Impact theme! We hope that you will enjoy editing
           dotsContainer.appendChild(dot);
         });
     
-        let current = 0;
         const dots = dotsContainer.querySelectorAll("span");
+        let current = 0;
     
         function showSlide(index) {
           slides.forEach(s => s.classList.remove("active"));
@@ -134,7 +134,7 @@ NOTE TO DEVELOPERS: welcome to Impact theme! We hope that you will enjoy editing
         }
     
         showSlide(0);
-        setInterval(nextSlide, 5000);
+        setInterval(nextSlide, 6000);
       });
     </script>
   </body>
