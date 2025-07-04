@@ -10494,13 +10494,13 @@ shopify-accelerated-checkout, shopify-accelerated-checkout-cart {
 /* Position exacte entre image et texte */
 .quote-bubble {
   position: absolute;
-  top: calc(23% - 80px); /* entre image et texte */
+  top: calc(21% - 80px); /* entre image et texte */
   right: 20px;
   background-color: #c44b2f;
   color: #fff2ec;
-  font-size: 20px;
-  width: 32px;
-  height: 32px;
+  font-size: 28px;
+  width: 40px;
+  height: 40px;
   line-height: 32px;
   border-radius: 50%;
   font-weight: bold;
