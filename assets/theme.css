@@ -10491,10 +10491,11 @@ shopify-accelerated-checkout, shopify-accelerated-checkout-cart {
   border-radius: 0;
 }
 
+/* 🟠 Bulle citation parfaitement visible au-dessus */
 .quote-bubble {
   position: absolute;
-  bottom: -16px;
-  right: 16px;
+  top: 190px;
+  right: 20px;
   background-color: #c44b2f;
   color: #fff2ec;
   font-size: 20px;
@@ -10503,20 +10504,23 @@ shopify-accelerated-checkout, shopify-accelerated-checkout-cart {
   line-height: 32px;
   border-radius: 50%;
   font-weight: bold;
-  z-index: 2;
+  z-index: 10;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
+/* Corps du texte */
 .testimonial-body {
   background-color: #f9f7f3;
   padding: 40px 20px 25px;
   position: relative;
+  text-align: center;
 }
 
+/* ⭐ Étoiles visibles */
 .stars {
   color: #ffcc00;
   font-size: 1.2rem;
-  margin-bottom: 8px;
+  margin-bottom: 10px;
   letter-spacing: 3px;
 }
 
