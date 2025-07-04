@@ -10469,16 +10469,12 @@ shopify-accelerated-checkout, shopify-accelerated-checkout-cart {
 .testimonial-slider {
   display: flex;
   transition: transform 0.4s ease-in-out;
-  width: 100%;              /* ✅ s'assurer qu'il prend bien toute la largeur */
-  touch-action: pan-y;      /* ✅ pour éviter les conflits swipe sur mobile */
 }
 
 .testimonial-slide {
-  min-width: 100%;          /* ✅ 1 slide = 100% */
-  flex-shrink: 0;           /* ✅ empêcher la compression automatique */
+  min-width: 100%;
   box-sizing: border-box;
 }
-
 
 .testimonial-box {
   background: #f2f2f2;
@@ -10572,13 +10568,22 @@ shopify-accelerated-checkout, shopify-accelerated-checkout-cart {
 }
 
 .dot {
-  width: 8px;
-  height: 8px;
-  background-color: #ccc;
+  width: 10px;
+  height: 10px;
+  background-color: #bbb;
   border-radius: 50%;
   display: inline-block;
+  transition: background-color 0.3s ease;
 }
 
 .dot.active {
   background-color: #000;
+}
+
+.testimonial-dots {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 12px;
 }
