@@ -10459,132 +10459,120 @@ shopify-accelerated-checkout, shopify-accelerated-checkout-cart {
 
 /* TESTIMONIAL */
 
-.testimonial-wrapper {
-  background-color: #f2f2f2; /* Plus gris */
-  padding: 25px 15px;
-  border-radius: 20px;
+.testimonial-carousel {
+  position: relative;
   max-width: 420px;
   margin: auto;
-  font-family: 'Helvetica Neue', sans-serif;
-  text-align: center;
+  background-color: #f2f2f2;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.testimonial-slide {
+  display: none;
+}
+
+.testimonial-slide.active {
+  display: block;
 }
 
 .testimonial-box {
-  background: white;
-  border-radius: 20px;
-  overflow: hidden;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  text-align: center;
+  padding-bottom: 25px;
   position: relative;
 }
 
 .testimonial-img-container {
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
-  overflow: hidden;
+  width: 100%;
 }
 
 .testimonial-img {
   width: 100%;
-  height: auto;
   display: block;
-  border-radius: 0;
 }
 
-/* 🟠 Bulle bien centrée à la jonction image/texte */
-/* Position exacte entre image et texte */
+.testimonial-body {
+  padding: 10px 20px 20px;
+  position: relative;
+}
+
 .quote-bubble {
   position: absolute;
-  top: calc(21% - 80px); /* entre image et texte */
+  top: -20px;
   right: 20px;
   background-color: #c44b2f;
   color: #fff2ec;
-  font-size: 28px;
-  width: 40px;
-  height: 40px;
-  line-height: 50px;
+  font-size: 20px;
+  width: 32px;
+  height: 32px;
+  line-height: 32px;
   border-radius: 50%;
   font-weight: bold;
   z-index: 10;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-}
-
-
-.testimonial-body {
-  background-color: #f2f2f2;
-  padding: 10px 20px 20px;
-  position: relative;
-  text-align: center;
 }
 
 .stars {
-  color: #ffcc00;
-  font-size: 1.2rem;
-  margin-bottom: 8px;
-  letter-spacing: 3px;
+  color: #facc15;
+  font-size: 20px;
+  margin-top: 5px;
 }
 
 .testimonial-title {
-  font-size: 1.1rem;
-  font-weight: bold;
-  color: #111;
-  margin-bottom: 10px;
+  font-size: 16px;
+  font-weight: 700;
+  margin: 8px 0;
 }
 
 .testimonial-text {
   font-style: italic;
-  color: #333;
-  font-size: 0.95rem;
+  font-size: 14px;
+  margin: 0 0 12px;
   line-height: 1.5;
-  margin-bottom: 20px;
-  text-align: center;
 }
 
 .testimonial-divider {
   border: none;
-  border-top: 1px solid #ddd;
-  margin-bottom: 10px;
-  width: 100%;
+  border-top: 1px solid #dcdcdc;
+  margin: 10px 0;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .testimonial-author {
-  font-size: 0.9rem;
-  font-style: italic;
   font-weight: bold;
-  color: #222;
+  font-size: 14px;
 }
 
-/* ⬅️➡️ Pagination + flèches */
 .testimonial-controls {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 10px;
-  margin-top: 15px;
-}
-
-.testimonial-pagination {
-  display: flex;
-  justify-content: center;
-  gap: 8px;
-}
-
-.testimonial-pagination .dot {
-  width: 8px;
-  height: 8px;
-  background: #ccc;
-  border-radius: 50%;
-  display: inline-block;
-}
-
-.testimonial-pagination .dot.active {
-  background: #111;
+  padding: 10px 0;
 }
 
 .arrow {
-  font-size: 20px;
-  color: #333;
-  cursor: default; /* change to pointer if using JS */
+  cursor: pointer;
+  font-size: 24px;
   user-select: none;
+}
+
+.testimonial-dots {
+  display: flex;
+  gap: 8px;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #ccc;
+  cursor: pointer;
+}
+
+.dot.active {
+  background: #000;
 }
 
 
