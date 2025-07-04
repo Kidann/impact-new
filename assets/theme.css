@@ -10543,105 +10543,108 @@ shopify-accelerated-checkout, shopify-accelerated-checkout-cart {
 }
 /* 04/07/25 */
 
-.testimonials-container {
-  max-width: 600px;
+.testimonials-box {
+  max-width: 100%;
   margin: auto;
   background: #fdfbf7;
-  padding: 10px;
-  font-family: Poppins, sans-serif;
-  text-align: center;
   border-radius: 12px;
+  padding: 12px;
+  font-family: Poppins, sans-serif;
 }
 
 .testimonials-title {
-  margin-bottom: 8px;
-  font-size: 20px;
+  text-align: center;
+  font-size: 18px;
   font-weight: 700;
-  color: #121212;
+  margin-bottom: 10px;
 }
 
-.slider {
+.testimonial-slider {
   position: relative;
   overflow: hidden;
 }
 
-.slides {
+.testimonial-slides {
   display: flex;
   width: 300%;
-  transition: all 0.4s ease;
+  transition: transform 0.3s ease;
 }
 
-.slide {
+.testimonial-slide {
   width: 100%;
   flex-shrink: 0;
-  padding: 10px;
+  padding: 10px 0;
   box-sizing: border-box;
 }
 
-.review-avatar {
+.testimonial-content {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.avatar {
   width: 45px;
   height: 45px;
   border-radius: 50%;
   object-fit: cover;
-  margin-bottom: 8px;
 }
 
-.review-text {
-  font-style: italic;
+.testimonial-text {
   font-size: 14px;
-  color: #333;
-  margin: 8px 0;
+  margin: 0 0 6px;
+  font-style: italic;
 }
 
-.review-name {
+.testimonial-name {
   font-size: 13px;
-  color: #888;
+  color: #777;
+  margin-bottom: 4px;
 }
 
-.review-stars {
-  font-size: 16px;
+.stars {
   color: #ffcc00;
-  margin-top: 4px;
+  font-size: 14px;
 }
 
-/* Hide radio buttons */
-input[name="slider"] {
-  display: none;
-}
-
-/* Move slides */
-#slide1:checked ~ .slides {
-  transform: translateX(0%);
-}
-#slide2:checked ~ .slides {
-  transform: translateX(-100%);
-}
-#slide3:checked ~ .slides {
-  transform: translateX(-200%);
-}
-
-/* Navigation Dots */
-.navigation-dots {
+/* Navigation dots */
+.testimonial-dots {
   display: flex;
   justify-content: center;
-  margin-top: 10px;
+  margin-top: 6px;
   gap: 8px;
 }
 
-.navigation-dots label {
+.testimonial-dots label {
   width: 8px;
   height: 8px;
   border-radius: 50%;
-  background: #999;
+  background: #ccc;
   cursor: pointer;
   transition: transform 0.2s ease;
 }
 
-/* Active dot */
-#slide1:checked ~ .navigation-dots label:nth-child(1),
-#slide2:checked ~ .navigation-dots label:nth-child(2),
-#slide3:checked ~ .navigation-dots label:nth-child(3) {
+/* Hide radio inputs */
+input[name="slider"] {
+  display: none;
+}
+
+/* Slide control */
+#review1:checked ~ .testimonial-slides {
+  transform: translateX(0%);
+}
+#review2:checked ~ .testimonial-slides {
+  transform: translateX(-100%);
+}
+#review3:checked ~ .testimonial-slides {
+  transform: translateX(-200%);
+}
+
+/* Active dot animation */
+#review1:checked ~ .testimonial-dots label:nth-child(1),
+#review2:checked ~ .testimonial-dots label:nth-child(2),
+#review3:checked ~ .testimonial-dots label:nth-child(3) {
   background: #000;
-  transform: scale(1.4);
+  transform: scale(1.3);
 }
 
