@@ -10580,7 +10580,7 @@ shopify-accelerated-checkout, shopify-accelerated-checkout-cart {
   background: #fff;
   padding: 1rem;
   border-radius: 1rem;
-  margin-bottom: 2rem; /* plus d'espace pour les dots */
+  margin-bottom: 1rem; /* plus d'espace pour les dots */
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12); /* ombre + visible */
 }
 
