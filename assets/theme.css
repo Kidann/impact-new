@@ -10463,9 +10463,10 @@ shopify-accelerated-checkout, shopify-accelerated-checkout-cart {
   position: relative;
   max-width: 420px;
   margin: auto;
-  background-color: #f2f2f2;
-  border-radius: 16px;
+  background-color: #f6f6f6;
+  border-radius: 18px;
   overflow: hidden;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
 }
 
 .testimonial-slide {
@@ -10483,26 +10484,32 @@ shopify-accelerated-checkout, shopify-accelerated-checkout-cart {
 }
 
 .testimonial-img-container {
+  position: relative;
   width: 100%;
+  overflow: hidden;
+  border-bottom: 2px solid #f6f6f6;
 }
 
 .testimonial-img {
-  width: 100%;
   display: block;
+  width: 100%;
+  height: auto;
+  border-top-left-radius: 18px;
+  border-top-right-radius: 18px;
 }
 
 .testimonial-body {
-  padding: 10px 20px 20px;
   position: relative;
+  padding: 15px 20px 20px;
 }
 
 .quote-bubble {
   position: absolute;
-  top: -20px;
-  right: 20px;
+  top: -16px;
+  right: 16px;
   background-color: #c44b2f;
   color: #fff2ec;
-  font-size: 20px;
+  font-size: 18px;
   width: 32px;
   height: 32px;
   line-height: 32px;
@@ -10513,7 +10520,7 @@ shopify-accelerated-checkout, shopify-accelerated-checkout-cart {
 
 .stars {
   color: #facc15;
-  font-size: 20px;
+  font-size: 18px;
   margin-top: 5px;
 }
 
@@ -10527,7 +10534,8 @@ shopify-accelerated-checkout, shopify-accelerated-checkout-cart {
   font-style: italic;
   font-size: 14px;
   margin: 0 0 12px;
-  line-height: 1.5;
+  line-height: 1.6;
+  color: #333;
 }
 
 .testimonial-divider {
@@ -10542,6 +10550,7 @@ shopify-accelerated-checkout, shopify-accelerated-checkout-cart {
 .testimonial-author {
   font-weight: bold;
   font-size: 14px;
+  color: #444;
 }
 
 .testimonial-controls {
@@ -10549,25 +10558,25 @@ shopify-accelerated-checkout, shopify-accelerated-checkout-cart {
   align-items: center;
   justify-content: center;
   gap: 10px;
-  padding: 10px 0;
+  padding: 8px 0 14px;
 }
 
 .arrow {
   cursor: pointer;
-  font-size: 24px;
+  font-size: 22px;
   user-select: none;
 }
 
 .testimonial-dots {
   display: flex;
-  gap: 8px;
+  gap: 6px;
 }
 
 .dot {
   width: 8px;
   height: 8px;
   border-radius: 50%;
-  background: #ccc;
+  background: #bbb;
   cursor: pointer;
 }
 
