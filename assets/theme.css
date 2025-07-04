@@ -10459,8 +10459,6 @@ shopify-accelerated-checkout, shopify-accelerated-checkout-cart {
 
 /* TESTIMONIAL */
 
-@import url('https://fonts.googleapis.com/css2?family=Segoe+UI:wght@400;700&display=swap');
-
 .testimonial-carousel {
   max-width: 420px;
   margin: auto;
