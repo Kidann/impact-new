@@ -10648,6 +10648,14 @@ shopify-accelerated-checkout, shopify-accelerated-checkout-cart {
   transform: scale(1.4);
 }
 
+.carousel-dots {
+  background: #fff;
+  padding: 0.5rem 0 1rem;
+  margin-top: -0.5rem;
+  position: relative;
+  z-index: 1;
+}
+
 
 
 
