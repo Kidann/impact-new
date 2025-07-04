@@ -10543,62 +10543,89 @@ shopify-accelerated-checkout, shopify-accelerated-checkout-cart {
 }
 /* 04/07/25 */
 
-.review-slider {
-  max-width: 650px;
-  margin: 0 auto;
-  font-family: 'Poppins', sans-serif;
+.review-carousel-container {
+  font-family: Poppins, sans-serif;
   text-align: center;
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 20px;
 }
 
-.review-title {
-  font-size: 1.6rem;
+.review-carousel-title {
   font-weight: 700;
-  margin-bottom: 0.8rem;
-  color: rgb(18, 18, 18);
+  font-size: 1.5rem;
+  margin-bottom: 20px;
 }
 
-.review-box {
-  display: flex;
-  align-items: center;
-  gap: 1.2rem;
-  background: #fff;
-  padding: 1.5rem;
-  border-radius: 14px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+.review-carousel {
+  position: relative;
+  overflow: hidden;
+  height: 200px;
+}
+
+.review-slide {
+  opacity: 0;
+  transition: opacity 0.6s ease-in-out;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  padding: 10px 20px;
+  box-sizing: border-box;
+}
+
+.review-slide.active {
+  opacity: 1;
+  position: relative;
 }
 
 .review-avatar {
-  width: 55px;
-  height: 55px;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
   object-fit: cover;
-}
-
-.review-content {
-  text-align: left;
+  margin-bottom: 10px;
 }
 
 .review-text {
-  font-size: 1rem;
-  color: rgba(18, 18, 18, 0.9);
-  margin-bottom: 0.4rem;
   font-style: italic;
+  font-size: 0.95rem;
+  color: #333;
+  margin-bottom: 10px;
 }
 
 .review-author {
-  font-size: 0.85rem;
-  color: #888;
-  font-style: italic;
-  margin-bottom: 0.3rem;
+  font-size: 0.9rem;
+  color: #777;
 }
 
 .review-author span {
-  color: #444;
-  font-weight: 500;
+  font-weight: 600;
+  color: #555;
 }
 
-.stars {
-  font-size: 1rem;
+.review-stars {
   color: #ffcc00;
+  font-size: 1.1rem;
+  margin-top: 5px;
+}
+
+.carousel-dots {
+  margin-top: 15px;
+}
+
+.dot {
+  height: 8px;
+  width: 8px;
+  margin: 0 4px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.dot.active {
+  background-color: #222;
 }
 
