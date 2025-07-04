@@ -180,6 +180,19 @@
         "text_color": ""
       }
     },
+    "custom_liquid_UaD3ey": {
+      "type": "custom-liquid",
+      "name": "Custom Liquid",
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "liquid": "<style>\n@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');\n.replica-warning {\n  font-family: 'Poppins', sans-serif;\n  text-align: center;\n  padding: 0.5rem 1rem;\n  color: #1a1a1a;\n}\n.replica-warning h2 {\n  font-size: 1.6rem;\n  font-weight: 700;\n  margin: 0 0 0.3rem;\n  line-height: 1.4;\n}\n.replica-warning .orange {\n  color: #cc4b1e;\n}\n.replica-warning p {\n  font-size: 1rem;\n  line-height: 1.7;\n  max-width: 90%;\n  margin: 0 auto;\n}\n.replica-warning strong {\n  font-weight: 600;\n}\n</style>\n\n<div class=\"replica-warning\">\n  <h2>Beware of <span class=\"orange\">Dangerous</span><br>Replicas</h2>\n  <p>\n    Últimamente, <strong>varios revendedores sospechosos</strong> han copiado nuestro producto y venden cápsulas de semilla de calabaza <strong>de baja calidad y diluidas</strong> que <strong>no funcionan</strong>. Elige la fórmula <strong>auténtica, pura y clínicamente comprobada</strong> que <strong>realmente detiene la caída del cabello en mechones</strong>.\n  </p>\n</div>",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
     "custom_liquid_VCVdWN": {
       "type": "custom-liquid",
       "name": "Custom Liquid",
@@ -450,6 +463,7 @@
     "custom_liquid_xRjiAb",
     "custom_liquid_Ur6bp9",
     "custom_liquid_yFCh7W",
+    "custom_liquid_UaD3ey",
     "custom_liquid_VCVdWN",
     "custom_liquid_4PbpzA",
     "custom_liquid_ieqFB7",
