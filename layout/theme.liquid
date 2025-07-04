@@ -126,52 +126,51 @@ NOTE TO DEVELOPERS: welcome to Impact theme! We hope that you will enjoy editing
         const leftArrow = document.querySelector(".arrow.left");
         const rightArrow = document.querySelector(".arrow.right");
     
+        const DOT_OFFSET = 3; // très important si tu utilises data-index=3 à 7
         let currentIndex = 0;
     
         function goToSlide(index) {
-          if (index < 0) index = -3;
-          if (index >= slides.length) index = slides.length - 1;
-    
+          if (index < 0 || index >= slides.length) return;
           slider.style.transform = `translateX(-${index * 100}%)`;
-          dots.forEach(dot => dot.classList.remove("active"));
-          if (dots[index]) dots[index].classList.add("active");
-    
           currentIndex = index;
+    
+          dots.forEach(dot => dot.classList.remove("active"));
+          const dot = document.querySelector(`.dot[data-index="${index + DOT_OFFSET}"]`);
+          if (dot) dot.classList.add("active");
         }
     
-        // Dot navigation
+        // Dots click
         dots.forEach(dot => {
           dot.addEventListener("click", () => {
-            const index = parseInt(dot.getAttribute("data-index"));
-            goToSlide(index);
+            const realIndex = parseInt(dot.getAttribute("data-index")) - DOT_OFFSET;
+            goToSlide(realIndex);
           });
         });
     
-        // Arrow navigation
-        leftArrow?.addEventListener("click", () => {
+        // Arrows
+        leftArrow.addEventListener("click", () => {
           goToSlide(currentIndex - 1);
         });
     
-        rightArrow?.addEventListener("click", () => {
+        rightArrow.addEventListener("click", () => {
           goToSlide(currentIndex + 1);
         });
     
-        // Touch (swipe) navigation
+        // Swipe mobile
         let startX = 0;
-        slider?.addEventListener("touchstart", (e) => {
+    
+        slider.addEventListener("touchstart", e => {
           startX = e.touches[0].clientX;
         });
     
-        slider?.addEventListener("touchend", (e) => {
+        slider.addEventListener("touchend", e => {
           const endX = e.changedTouches[0].clientX;
-          const delta = endX - startX;
-    
-          if (delta > 50) goToSlide(currentIndex - 1);
-          else if (delta < -50) goToSlide(currentIndex + 1);
+          const deltaX = endX - startX;
+          if (deltaX > 50) goToSlide(currentIndex - 1);
+          else if (deltaX < -50) goToSlide(currentIndex + 1);
         });
     
-        // Initialize first slide
-        goToSlide(0);
+        goToSlide(0); // Initialisation propre
       });
     </script>
   </body>
