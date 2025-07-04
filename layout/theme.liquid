@@ -104,5 +104,20 @@ NOTE TO DEVELOPERS: welcome to Impact theme! We hope that you will enjoy editing
         {%- sections 'footer-group' -%}
       {%- endif -%}
     </main>
+    <script>
+      let currentSlide = 0;
+    
+      function moveSlide(index) {
+        const track = document.querySelector('.review-track');
+        const dots = document.querySelectorAll('.dot');
+    
+        currentSlide = index;
+        track.style.transform = `translateX(-${index * 100}%)`;
+    
+        dots.forEach(dot => dot.classList.remove('active'));
+        dots[index].classList.add('active');
+      }
+    </script>
+
   </body>
 </html>
