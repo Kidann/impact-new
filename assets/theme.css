@@ -10485,7 +10485,7 @@ shopify-accelerated-checkout, shopify-accelerated-checkout-cart {
   position: relative;
 }
 
-.testimonial-img-container {
+.testimonial-img {
   width: 100%;
   height: auto;
   display: block;
@@ -10493,6 +10493,7 @@ shopify-accelerated-checkout, shopify-accelerated-checkout-cart {
   border-top-left-radius: 16px;
   border-top-right-radius: 16px;
 }
+
 
 .testimonial-body {
   padding: 10px 20px 20px;
