@@ -10543,4 +10543,88 @@ shopify-accelerated-checkout, shopify-accelerated-checkout-cart {
 }
 /* 04/07/25 */
 
+.review-carousel {
+  font-family: 'Poppins', sans-serif;
+  max-width: 700px;
+  margin: auto;
+  text-align: center;
+  padding: 1rem;
+}
+
+.review-title {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.review-wrapper {
+  overflow: hidden;
+  position: relative;
+  border-top: 1px solid #ddd;
+  padding-top: 1rem;
+}
+
+.review-track {
+  display: flex;
+  transition: transform 0.4s ease-in-out;
+  width: 300%;
+}
+
+.review-slide {
+  min-width: 100%;
+  box-sizing: border-box;
+  padding: 0 1rem;
+}
+
+.review-avatar {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 0.5rem;
+}
+
+.review-text {
+  font-style: italic;
+  font-size: 0.95rem;
+  color: #333;
+  line-height: 1.5;
+  margin-bottom: 0.8rem;
+}
+
+.review-author {
+  font-size: 0.85rem;
+  color: #888;
+  font-weight: 500;
+}
+
+.review-author .verified {
+  font-style: italic;
+  color: #888;
+}
+
+.review-stars {
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  color: #f5c518;
+}
+
+.review-dots {
+  margin-top: 10px;
+}
+
+.review-dots .dot {
+  height: 8px;
+  width: 8px;
+  margin: 0 4px;
+  background-color: #ccc;
+  border-radius: 50%;
+  display: inline-block;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.review-dots .dot.active {
+  background-color: #333;
+}
 
