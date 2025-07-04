@@ -10624,6 +10624,9 @@ shopify-accelerated-checkout, shopify-accelerated-checkout-cart {
 
 .carousel-dots {
   margin-top: 0.7rem;
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem; /* Espace entre review et les dots */
 }
 
 .dot {
@@ -10639,12 +10642,6 @@ shopify-accelerated-checkout, shopify-accelerated-checkout-cart {
 .dot.active {
   background-color: #111;
   transform: scale(1.4);
-}
-
-.dots-container {
-  display: flex;
-  justify-content: center;
-  margin-top: 1rem; /* Espace entre review et les dots */
 }
 
 
