@@ -10575,10 +10575,13 @@ shopify-accelerated-checkout, shopify-accelerated-checkout-cart {
 .review-avatar {
   width: 50px;
   height: 50px;
-  border-radius: 50%; /* rend bien rond */
+  border-radius: 50%;
   object-fit: cover;
+  aspect-ratio: 1 / 1; /* Ajouté pour forcer un ratio carré */
+  display: block;
   border: 1px solid #ddd;
 }
+
 
 .review-text {
   text-align: left;
