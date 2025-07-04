@@ -10641,6 +10641,12 @@ shopify-accelerated-checkout, shopify-accelerated-checkout-cart {
   transform: scale(1.4);
 }
 
+.dots-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem; /* Espace entre review et les dots */
+}
+
 
 
 
