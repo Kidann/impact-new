@@ -10627,7 +10627,7 @@ shopify-accelerated-checkout, shopify-accelerated-checkout-cart {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: -0.5rem;
+  margin-top: 0.6rem;
   margin-bottom: 1rem;
   gap: 8px;
   position: relative;
