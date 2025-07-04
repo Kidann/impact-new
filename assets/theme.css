@@ -10543,71 +10543,60 @@ shopify-accelerated-checkout, shopify-accelerated-checkout-cart {
 }
 /* 04/07/25 */
 
-.testimonial-slider {
-  max-width: 500px;
+.custom-review-slider {
+  max-width: 700px;
   margin: auto;
   text-align: center;
-  font-family: 'Poppins', sans-serif;
-  background-color: #fdfbf7;
-  padding: 20px;
-  border-radius: 20px;
-  box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+  font-family: Poppins, sans-serif;
+  padding: 1rem;
 }
 
-.carousel-title {
-  font-size: 22px;
+.custom-review-slider h2 {
+  font-size: 1.6rem;
   font-weight: 700;
-  margin-bottom: 20px;
-  color: #121212;
+  margin-bottom: 1rem;
 }
 
-.slider {
+.slider-container {
   position: relative;
-  overflow: hidden;
-  height: 320px;
 }
 
 .slide {
   display: none;
-  padding: 10px 20px;
-  animation: fade 0.8s ease-in-out;
+  animation: fadeIn 0.6s ease-in-out;
 }
 
 .slide.active {
   display: block;
 }
 
-.testimonial-img {
+.avatar {
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  margin-bottom: 15px;
-  object-fit: cover;
+  margin-bottom: 0.5rem;
 }
 
-.testimonial-text {
+.review-text {
+  font-size: 0.95rem;
   font-style: italic;
-  font-size: 15px;
   color: #333;
-  margin-bottom: 15px;
+  margin-bottom: 0.6rem;
+  line-height: 1.4;
 }
 
-.testimonial-name {
-  font-weight: 600;
-  font-size: 14px;
-  color: #121212;
-  margin-bottom: 10px;
+.review-author {
+  font-size: 0.85rem;
+  color: #777;
 }
 
-.testimonial-name span {
-  font-weight: 400;
+.review-author .verified {
   font-style: italic;
-  color: gray;
 }
 
 .stars {
   color: #ffcc00;
-  font-size: 18px;
+  margin-left: 0.3rem;
 }
 
 .dots {
@@ -10616,20 +10605,21 @@ shopify-accelerated-checkout, shopify-accelerated-checkout-cart {
 
 .dots span {
   display: inline-block;
-  height: 8px;
   width: 8px;
-  background-color: #ccc;
+  height: 8px;
+  background: #ccc;
   border-radius: 50%;
-  margin: 0 4px;
+  margin: 0 5px;
   cursor: pointer;
+  transition: background 0.3s;
 }
 
 .dots .active {
-  background-color: #000;
+  background: #000;
 }
 
-@keyframes fade {
-  from {opacity: 0.3;}
-  to {opacity: 1;}
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
 }
 
