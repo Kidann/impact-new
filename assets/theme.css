@@ -10487,15 +10487,20 @@ shopify-accelerated-checkout, shopify-accelerated-checkout-cart {
 
 .testimonial-img-container {
   width: 100%;
+  overflow: hidden;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
 }
 
 .testimonial-img {
   width: 100%;
   height: auto;
   display: block;
+  object-fit: cover;
   border-top-left-radius: 16px;
   border-top-right-radius: 16px;
 }
+
 
 .testimonial-body {
   padding: 10px 20px 20px;
