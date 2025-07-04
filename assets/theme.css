@@ -10491,9 +10491,10 @@ shopify-accelerated-checkout, shopify-accelerated-checkout-cart {
 }
 
 /* 🟠 Bulle bien centrée à la jonction image/texte */
+/* Position exacte entre image et texte */
 .quote-bubble {
   position: absolute;
-  top: 240px; /* Ajusté pour être entre image et texte */
+  top: calc(100% - 80px); /* entre image et texte */
   right: 20px;
   background-color: #c44b2f;
   color: #fff2ec;
@@ -10506,6 +10507,7 @@ shopify-accelerated-checkout, shopify-accelerated-checkout-cart {
   z-index: 10;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
+
 
 .testimonial-body {
   background-color: #f2f2f2;
