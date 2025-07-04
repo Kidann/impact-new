@@ -10466,12 +10466,6 @@ shopify-accelerated-checkout, shopify-accelerated-checkout-cart {
   position: relative;
 }
 
-.testimonial-slider {
-  display: flex;
-  transition: transform 0.4s ease-in-out;
-  width: 100%;
-}
-
 .testimonial-slide {
   flex: 0 0 100%; /* assure qu'il prend 100% de largeur */
   box-sizing: border-box;
