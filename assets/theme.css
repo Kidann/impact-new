@@ -10543,42 +10543,47 @@ shopify-accelerated-checkout, shopify-accelerated-checkout-cart {
 }
 /* 04/07/25 */
 
-.review-carousel {
-  font-family: 'Poppins', sans-serif;
+.review-carousel-container {
   max-width: 700px;
-  margin: auto;
+  margin: 0 auto;
   text-align: center;
-  padding: 1rem;
+  font-family: 'Poppins', sans-serif;
 }
 
-.review-title {
-  font-size: 1.4rem;
+.review-carousel-title {
+  font-size: 1.6rem;
   font-weight: 600;
   margin-bottom: 1rem;
+  color: #121212;
 }
 
-.review-wrapper {
-  overflow: hidden;
-  position: relative;
-  border-top: 1px solid #ddd;
-  padding-top: 1rem;
-}
-
-.review-track {
+.review-carousel {
   display: flex;
-  transition: transform 0.4s ease-in-out;
-  width: 300%;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  gap: 1.5rem;
+  padding: 1rem 0.5rem;
+  scrollbar-width: none; /* Firefox */
 }
 
-.review-slide {
-  min-width: 100%;
-  box-sizing: border-box;
-  padding: 0 1rem;
+.review-carousel::-webkit-scrollbar {
+  display: none;
+}
+
+.review-card {
+  flex: 0 0 90%;
+  max-width: 320px;
+  background: #fff;
+  border-radius: 12px;
+  padding: 1rem;
+  scroll-snap-align: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  margin: 0 auto;
 }
 
 .review-avatar {
-  width: 45px;
-  height: 45px;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
   object-fit: cover;
   margin-bottom: 0.5rem;
@@ -10588,43 +10593,26 @@ shopify-accelerated-checkout, shopify-accelerated-checkout-cart {
   font-style: italic;
   font-size: 0.95rem;
   color: #333;
-  line-height: 1.5;
   margin-bottom: 0.8rem;
 }
 
 .review-author {
   font-size: 0.85rem;
   color: #888;
-  font-weight: 500;
 }
 
-.review-author .verified {
+.review-author strong {
+  color: #000;
+}
+
+.verified {
   font-style: italic;
   color: #888;
 }
 
 .review-stars {
+  font-size: 1.1rem;
+  color: #ffc107;
   margin-top: 0.5rem;
-  font-size: 1rem;
-  color: #f5c518;
-}
-
-.review-dots {
-  margin-top: 10px;
-}
-
-.review-dots .dot {
-  height: 8px;
-  width: 8px;
-  margin: 0 4px;
-  background-color: #ccc;
-  border-radius: 50%;
-  display: inline-block;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.review-dots .dot.active {
-  background-color: #333;
 }
 
