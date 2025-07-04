@@ -129,7 +129,7 @@ NOTE TO DEVELOPERS: welcome to Impact theme! We hope that you will enjoy editing
         let currentIndex = 0;
     
         function goToSlide(index) {
-          if (index < 0) index = 0;
+          if (index < 0) index = -3;
           if (index >= slides.length) index = slides.length - 1;
     
           slider.style.transform = `translateX(-${index * 100}%)`;
@@ -171,7 +171,7 @@ NOTE TO DEVELOPERS: welcome to Impact theme! We hope that you will enjoy editing
         });
     
         // Initialize first slide
-        goToSlide(-3);
+        goToSlide(0);
       });
     </script>
   </body>
