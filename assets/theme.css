@@ -10543,70 +10543,93 @@ shopify-accelerated-checkout, shopify-accelerated-checkout-cart {
 }
 /* 04/07/25 */
 
-.testimonial-carousel {
-  max-width: 700px;
-  margin: 0 auto;
-  padding: 2rem 1rem;
-  font-family: 'Poppins', sans-serif;
-  color: #121212;
+.testimonial-slider {
+  max-width: 500px;
+  margin: auto;
   text-align: center;
+  font-family: 'Poppins', sans-serif;
+  background-color: #fdfbf7;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.05);
 }
 
 .carousel-title {
-  font-size: 1.8rem;
+  font-size: 22px;
   font-weight: 700;
-  margin-bottom: 1.5rem;
+  margin-bottom: 20px;
+  color: #121212;
 }
 
-.carousel-track {
-  display: flex;
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
-  gap: 1.5rem;
-  scrollbar-width: none;
+.slider {
+  position: relative;
+  overflow: hidden;
+  height: 320px;
 }
 
-.carousel-track::-webkit-scrollbar {
+.slide {
   display: none;
+  padding: 10px 20px;
+  animation: fade 0.8s ease-in-out;
 }
 
-.testimonial {
-  flex: 0 0 100%;
-  scroll-snap-align: start;
-  background: #fdfbf7;
-  border-radius: 1rem;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.06);
-  padding: 1.5rem;
+.slide.active {
+  display: block;
 }
 
 .testimonial-img {
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  margin-bottom: 1rem;
+  margin-bottom: 15px;
+  object-fit: cover;
 }
 
 .testimonial-text {
   font-style: italic;
-  margin-bottom: 1rem;
-  font-size: 0.95rem;
-  line-height: 1.6;
+  font-size: 15px;
+  color: #333;
+  margin-bottom: 15px;
 }
 
 .testimonial-name {
   font-weight: 600;
-  font-size: 0.9rem;
-  margin-bottom: 0.5rem;
+  font-size: 14px;
+  color: #121212;
+  margin-bottom: 10px;
 }
 
 .testimonial-name span {
-  color: #888;
   font-weight: 400;
   font-style: italic;
+  color: gray;
 }
 
 .stars {
-  font-size: 1.1rem;
-  color: #ffc107;
+  color: #ffcc00;
+  font-size: 18px;
+}
+
+.dots {
+  margin-top: 10px;
+}
+
+.dots span {
+  display: inline-block;
+  height: 8px;
+  width: 8px;
+  background-color: #ccc;
+  border-radius: 50%;
+  margin: 0 4px;
+  cursor: pointer;
+}
+
+.dots .active {
+  background-color: #000;
+}
+
+@keyframes fade {
+  from {opacity: 0.3;}
+  to {opacity: 1;}
 }
 
