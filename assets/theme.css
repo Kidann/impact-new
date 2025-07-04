@@ -10543,105 +10543,62 @@ shopify-accelerated-checkout, shopify-accelerated-checkout-cart {
 }
 /* 04/07/25 */
 
-.review-carousel {
-  max-width: 100%;
-  background: #fdfbf7;
-  border-radius: 12px;
-  padding: 10px;
-  font-family: 'Poppins', sans-serif;
-  box-sizing: border-box;
-  overflow: hidden;
-  text-align: center;
+<style>
+.review-card {
+  background: #fdfaf7;
+  padding: 1rem;
+  border-radius: 1rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  font-family: system-ui, sans-serif;
+  max-width: 400px;
+  margin: auto;
 }
-
 .review-title {
-  font-size: 16px;
+  font-size: 1.2rem;
   font-weight: 700;
-  margin-bottom: 12px;
+  text-align: center;
+  margin-bottom: 1rem;
 }
-
-.slides {
+.review-content {
   display: flex;
-  transition: transform 0.4s ease-in-out;
-  width: 300%;
+  align-items: flex-start;
+  gap: 0.8rem;
 }
-
-.slide {
-  width: 100%;
-  flex-shrink: 0;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  padding: 5px;
-  box-sizing: border-box;
-}
-
-.avatar {
-  width: 40px;
-  height: 40px;
+.review-avatar {
+  width: 45px;
+  height: 45px;
   border-radius: 50%;
   object-fit: cover;
   flex-shrink: 0;
 }
-
-.text {
-  text-align: left;
-  font-size: 13px;
+.review-text {
+  flex: 1;
 }
-
-.text p {
-  margin: 0 0 4px;
-  line-height: 1.4;
+.review-quote {
+  font-style: italic;
+  font-size: 0.9rem;
+  margin: 0;
 }
-
-.text span {
-  font-size: 12px;
-  color: #777;
+.review-name {
+  font-size: 0.8rem;
+  margin: 0.3rem 0 0;
+  color: #888;
 }
-
+.verified {
+  font-style: italic;
+}
 .stars {
-  font-size: 14px;
-  color: #ffc107;
-  margin-top: 4px;
+  color: #f4c430;
+  font-size: 1rem;
 }
-
-input[type="radio"] {
-  display: none;
+.splide__pagination {
+  margin-top: 0.5rem;
 }
-
-.navigation {
-  margin-top: 10px;
-  display: flex;
-  justify-content: center;
-  gap: 6px;
+.splide__pagination__page.is-active {
+  transform: scale(1.4);
+  background: black;
 }
-
-.dot {
-  width: 6px;
-  height: 6px;
-  background: #999;
-  border-radius: 50%;
-  cursor: pointer;
-  transition: all 0.2s ease;
-}
-
-input#slide1:checked ~ .slides {
-  transform: translateX(0%);
-}
-input#slide2:checked ~ .slides {
-  transform: translateX(-100%);
-}
-input#slide3:checked ~ .slides {
-  transform: translateX(-200%);
-}
-
-input#slide1:checked ~ .navigation label[for="slide1"],
-input#slide2:checked ~ .navigation label[for="slide2"],
-input#slide3:checked ~ .navigation label[for="slide3"] {
-  width: 10px;
-  height: 10px;
-  background: #000;
-}
+</style>
 
 
 
