@@ -104,37 +104,5 @@ NOTE TO DEVELOPERS: welcome to Impact theme! We hope that you will enjoy editing
         {%- sections 'footer-group' -%}
       {%- endif -%}
     </main>
-    <script>
-      document.addEventListener('DOMContentLoaded', () => {
-        const carousel = document.getElementById('carousel');
-        const slides = document.querySelectorAll('.slide');
-        const dotsContainer = document.getElementById('dots');
-        let index = 0;
-        let startX = 0;
-    
-        function updateCarousel() {
-          carousel.style.transform = `translateX(-${index * 100}%)`;
-          dotsContainer.innerHTML = '';
-          slides.forEach((_, i) => {
-            const dot = document.createElement('span');
-            dot.classList.toggle('active', i === index);
-            dotsContainer.appendChild(dot);
-          });
-        }
-    
-        carousel.addEventListener('touchstart', (e) => {
-          startX = e.touches[0].clientX;
-        });
-    
-        carousel.addEventListener('touchend', (e) => {
-          const diff = e.changedTouches[0].clientX - startX;
-          if (diff < -50 && index < slides.length - 1) index++;
-          if (diff > 50 && index > 0) index--;
-          updateCarousel();
-        });
-    
-        updateCarousel();
-      });
-    </script>
   </body>
 </html>
