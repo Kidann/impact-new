@@ -10072,7 +10072,7 @@ shopify-accelerated-checkout, shopify-accelerated-checkout-cart {
 }
 .ticker-wrapper {
   overflow: hidden;
-  background: #2f74b3;
+  background: #c64a1e; /* couleur personnalisée */
   padding: 10px 0;
 }
 
