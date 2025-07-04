@@ -10467,7 +10467,6 @@ shopify-accelerated-checkout, shopify-accelerated-checkout-cart {
   margin: auto;
   font-family: 'Helvetica Neue', sans-serif;
   text-align: center;
-  position: relative;
 }
 
 .testimonial-box {
@@ -10475,26 +10474,27 @@ shopify-accelerated-checkout, shopify-accelerated-checkout-cart {
   border-radius: 20px;
   overflow: hidden;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  position: relative;
 }
 
 .testimonial-img-container {
   position: relative;
-  overflow: hidden;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
+  overflow: hidden;
 }
 
 .testimonial-img {
   width: 100%;
   height: auto;
   display: block;
-  border-radius: 0; /* Ne pas déformer l’image */
+  border-radius: 0;
 }
 
 .quote-bubble {
   position: absolute;
   bottom: -16px;
-  right: 15px;
+  right: 16px;
   background-color: #c44b2f;
   color: #fff2ec;
   font-size: 20px;
@@ -10503,12 +10503,21 @@ shopify-accelerated-checkout, shopify-accelerated-checkout-cart {
   line-height: 32px;
   border-radius: 50%;
   font-weight: bold;
-  z-index: 1;
+  z-index: 2;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
 .testimonial-body {
-  padding: 25px 20px 20px;
   background-color: #f9f7f3;
+  padding: 40px 20px 25px;
+  position: relative;
+}
+
+.stars {
+  color: #ffcc00;
+  font-size: 1.2rem;
+  margin-bottom: 8px;
+  letter-spacing: 3px;
 }
 
 .testimonial-title {
@@ -10522,14 +10531,16 @@ shopify-accelerated-checkout, shopify-accelerated-checkout-cart {
   font-style: italic;
   color: #333;
   font-size: 0.95rem;
-  line-height: 1.5;
+  line-height: 1.6;
   margin-bottom: 20px;
+  text-align: center;
 }
 
 .testimonial-divider {
   border: none;
   border-top: 1px solid #e0dcd6;
   margin-bottom: 10px;
+  width: 100%;
 }
 
 .testimonial-author {
