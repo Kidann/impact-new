@@ -167,6 +167,19 @@
         "text_color": ""
       }
     },
+    "custom_liquid_yFCh7W": {
+      "type": "custom-liquid",
+      "name": "Custom Liquid",
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": true,
+        "remove_horizontal_spacing": true,
+        "liquid": "<div style=\"text-align: center;\">\n  <img \n    src=\"https://cdn.shopify.com/s/files/1/0681/1290/8348/files/salem.png?v=1751665956\" \n    alt=\"Resultados Cabello\" \n    style=\"max-width: 100%; height: auto; border-radius: 1.2rem;\">\n</div>",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
     "custom_liquid_VCVdWN": {
       "type": "custom-liquid",
       "name": "Custom Liquid",
@@ -436,6 +449,7 @@
     "custom_html_agkhmC",
     "custom_liquid_xRjiAb",
     "custom_liquid_Ur6bp9",
+    "custom_liquid_yFCh7W",
     "custom_liquid_VCVdWN",
     "custom_liquid_4PbpzA",
     "custom_liquid_ieqFB7",
