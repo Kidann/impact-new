@@ -10581,7 +10581,7 @@ shopify-accelerated-checkout, shopify-accelerated-checkout-cart {
   padding: 1rem;
   border-radius: 1rem;
   margin-bottom: 1rem;
-  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.15); /* plus forte ombre */
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05); /* ombre réduite */
   position: relative;
   z-index: 2;
 }
@@ -10648,13 +10648,6 @@ shopify-accelerated-checkout, shopify-accelerated-checkout-cart {
   transform: scale(1.4);
 }
 
-.carousel-dots {
-  background: #fff;
-  padding: 0.5rem 0 1rem;
-  margin-top: -0.5rem;
-  position: relative;
-  z-index: 1;
-}
 
 
 
