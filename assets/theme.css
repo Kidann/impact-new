@@ -10482,7 +10482,7 @@ shopify-accelerated-checkout, shopify-accelerated-checkout-cart {
   box-sizing: border-box;
 }
 
-.testimonial-img-container {
+.testimonial-container {
   width: 100%;
   position: relative;
   overflow: hidden;
