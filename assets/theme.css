@@ -10592,109 +10592,59 @@ shopify-accelerated-checkout, shopify-accelerated-checkout-cart {
 
 /* faq */
 
-<style>
-/* Conteneur principal */
-.collapsible-content__wrapper {
-  max-width: 720px;
-  margin: 0 auto;
-  padding: 40px 20px;
-  font-family: 'Helvetica Neue', sans-serif;
-  color: #111;
-}
-
-/* En-tête */
-.collapsible-content__header {
-  text-align: center;
-  margin-bottom: 30px;
-}
-.collapsible-content__heading {
-  font-size: 32px;
-  font-weight: 700;
-  color: #222;
-  text-transform: none;
-  margin: 0;
-}
-.caption-with-letter-spacing {
-  font-size: 14px;
-  letter-spacing: 1.4px;
-  color: #888;
-  text-transform: uppercase;
-  margin-bottom: 5px;
-}
-
-/* Accordéon */
-.accordion {
-  border-top: 1px solid #e3e3e3;
-  background-color: #f9f9f9;
-  border-radius: 10px;
-  margin-bottom: 10px;
-  overflow: hidden;
-  box-shadow: 0 1px 4px rgba(0,0,0,0.05);
-}
-
-.accordion__summary {
-  cursor: pointer;
-  padding: 18px 20px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  transition: background-color 0.3s ease;
-}
-.accordion__summary:hover {
-  background-color: #f1f1f1;
-}
-
-.accordion__title {
-  font-size: 17px;
-  font-weight: 600;
-  margin: 0;
-  color: #222;
-}
-
-/* Icône flèche */
-.accordion__summary svg {
-  width: 14px;
-  height: 14px;
-  transition: transform 0.3s ease;
-}
-
-details[open] .accordion__summary svg {
-  transform: rotate(180deg);
-}
-
-.accordion__content-wrapper {
+/* Fond général de l'accordéon */
+details.accordion__details {
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  margin-bottom: 12px;
   transition: all 0.3s ease;
 }
 
-.accordion__content {
-  padding: 15px 20px 20px 20px;
-  font-size: 15px;
-  line-height: 1.6;
+/* Texte de la question */
+.summary__title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #222222;
+  padding: 14px 18px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Icône flèche */
+.accordion__summary::after {
+  content: '▼';
+  font-size: 12px;
+  color: #666;
+  margin-left: 10px;
+  transition: transform 0.3s ease;
+}
+
+/* Rotation flèche à l'ouverture */
+details[open] .accordion__summary::after {
+  transform: rotate(180deg);
+}
+
+/* Réponse de l'accordéon */
+.accordion__details > * {
+  font-size: 14px;
   color: #444;
+  padding: 10px 18px 16px;
+  border-top: 1px solid #eee;
 }
 
-.accordion__content p,
-.accordion__content ul {
-  margin: 0 0 10px;
-}
-.accordion__content ul {
-  padding-left: 18px;
+/* Couleur du texte générale */
+.accordion__summary, .accordion__details {
+  color: #222 !important;
+  background-color: #fff !important;
 }
 
-/* Responsive */
-@media screen and (max-width: 480px) {
-  .collapsible-content__heading {
-    font-size: 24px;
-  }
-  .accordion__title {
-    font-size: 16px;
-  }
-  .accordion__summary {
-    padding: 14px 16px;
-  }
-  .accordion__content {
-    padding: 12px 16px 16px;
-    font-size: 14px;
-  }
+/* Supprime la transparence par défaut Shopify */
+.accordion__summary,
+.accordion__details,
+.summary__title {
+  background: none !important;
+  color: inherit !important;
 }
-</style>
