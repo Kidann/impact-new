@@ -10471,24 +10471,20 @@ shopify-accelerated-checkout, shopify-accelerated-checkout-cart {
   overflow: hidden;
 }
 
-.testimonial-box {
-  background-color: #f2f2f2;
-  border-radius: 16px;
-  overflow: hidden;
-  position: relative;
-  min-width: 100%;
-  transition: transform 0.4s ease;
-  flex-shrink: 0;
-}
-
 .testimonial-slider {
   display: flex;
-  transition: transform 0.4s ease;
-  will-change: transform;
+  transition: transform 0.4s ease-in-out;
+  width: 100%;
+}
+
+.testimonial-box {
+  min-width: 100%;
+  box-sizing: border-box;
 }
 
 .testimonial-img-container {
   width: 100%;
+  position: relative;
   overflow: hidden;
 }
 
