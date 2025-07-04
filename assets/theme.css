@@ -10543,86 +10543,96 @@ shopify-accelerated-checkout, shopify-accelerated-checkout-cart {
 }
 /* 04/07/25 */
 
-.avis-wrapper {
-  font-family: sans-serif;
+<style>
+.custom-carousel {
+  font-family: 'Segoe UI', sans-serif;
+  max-width: 100%;
+  background: #fefefe;
+  padding: 10px 15px;
+  border-radius: 12px;
   text-align: center;
-  padding: 8px 0;
 }
 
-.avis-header {
-  font-size: 18px;
+.carousel-header {
   font-weight: 700;
+  font-size: 18px;
   margin-bottom: 12px;
 }
 
-.avis-carousel {
+.carousel-wrapper {
   overflow-x: auto;
   scroll-snap-type: x mandatory;
+  display: flex;
+  gap: 16px;
+  padding-bottom: 10px;
   -webkit-overflow-scrolling: touch;
 }
 
-.avis-track {
+.carousel-track {
   display: flex;
-  gap: 12px;
   width: max-content;
 }
 
-.avis-slide {
-  flex: 0 0 85%;
+.carousel-item {
+  flex: 0 0 90%;
   scroll-snap-align: center;
-  display: flex;
-  align-items: flex-start;
-  background: #f9f9f9;
+  background: #fff;
   border-radius: 10px;
-  padding: 10px;
-  box-sizing: border-box;
-  text-align: left;
-  max-width: 280px;
+  padding: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  min-width: 280px;
+  max-width: 320px;
+  margin: auto;
 }
 
-.avis-avatar {
-  width: 42px;
-  height: 42px;
+.avatar {
+  width: 45px;
+  height: 45px;
   border-radius: 50%;
   object-fit: cover;
-  margin-right: 10px;
-  flex-shrink: 0;
+  margin-bottom: 8px;
 }
 
-.avis-content p {
+.quote {
+  font-style: italic;
+  font-size: 14px;
+  margin-bottom: 6px;
+  color: #333;
+}
+
+.author {
   font-size: 13px;
-  line-height: 1.4;
-  margin: 0 0 6px;
-  word-break: break-word;
+  color: #999;
+  margin-bottom: 4px;
 }
 
-.avis-content span {
-  display: block;
-  font-size: 12px;
-  color: #777;
+.verified {
   font-style: italic;
 }
 
 .stars {
   color: #ffcc00;
-  font-size: 14px;
-  margin-top: 4px;
+  font-size: 16px;
 }
 
-.avis-dots {
-  display: flex;
-  justify-content: center;
-  gap: 6px;
-  margin-top: 10px;
+.carousel-dots {
+  margin-top: 8px;
 }
 
-.avis-dots span {
+.carousel-dots .dot {
+  display: inline-block;
   width: 6px;
   height: 6px;
-  background: #ccc;
+  margin: 0 4px;
   border-radius: 50%;
-  display: inline-block;
+  background-color: #ccc;
+  transition: background-color 0.3s ease;
 }
+
+.carousel-dots .dot.active {
+  background-color: #000;
+}
+</style>
 
 
 
