@@ -200,35 +200,7 @@
         "full_width": true,
         "remove_vertical_spacing": true,
         "remove_horizontal_spacing": true,
-        "liquid": "<div class=\"comparison-section\">\n  <h2 class=\"comparison-title\">Pourquoi choisir Lumora™ ?</h2>\n  <table class=\"comparison-table\">\n    <thead>\n      <tr>\n        <th></th>\n        <th class=\"brand\">Lumora™</th>\n        <th>Autres</th>\n      </tr>\n    </thead>\n    <tbody>\n      <tr>\n        <td>Testé cliniquement</td>\n        <td class=\"check\">✔</td>\n        <td class=\"cross\">✘</td>\n      </tr>\n      <tr>\n        <td>Sans sensibilité</td>\n        <td class=\"check\">✔</td>\n        <td class=\"cross\">✘</td>\n      </tr>\n      <tr>\n        <td>Sans effets secondaires</td>\n        <td class=\"check\">✔</td>\n        <td class=\"cross\">✘</td>\n      </tr>\n      <tr>\n        <td>Prix abordable</td>\n        <td class=\"check\">✔</td>\n        <td class=\"cross\">✘</td>\n      </tr>\n    </tbody>\n  </table>\n</div>",
-        "background": "",
-        "background_gradient": "",
-        "text_color": ""
-      }
-    },
-    "custom_liquid_4PbpzA": {
-      "type": "custom-liquid",
-      "custom_css": [],
-      "name": "Custom Liquid",
-      "settings": {
-        "full_width": true,
-        "remove_vertical_spacing": false,
-        "remove_horizontal_spacing": true,
-        "liquid": "<div class=\"image-text-vertical\">\n  <div class=\"media\">\n    <img\n      src=\"//brightsmileltd.store/cdn/shop/files/0222-ezgif.com-optimize_1_f26fc25c-14f5-48a1-8e2d-f86a16d6d095.gif?v=1742718926&width=1500\"\n      alt=\"Blanchiment dentaire\"\n      class=\"rounded-img\"\n    />\n  </div>\n  <div class=\"text\">\n    <p class=\"stars\">⭐⭐⭐⭐⭐ <span>NOTÉ 4.9/5 PAR 10 000+ CLIENTS</span></p>\n    <h2>Blanchiment Approuvé par les Stars</h2>\n    <p>\n      Notre <strong>formule PAP innovante</strong> est une <strong>révolution</strong> du blanchiment ! 🌟 Contrairement au peroxyde,\n      <strong>le PAP blanchit sans libérer de radicaux libres</strong>, protégeant <strong>l’émail et les gencives</strong> tout en offrant des\n      <strong>résultats brillants</strong>. Devenu <strong>viral</strong>, il est adoré par les <strong>célébrités</strong> !\n    </p>\n    <a href=\"/products/lumora™-poudre-de-blanchiment-des-dents\" class=\"cta\">ESSAYER MAINTENANT</a>\n  </div>\n</div>",
-        "background": "",
-        "background_gradient": "",
-        "text_color": ""
-      }
-    },
-    "custom_liquid_ieqFB7": {
-      "type": "custom-liquid",
-      "custom_css": [],
-      "name": "Custom Liquid",
-      "settings": {
-        "full_width": true,
-        "remove_vertical_spacing": true,
-        "remove_horizontal_spacing": true,
-        "liquid": "<div class=\"feature-icons\">\n  <h2 class=\"feature-title\">Sûr, Puissant & Sans Peroxyde !</h2>\n  <div class=\"feature-columns\">\n    <div class=\"feature-item\">\n      <img src=\"//brightsmileltd.store/cdn/shop/files/natural_1.png?v=1743259141\" alt=\"Formule PAP\">\n      <h3>Formule enrichie en PAP</h3>\n      <p>Une alternative <strong>plus sûre et sans peroxyde</strong> qui blanchit <strong>sans abîmer l’émail ni les gencives</strong>.</p>\n    </div>\n    <div class=\"feature-item\">\n      <img src=\"//brightsmileltd.store/cdn/shop/files/taste.png?v=1743259141\" alt=\"Taches tenaces\">\n      <h3>Élimine les taches tenaces</h3>\n      <p>Élimine les taches de <strong>café, thé, vin et tabac</strong> pour un sourire visiblement plus éclatant.</p>\n    </div>\n    <div class=\"feature-item\">\n      <img src=\"//brightsmileltd.store/cdn/shop/files/fresh.png?v=1743259141\" alt=\"Haleine fraîche\">\n      <h3>Rafraîchit l’haleine</h3>\n      <p>Combat les bactéries responsables des odeurs pour une bouche <strong>fraîche et propre</strong> toute la journée.</p>\n    </div>\n  </div>\n</div>",
+        "liquid": "<div class=\"comparison-section\">\n  <h2 class=\"comparison-title\">¿Por qué elegir Lumoria™?</h2>\n  <table class=\"comparison-table\">\n    <thead>\n      <tr>\n        <th></th>\n        <th class=\"brand\">Lumoria™</th>\n        <th>Otros</th>\n      </tr>\n    </thead>\n    <tbody>\n      <tr>\n        <td>100% natural</td>\n        <td class=\"check\">✔</td>\n        <td class=\"cross\">✘</td>\n      </tr>\n      <tr>\n        <td>Bloqueador de DHT</td>\n        <td class=\"check\">✔</td>\n        <td class=\"cross\">✘</td>\n      </tr>\n      <tr>\n        <td>Sin efectos secundarios</td>\n        <td class=\"check\">✔</td>\n        <td class=\"cross\">✘</td>\n      </tr>\n      <tr>\n        <td>Resultados visibles sin esfuerzo</td>\n        <td class=\"check\">✔</td>\n        <td class=\"cross\">✘</td>\n      </tr>\n      <tr>\n        <td>Precio accesible</td>\n        <td class=\"check\">✔</td>\n        <td class=\"cross\">✘</td>\n      </tr>\n      <tr>\n        <td>Resultados duraderos</td>\n        <td class=\"check\">✔</td>\n        <td class=\"cross\">✘</td>\n      </tr>\n    </tbody>\n  </table>\n</div>",
         "background": "",
         "background_gradient": "",
         "text_color": ""
@@ -247,55 +219,14 @@
         "text_color": ""
       }
     },
-    "before_after_image_qhUFL4": {
-      "type": "before-after-image",
-      "custom_css": [],
-      "name": "Before/after image",
-      "settings": {
-        "full_width": true,
-        "subheading": "",
-        "title": "Avant & Après : Un sourire plus éclatant !",
-        "content": "<p><strong>Admirez la différence incroyable ! </strong>D’un sourire terne à un éclat éblouissant, notre traitement blanchissant offre des résultats visibles dès la première séance. </p><p>Voyez par vous-même à quelle vitesse vous pouvez obtenir un sourire plus blanc et plus confiant !</p>",
-        "before_image": "shopify://shop_images/Capture_d_ecran_2025-03-26_013123.png",
-        "before_image_mobile": "shopify://shop_images/Capture_d_ecran_2025-03-26_013123.png",
-        "after_image": "shopify://shop_images/Capture_d_ecran_2025-03-26_013131.png",
-        "after_image_mobile": "shopify://shop_images/Capture_d_ecran_2025-03-26_013131.png",
-        "expand_image": false,
-        "text_position": "center",
-        "before_after_text_position": "top",
-        "before_text": "Before",
-        "after_text": "After",
-        "drag_initial_position": 50,
-        "background": "",
-        "background_gradient": "",
-        "text_color": "",
-        "before_text_color": "#ffffff",
-        "after_text_color": "#ffffff",
-        "drag_cursor_background": "#ffffff",
-        "drag_cursor_color": "#000000"
-      }
-    },
-    "custom_liquid_nBgi7Q": {
-      "type": "custom-liquid",
-      "name": "Custom Liquid",
+    "custom_html_fbhpFr": {
+      "type": "custom-html",
+      "name": "Custom HTML",
       "settings": {
         "full_width": true,
         "remove_vertical_spacing": false,
         "remove_horizontal_spacing": false,
-        "liquid": "<div class=\"clinical-results-section\">\n  <div class=\"results-grid\">\n    <div class=\"results-image\">\n      <img src=\"//brightsmileltd.store/cdn/shop/files/2_465619a7-1bd6-4d40-be9b-8b8271bc15f1_1.jpg?v=1742718924\" alt=\"Avant et après blanchiment\" />\n    </div>\n\n    <div class=\"results-text\">\n      <h2>SOUTENU PAR DES ÉTUDES CLINIQUES.</h2>\n    </div>\n\n    <div class=\"results-item\">\n      <div class=\"circle\"><span>98%</span></div>\n      <p>ont constaté des dents visiblement plus blanches</p>\n    </div>\n\n    <div class=\"results-item\">\n      <div class=\"circle\"><span>96%</span></div>\n      <p>ont obtenu des résultats plus rapides avec Lumora™</p>\n    </div>\n\n    <div class=\"results-item\">\n      <div class=\"circle\"><span>92%</span></div>\n      <p>ont remarqué une blancheur durable</p>\n    </div>\n\n    <div class=\"results-text\">\n      <p class=\"caption\">Résultats basés sur un échantillon de 1020 participants. Les pourcentages ont été arrondis pour plus de clarté.</p>\n    </div>\n  </div>\n</div>",
-        "background": "#2f74b3",
-        "background_gradient": "",
-        "text_color": ""
-      }
-    },
-    "custom_liquid_TebmcM": {
-      "type": "custom-liquid",
-      "name": "Custom Liquid",
-      "settings": {
-        "full_width": true,
-        "remove_vertical_spacing": true,
-        "remove_horizontal_spacing": true,
-        "liquid": "<div class=\"faq-wrapper\">\n  <div class=\"faq-subtitle\">QUESTIONS FRÉQUENTES</div>\n  <div class=\"faq-title\">Vos questions, nos réponses</div>\n\n  <div class=\"faq-accordion\">\n    <details>\n      <summary><span>Ce produit est-il sûr pour les dents sensibles ?</span><span class=\"arrow\">⌄</span></summary>\n      <div class=\"content\">Oui ! 🌿 Notre formule est <strong>sans peroxyde</strong>, donc aucun produit chimique agressif ni irritation — juste un <strong>blanchiment doux et efficace</strong>.</div>\n    </details>\n    <details>\n      <summary><span>Y a-t-il des effets secondaires ?</span><span class=\"arrow\">⌄</span></summary>\n      <div class=\"content\">La formule Lumora™ est conçue pour être douce 😌. Une mauvaise utilisation ou une surutilisation peut entraîner une légère sensibilité. Suivez les instructions 📋. En cas d'inconfort, stoppez et consultez un dentiste 🦷.</div>\n    </details>\n    <details>\n      <summary><span>Combien de temps pour voir les résultats ?</span><span class=\"arrow\">⌄</span></summary>\n      <div class=\"content\">De nombreux utilisateurs constatent un <strong>sourire plus éclatant après quelques utilisations</strong>, avec des résultats complets en <strong>1 à 2 semaines</strong>.</div>\n    </details>\n    <details>\n      <summary><span>À quelle fréquence dois-je l’utiliser ?</span><span class=\"arrow\">⌄</span></summary>\n      <div class=\"content\">Pour des résultats optimaux, utilisez-le <strong>2 à 3 fois par semaine</strong> dans votre routine d’hygiène dentaire.</div>\n    </details>\n    <details>\n      <summary><span>Mes dents seront-elles rugueuses ou abîmées ?</span><span class=\"arrow\">⌄</span></summary>\n      <div class=\"content\">Non ! Notre formule <strong>respectueuse de l’émail</strong> polit en douceur sans endommager ni rendre les dents rugueuses.</div>\n    </details>\n    <details>\n      <summary><span>Délai de livraison ?</span><span class=\"arrow\">⌄</span></summary>\n      <div class=\"content\">En raison de la forte demande 📦, la livraison prend entre <strong>12 à 16 jours</strong> (en moyenne 14 jours 🚚).</div>\n    </details>\n    <details>\n      <summary><span>Comment nous contacter ?</span><span class=\"arrow\">⌄</span></summary>\n      <div class=\"content\">Rendez-vous sur la <strong>page Contact</strong> via le menu 📄 ou utilisez le <strong>chat en bas à gauche</strong> 💬.</div>\n    </details>\n  </div>\n</div>",
+        "html": "<div class=\"testimonial-carousel\">\n  <!-- Avis 1 - Veronica S. -->\n  <div class=\"testimonial-item\">\n    <img src=\"https://cdn.shopify.com/s/files/1/0681/1290/8348/files/1738031295957-605063516.jpg?v=1751668656\" alt=\"Veronica S.\" class=\"testimonial-photo\">\n    <div class=\"testimonial-content\">\n      <div class=\"stars\">★★★★★</div>\n      <h3 class=\"testimonial-title\">100% Lo Recomiendo</h3>\n      <p class=\"testimonial-text\">\n        \"He luchado durante años con el adelgazamiento del cabello, pero después de solo 2 meses tomando estas cápsulas, mi cabello se siente más grueso y se ve saludable por primera vez en años.\"\n      </p>\n      <p class=\"testimonial-author\"><strong>Veronica S. ~ Cliente verificada</strong></p>\n      <div class=\"quote-icon\">❞</div>\n    </div>\n  </div>\n\n  <!-- Avis 2 - Aria B. -->\n  <div class=\"testimonial-item\">\n    <img src=\"https://cdn.shopify.com/s/files/1/0681/1290/8348/files/1738031235941-920229753.jpg?v=1751668656\" alt=\"Aria B.\" class=\"testimonial-photo\">\n    <div class=\"testimonial-content\">\n      <div class=\"stars\">★★★★★</div>\n      <h3 class=\"testimonial-title\">Funcionó Perfectamente Para Mí</h3>\n      <p class=\"testimonial-text\">\n        \"Al principio era escéptica, pero después de usarlas de forma constante, mi cabello está visiblemente más lleno y mi cuero cabelludo se siente más saludable. ¡Mi estilista notó la diferencia! Nunca pensé que esto funcionaría.\"\n      </p>\n      <p class=\"testimonial-author\"><strong>Aria B. ~ Cliente verificada</strong></p>\n      <div class=\"quote-icon\">❞</div>\n    </div>\n  </div>\n\n  <!-- Avis 3 - Kourtney N. -->\n  <div class=\"testimonial-item\">\n    <img src=\"https://cdn.shopify.com/s/files/1/0681/1290/8348/files/1738031254035-863494521.jpg?v=1751668656\" alt=\"Kourtney N.\" class=\"testimonial-photo\">\n    <div class=\"testimonial-content\">\n      <div class=\"stars\">★★★★★</div>\n      <h3 class=\"testimonial-title\">Funciona Muy Bien</h3>\n      <p class=\"testimonial-text\">\n        \"Perder cabello me hacía sentir cohibida, pero después de usar esto durante un mes, veo que están creciendo nuevos cabellos. Vuelvo a sentirme segura con mi cabello. ¡Y es tan fácil de tomar también!\"\n      </p>\n      <p class=\"testimonial-author\"><strong>Kourtney N. ~ Cliente verificada</strong></p>\n      <div class=\"quote-icon\">❞</div>\n    </div>\n  </div>\n\n  <!-- Avis 4 - Lilyana N. -->\n  <div class=\"testimonial-item\">\n    <img src=\"https://cdn.shopify.com/s/files/1/0681/1290/8348/files/1738031273414-746535138.jpg?v=1751668656\" alt=\"Lilyana N.\" class=\"testimonial-photo\">\n    <div class=\"testimonial-content\">\n      <div class=\"stars\">★★★★★</div>\n      <h3 class=\"testimonial-title\">No Volveré Atrás</h3>\n      <p class=\"testimonial-text\">\n        \"He probado tantos tratamientos diferentes pero todos empeoraban la caída de mi cabello. ¡Este es el único que funcionó y además es súper fácil de tomar! ¡Y es completamente natural también!\"\n      </p>\n      <p class=\"testimonial-author\"><strong>Lilyana N. ~ Cliente verificada</strong></p>\n      <div class=\"quote-icon\">❞</div>\n    </div>\n  </div>\n\n  <!-- Avis 5 - Valeria L. -->\n  <div class=\"testimonial-item\">\n    <img src=\"https://cdn.shopify.com/s/files/1/0681/1290/8348/files/1738031195241-349416627.jpg?v=1751668657\" alt=\"Valeria L.\" class=\"testimonial-photo\">\n    <div class=\"testimonial-content\">\n      <div class=\"stars\">★★★★★</div>\n      <h3 class=\"testimonial-title\">El Único Producto Que Funciona</h3>\n      <p class=\"testimonial-text\">\n        \"He probado tantos productos para el crecimiento del cabello, pero este es el único que realmente hizo la diferencia. Mi cabello se ve más lleno y mi cuero cabelludo ya no está tan irritado. Lo recomiendo.\"\n      </p>\n      <p class=\"testimonial-author\"><strong>Valeria L. ~ Cliente verificada</strong></p>\n      <div class=\"quote-icon\">❞</div>\n    </div>\n  </div>\n</div>\n\n<!-- Pagination dots -->\n<div class=\"testimonial-pagination\">\n  <span class=\"dot active\"></span>\n  <span class=\"dot\"></span>\n  <span class=\"dot\"></span>\n  <span class=\"dot\"></span>\n  <span class=\"dot\"></span>\n</div>",
         "background": "",
         "background_gradient": "",
         "text_color": ""
@@ -465,12 +396,8 @@
     "custom_liquid_yFCh7W",
     "custom_liquid_UaD3ey",
     "custom_liquid_VCVdWN",
-    "custom_liquid_4PbpzA",
-    "custom_liquid_ieqFB7",
     "custom_html_prUmae",
-    "before_after_image_qhUFL4",
-    "custom_liquid_nBgi7Q",
-    "custom_liquid_TebmcM",
+    "custom_html_fbhpFr",
     "avisenbas_DWpCX7"
   ]
 }
