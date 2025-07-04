@@ -232,157 +232,102 @@
         "text_color": ""
       }
     },
-    "avisenbas_DWpCX7": {
-      "type": "avisenbas",
+    "accordion_content_UnNbj3": {
+      "type": "accordion-content",
       "blocks": {
-        "image_Qawktr": {
-          "type": "image",
+        "item_BbN6DM": {
+          "type": "item",
           "settings": {
-            "image": "shopify://shop_images/1_a73f7a93-407a-40b0-b849-b26d07676c18_1_1.jpg"
+            "title": "¿Por qué las cápsulas se ven diferentes?",
+            "content": "<p><br/>Los cambios recientes se realizaron en respuesta a comentarios de clientes que solicitaban una cápsula más pequeña y fácil de tragar.<br/><br/>Aunque el aspecto ha cambiado, la fórmula y la calidad siguen siendo exactamente las mismas. Todos los productos continúan fabricándose en instalaciones certificadas bajo estrictos estándares de calidad.</p>",
+            "page": ""
           }
         },
-        "image_8qTyYX": {
-          "type": "image",
+        "item_LRzh8a": {
+          "type": "item",
           "settings": {
-            "image": "shopify://shop_images/551E064E-3007-4E29-87D0-002C6226E20C_1_1.jpg"
+            "title": "¿Cómo ayuda esto con el adelgazamiento y la caída del cabello?",
+            "content": "<p>El aceite de semilla de calabaza y el saw palmetto trabajan juntos para mantener un cuero cabelludo sano y mejorar la vitalidad del cabello, lo cual es especialmente beneficioso si estás experimentando adelgazamiento o caída capilar.</p><ul><li>Ayuda a regular la conversión de testosterona en dihidrotestosterona (DHT), una hormona que puede contribuir a la caída del cabello. Al controlar los niveles de DHT, promueve un cabello más fuerte y con más volumen.<br/></li><li>Rico en ácidos grasos esenciales, antioxidantes y vitaminas, nutre el cuero cabelludo y los folículos capilares. Sus propiedades antiinflamatorias crean un entorno óptimo para el crecimiento del cabello al fortalecerlo y reducir la rotura.<br/></li></ul><p>Juntos, estos ingredientes equilibran el entorno hormonal y aportan los nutrientes esenciales que tu cabello necesita para fortalecerse.</p>",
+            "page": ""
           }
         },
-        "testimonial_dadCWX": {
-          "type": "testimonial",
+        "item_XYccxQ": {
+          "type": "item",
           "settings": {
-            "rating": 4.7,
-            "text": "Après des années de taches dues au café et à la cigarette, j'ai vu une amélioration notable de la blancheur de mes dents après seulement quelques jours d'utilisation de ce produit.",
-            "author": "Sarah M.",
-            "verified": "ACHAT VÉRIFIÉ"
+            "title": "¿Qué hace que el aceite de semilla de calabaza sea eficaz para la salud capilar?",
+            "content": "<p>El aceite de semilla de calabaza es eficaz porque aporta una potente combinación de nutrientes directamente al cuero cabelludo y los folículos:</p><ul><li>Contiene ácidos grasos esenciales, vitamina E y antioxidantes que nutren y fortalecen el cabello.<br/></li><li>Los ácidos grasos refuerzan la estructura del cabello, mientras que los antioxidantes lo protegen contra el estrés oxidativo.<br/></li><li>Sus propiedades antiinflamatorias calman el cuero cabelludo y favorecen un entorno sano para el crecimiento capilar.</li></ul>",
+            "page": ""
           }
         },
-        "testimonial_pWdBGJ": {
-          "type": "testimonial",
+        "item_F9mzCD": {
+          "type": "item",
           "settings": {
-            "rating": 4.6,
-            "text": "Lumora a visiblement blanchi mes dents après seulement quelques utilisations, et j'adore à quel point il est facile à appliquer sans provoquer de sensibilité.",
-            "author": "Thomas V.",
-            "verified": "ACHAT VÉRIFIÉ"
+            "title": "¿Cuánto tiempo tarda en verse los resultados?",
+            "content": "<p>La mayoría de los usuarios notan mejoras visibles en el grosor y la vitalidad del cabello tras 60 días de uso diario constante. Este período permite que nuestra fórmula nutra el cuero cabelludo y los folículos, favoreciendo un aspecto más saludable y denso.<br/><br/></p>",
+            "page": ""
           }
         },
-        "testimonial_rzmbYR": {
-          "type": "testimonial",
+        "item_YWMTGt": {
+          "type": "item",
           "settings": {
-            "rating": 5,
-            "text": "Lumora a fait des merveilles sur mes dents, les rendant visiblement plus blanches après seulement une semaine d'utilisation, et je n'ai ressenti aucun inconfort.",
-            "author": "Camille A.",
-            "verified": "ACHAT VÉRIFIÉ"
+            "title": "¿De qué están hechas las cápsulas?",
+            "content": "<p><br/>Nuestras cápsulas blandas están elaboradas con ingredientes de alta calidad como gelatina, glicerina, agua purificada y algarroba natural.<br/><br/>No contienen soja, lácteos, gluten ni frutos secos.</p>",
+            "page": ""
           }
         },
-        "testimonial_FjBnHp": {
-          "type": "testimonial",
+        "item_fkTDcB": {
+          "type": "item",
           "settings": {
-            "rating": 4.5,
-            "text": "En quelques jours seulement, j’ai retrouvé un sourire éclatant. Le produit est simple à utiliser et doux, même pour mes dents sensibles. Je recommande vivement !",
-            "author": "Stephanie As.",
-            "verified": "ACHAT VÉRIFIÉ"
+            "title": "¿Cómo contribuye la DHT a la caída del cabello y cómo lo bloquea este producto?",
+            "content": "<p>La DHT (dihidrotestosterona) es una hormona que se adhiere a los folículos capilares, provocando que se encojan y produzcan cabello más fino y débil.<br/><br/>Nuestro producto bloquea la producción de DHT inhibiendo la enzima 5-alfa reductasa (gracias al saw palmetto), evitando así la conversión de testosterona en DHT.<br/><br/>Además, el aceite de semilla de calabaza aporta nutrientes y antioxidantes para nutrir y proteger el cuero cabelludo.<br/><br/>Esta acción dual combate uno de los factores clave del adelgazamiento capilar y promueve un cabello más fuerte y voluminoso.</p>",
+            "page": ""
+          }
+        },
+        "item_yMFdDg": {
+          "type": "item",
+          "settings": {
+            "title": "¿Cómo debo tomar las cápsulas y cuál es la dosis diaria?",
+            "content": "<p><br/>Para obtener los mejores beneficios, recomendamos tomar una cápsula al día.<br/><br/>Lo ideal es consumirla con una comida y a la misma hora cada día para establecer una rutina constante.</p>",
+            "page": ""
+          }
+        },
+        "item_fnLhYe": {
+          "type": "item",
+          "settings": {
+            "title": "¿Está probado por USP o por terceros?",
+            "content": "<p>Sí, nuestro producto está probado tanto por la USP como por laboratorios independientes.<br/><br/>Todos los ingredientes naturales se someten a rigurosas pruebas en laboratorios certificados, garantizando los más altos estándares de pureza, potencia y calidad.<br/><br/>Este proceso asegura que nuestros ingredientes funcionen de manera eficaz y segura.</p>",
+            "page": ""
           }
         }
       },
       "block_order": [
-        "image_Qawktr",
-        "image_8qTyYX",
-        "testimonial_dadCWX",
-        "testimonial_pWdBGJ",
-        "testimonial_rzmbYR",
-        "testimonial_FjBnHp"
+        "item_BbN6DM",
+        "item_LRzh8a",
+        "item_XYccxQ",
+        "item_F9mzCD",
+        "item_YWMTGt",
+        "item_fkTDcB",
+        "item_yMFdDg",
+        "item_fnLhYe"
       ],
-      "name": "SS - Testimonials #7",
+      "name": "Accordion content",
       "settings": {
-        "hide_images": true,
-        "heading": "<h4>Nos clients sont ravis de voir leur sourire s'illuminer jour après jour.</h4>",
-        "heading_custom": true,
-        "heading_font": "josefin_sans_n4",
-        "heading_size": 36,
-        "heading_size_mobile": 30,
-        "heading_height": 150,
-        "heading_align": "center",
-        "heading_align_mobile": "center",
-        "layout": "image_testimonial",
-        "layout_mobile": "image_testimonial",
-        "layout_gap": 24,
-        "layout_gap_mobile": 24,
-        "layout_mt": 36,
-        "image_row": "2",
-        "image_row_mobile": "2",
-        "image_gap": 12,
-        "image_gap_mobile": 12,
-        "image_radius": 8,
-        "image_border_thickness": 0,
-        "image_ratio": "square",
-        "testimonials_style_mobile": "grid",
-        "testimonials_row": "2",
-        "testimonials_row_mobile": "2",
-        "testimonials_gap": 12,
-        "testimonials_gap_mobile": 12,
-        "testimonial_padding_vertical": 12,
-        "testimonial_padding_horizontal": 12,
-        "testimonial_radius": 8,
-        "testimonial_border_thickness": 1,
-        "stars_size": 24,
-        "testimonial_text_custom": false,
-        "testimonial_text_font": "josefin_sans_n4",
-        "testimonial_text_size": 14,
-        "testimonial_text_size_mobile": 14,
-        "testimonial_text_height": 150,
-        "testimonial_text_mt": 8,
-        "testimonial_author_custom": false,
-        "testimonial_author_font": "josefin_sans_n4",
-        "testimonial_author_size": 14,
-        "testimonial_author_size_mobile": 14,
-        "testimonial_author_height": 150,
-        "testimonial_author_mt": 12,
-        "testimonial_verified_custom": false,
-        "testimonial_verified_font": "josefin_sans_n4",
-        "testimonial_verified_size": 10,
-        "testimonial_verified_size_mobile": 10,
-        "testimonial_verified_height": 150,
-        "button": "",
+        "full_width": true,
+        "subheading": "¿Tienes preguntas?",
+        "title": "¡Tenemos respuestas!",
+        "content": "",
+        "button_text": "",
         "button_url": "",
-        "button_use_icon": false,
-        "button_custom": false,
-        "button_font": "josefin_sans_n4",
-        "button_size": 18,
-        "button_size_mobile": 16,
-        "button_height": 100,
-        "button_align": "center",
-        "button_align_mobile": "center",
-        "button_mt": 24,
-        "button_padding_vertical": 16,
-        "button_padding_horizontal": 50,
-        "button_radius": 12,
-        "button_border_thickness": 2,
-        "heading_color": "#120a0a",
-        "background_color": "#f4f4f4",
+        "text_position": "center",
+        "background": "",
         "background_gradient": "",
-        "border_color": "#000000",
-        "button_color": "#000000",
-        "button_hover_color": "#000000",
-        "button_bg_color": "#ffffff",
-        "button_bg_hover_color": "#ffffff",
-        "button_border_color": "#000000",
-        "button_border_hover_color": "#000000",
-        "image_border_color": "#000000",
-        "testimonial_bg_color": "#ffffff",
-        "testimonial_border_color": "#f7dc5a",
-        "stars_color": "#f7dc5a",
-        "testimonial_text_color": "#000000",
-        "testimonial_author_color": "#000000",
-        "testimonial_verified_color": "#999999",
-        "testimonial_pagination_color": "#000000",
-        "margin_top": 0,
-        "margin_bottom": 0,
-        "padding_top": 96,
-        "padding_bottom": 96,
-        "padding_horizontal": 5,
-        "padding_horizontal_mobile": 1.5,
-        "content_width": 140,
-        "border_thickness": 0
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "button_background": "",
+        "button_text_color": "",
+        "accordion_background": "",
+        "accordion_text_color": ""
       }
     }
   },
@@ -398,6 +343,6 @@
     "custom_liquid_VCVdWN",
     "custom_html_prUmae",
     "custom_html_fbhpFr",
-    "avisenbas_DWpCX7"
+    "accordion_content_UnNbj3"
   ]
 }
