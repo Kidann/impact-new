@@ -10543,96 +10543,101 @@ shopify-accelerated-checkout, shopify-accelerated-checkout-cart {
 }
 /* 04/07/25 */
 
-<style>
-.custom-carousel {
+.carousel-container {
+  max-width: 95%;
+  margin: auto;
   font-family: 'Segoe UI', sans-serif;
-  max-width: 100%;
-  background: #fefefe;
-  padding: 10px 15px;
-  border-radius: 12px;
   text-align: center;
+  padding: 1rem 0;
 }
 
 .carousel-header {
-  font-weight: 700;
-  font-size: 18px;
-  margin-bottom: 12px;
-}
-
-.carousel-wrapper {
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
-  display: flex;
-  gap: 16px;
-  padding-bottom: 10px;
-  -webkit-overflow-scrolling: touch;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 0.8rem;
 }
 
 .carousel-track {
   display: flex;
-  width: max-content;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
 }
 
-.carousel-item {
-  flex: 0 0 90%;
-  scroll-snap-align: center;
+.carousel-track::-webkit-scrollbar {
+  display: none;
+}
+
+.carousel-slide {
+  flex: 0 0 100%;
+  scroll-snap-align: start;
+  padding: 0 0.5rem;
+  box-sizing: border-box;
+}
+
+.testimonial-card {
   background: #fff;
-  border-radius: 10px;
-  padding: 12px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-  min-width: 280px;
-  max-width: 320px;
-  margin: auto;
+  padding: 1rem;
+  border-radius: 1rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
 }
 
-.avatar {
+.testimonial-text {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.8rem;
+  text-align: left;
+}
+
+.testimonial-img {
   width: 45px;
   height: 45px;
   border-radius: 50%;
   object-fit: cover;
-  margin-bottom: 8px;
+  flex-shrink: 0;
 }
 
-.quote {
-  font-style: italic;
-  font-size: 14px;
-  margin-bottom: 6px;
-  color: #333;
+.testimonial-card p {
+  margin: 0.4rem 0;
+  font-size: 0.95rem;
 }
 
-.author {
-  font-size: 13px;
-  color: #999;
-  margin-bottom: 4px;
+.separator {
+  border: none;
+  height: 1px;
+  background: #eee;
+  margin: 0.8rem 0 0.5rem;
 }
 
-.verified {
-  font-style: italic;
+.testimonial-author {
+  font-size: 0.85rem;
+  color: #888;
 }
 
 .stars {
-  color: #ffcc00;
-  font-size: 16px;
+  color: #f5c518;
+  font-size: 1rem;
 }
 
 .carousel-dots {
-  margin-top: 8px;
+  margin-top: 0.7rem;
 }
 
-.carousel-dots .dot {
-  display: inline-block;
-  width: 6px;
-  height: 6px;
+.dot {
+  height: 8px;
+  width: 8px;
   margin: 0 4px;
-  border-radius: 50%;
   background-color: #ccc;
-  transition: background-color 0.3s ease;
+  border-radius: 50%;
+  display: inline-block;
+  transition: transform 0.3s;
 }
 
-.carousel-dots .dot.active {
-  background-color: #000;
+.dot.active {
+  background-color: #111;
+  transform: scale(1.4);
 }
-</style>
 
 
 
