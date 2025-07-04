@@ -10589,3 +10589,90 @@ shopify-accelerated-checkout, shopify-accelerated-checkout-cart {
   justify-content: center;
   align-items: center;
 }
+
+/* faq */
+
+/* Conteneur principal */
+.collapsible-content__wrapper {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 20px 15px;
+  font-family: 'Helvetica Neue', sans-serif;
+  color: #222;
+}
+
+/* En-tête */
+.collapsible-content__heading {
+  font-size: 28px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.caption-with-letter-spacing {
+  font-size: 14px;
+  letter-spacing: 1.2px;
+  color: #888;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+
+/* Accordéon global */
+.accordion {
+  border-top: 1px solid #ddd;
+}
+
+/* Résumé (titre de la question) */
+.accordion__summary {
+  cursor: pointer;
+  padding: 15px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.accordion__title {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0;
+}
+
+/* Flèche */
+.accordion__summary svg {
+  width: 14px;
+  height: 14px;
+  transition: transform 0.3s ease;
+}
+
+/* Rotation de la flèche quand ouvert */
+details[open] .accordion__summary svg {
+  transform: rotate(180deg);
+}
+
+/* Contenu caché/déployé */
+.accordion__content-wrapper {
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.accordion__content {
+  padding: 10px 0 20px 0;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #444;
+}
+
+/* Responsive */
+@media screen and (max-width: 480px) {
+  .collapsible-content__heading {
+    font-size: 22px;
+  }
+
+  .accordion__title {
+    font-size: 16px;
+  }
+
+  .accordion__content {
+    font-size: 15px;
+  }
+}
