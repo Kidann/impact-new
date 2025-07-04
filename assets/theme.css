@@ -10473,9 +10473,10 @@ shopify-accelerated-checkout, shopify-accelerated-checkout-cart {
 }
 
 .testimonial-slide {
-  min-width: 100%;
+  flex: 0 0 100%; /* assure qu'il prend 100% de largeur */
   box-sizing: border-box;
 }
+
 
 
 .testimonial-box {
