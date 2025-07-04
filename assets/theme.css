@@ -10543,90 +10543,105 @@ shopify-accelerated-checkout, shopify-accelerated-checkout-cart {
 }
 /* 04/07/25 */
 
-.review-carousel {
-  font-family: Poppins, sans-serif;
+.testimonials-container {
   max-width: 600px;
-  margin: 0 auto;
-  padding: 5px;
-  text-align: center;
+  margin: auto;
   background: #fdfbf7;
+  padding: 10px;
+  font-family: Poppins, sans-serif;
+  text-align: center;
   border-radius: 12px;
 }
 
-.review-title {
-  font-weight: 700;
+.testimonials-title {
+  margin-bottom: 8px;
   font-size: 20px;
-  margin-bottom: 4px; /* Réduit l’espace entre le titre et le premier avis */
+  font-weight: 700;
+  color: #121212;
 }
 
-.review-container {
-  display: none;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  padding: 5px 5px 0 5px; /* padding bas réduit */
+.slider {
+  position: relative;
+  overflow: hidden;
 }
 
-.review-container.active {
+.slides {
   display: flex;
+  width: 300%;
+  transition: all 0.4s ease;
+}
+
+.slide {
+  width: 100%;
+  flex-shrink: 0;
+  padding: 10px;
+  box-sizing: border-box;
 }
 
 .review-avatar {
-  width: 50px;
-  height: 50px;
+  width: 45px;
+  height: 45px;
   border-radius: 50%;
   object-fit: cover;
-  aspect-ratio: 1 / 1; /* Ajouté pour forcer un ratio carré */
-  display: block;
-  border: 1px solid #ddd;
+  margin-bottom: 8px;
 }
-
 
 .review-text {
-  text-align: left;
-  max-width: 450px;
-}
-
-.review-text p {
-  font-size: 14px;
-  margin: 5px 0;
-  line-height: 1.4;
-}
-
-.review-author {
   font-style: italic;
+  font-size: 14px;
+  color: #333;
+  margin: 8px 0;
+}
+
+.review-name {
   font-size: 13px;
   color: #888;
 }
 
-.stars {
-  color: #ffcc00;
+.review-stars {
   font-size: 16px;
+  color: #ffcc00;
+  margin-top: 4px;
 }
 
-.dots {
-  margin: 4px auto 6px;
+/* Hide radio buttons */
+input[name="slider"] {
+  display: none;
+}
+
+/* Move slides */
+#slide1:checked ~ .slides {
+  transform: translateX(0%);
+}
+#slide2:checked ~ .slides {
+  transform: translateX(-100%);
+}
+#slide3:checked ~ .slides {
+  transform: translateX(-200%);
+}
+
+/* Navigation Dots */
+.navigation-dots {
   display: flex;
   justify-content: center;
-  align-items: center;
-  gap: 6px;
+  margin-top: 10px;
+  gap: 8px;
 }
 
-.dot {
-  display: inline-block;
-  width: 6px;
-  height: 6px;
-  background-color: #999;
+.navigation-dots label {
+  width: 8px;
+  height: 8px;
   border-radius: 50%;
-  opacity: 0.6;
-  transition: all 0.2s ease-in-out;
+  background: #999;
+  cursor: pointer;
+  transition: transform 0.2s ease;
 }
 
-.dot.active {
-  width: 10px;
-  height: 10px;
-  background-color: #000;
-  opacity: 1;
+/* Active dot */
+#slide1:checked ~ .navigation-dots label:nth-child(1),
+#slide2:checked ~ .navigation-dots label:nth-child(2),
+#slide3:checked ~ .navigation-dots label:nth-child(3) {
+  background: #000;
+  transform: scale(1.4);
 }
 
