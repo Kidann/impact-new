@@ -10460,7 +10460,7 @@ shopify-accelerated-checkout, shopify-accelerated-checkout-cart {
 /* TESTIMONIAL */
 
 .testimonial-wrapper {
-  background-color: #f9f7f3;
+  background-color: #f2f2f2; /* Plus gris */
   padding: 25px 15px;
   border-radius: 20px;
   max-width: 420px;
@@ -10478,7 +10478,6 @@ shopify-accelerated-checkout, shopify-accelerated-checkout-cart {
 }
 
 .testimonial-img-container {
-  position: relative;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
   overflow: hidden;
@@ -10491,10 +10490,10 @@ shopify-accelerated-checkout, shopify-accelerated-checkout-cart {
   border-radius: 0;
 }
 
-/* 🟠 Bulle citation parfaitement visible au-dessus */
+/* 🟠 Bulle bien centrée à la jonction image/texte */
 .quote-bubble {
   position: absolute;
-  top: 190px;
+  top: 240px; /* Ajusté pour être entre image et texte */
   right: 20px;
   background-color: #c44b2f;
   color: #fff2ec;
@@ -10508,19 +10507,17 @@ shopify-accelerated-checkout, shopify-accelerated-checkout-cart {
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
-/* Corps du texte */
 .testimonial-body {
-  background-color: #f9f7f3;
-  padding: 40px 20px 25px;
+  background-color: #f2f2f2;
+  padding: 25px 20px 20px;
   position: relative;
   text-align: center;
 }
 
-/* ⭐ Étoiles visibles */
 .stars {
   color: #ffcc00;
   font-size: 1.2rem;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
   letter-spacing: 3px;
 }
 
@@ -10528,21 +10525,21 @@ shopify-accelerated-checkout, shopify-accelerated-checkout-cart {
   font-size: 1.1rem;
   font-weight: bold;
   color: #111;
-  margin-bottom: 12px;
+  margin-bottom: 10px;
 }
 
 .testimonial-text {
   font-style: italic;
   color: #333;
   font-size: 0.95rem;
-  line-height: 1.6;
+  line-height: 1.5;
   margin-bottom: 20px;
   text-align: center;
 }
 
 .testimonial-divider {
   border: none;
-  border-top: 1px solid #e0dcd6;
+  border-top: 1px solid #ddd;
   margin-bottom: 10px;
   width: 100%;
 }
@@ -10554,10 +10551,18 @@ shopify-accelerated-checkout, shopify-accelerated-checkout-cart {
   color: #222;
 }
 
+/* ⬅️➡️ Pagination + flèches */
+.testimonial-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 15px;
+}
+
 .testimonial-pagination {
   display: flex;
   justify-content: center;
-  margin-top: 16px;
   gap: 8px;
 }
 
@@ -10571,6 +10576,13 @@ shopify-accelerated-checkout, shopify-accelerated-checkout-cart {
 
 .testimonial-pagination .dot.active {
   background: #111;
+}
+
+.arrow {
+  font-size: 20px;
+  color: #333;
+  cursor: default; /* change to pointer if using JS */
+  user-select: none;
 }
 
 
