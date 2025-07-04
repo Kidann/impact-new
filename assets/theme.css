@@ -10543,72 +10543,62 @@ shopify-accelerated-checkout, shopify-accelerated-checkout-cart {
 }
 /* 04/07/25 */
 
-.review-items-container {
-  max-width: 620px;
+.review-slider {
+  max-width: 650px;
   margin: 0 auto;
-  font-family: 'Segoe UI', sans-serif;
+  font-family: 'Poppins', sans-serif;
   text-align: center;
 }
 
 .review-title {
-  font-size: 20px;
+  font-size: 1.6rem;
   font-weight: 700;
-  margin-bottom: 10px;
+  margin-bottom: 0.8rem;
+  color: rgb(18, 18, 18);
 }
 
-.review-item {
+.review-box {
   display: flex;
-  align-items: flex-start;
-  gap: 12px;
-  text-align: left;
-  padding: 10px;
+  align-items: center;
+  gap: 1.2rem;
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 14px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
 }
 
-.review-item__image img {
+.review-avatar {
   width: 55px;
   height: 55px;
   border-radius: 50%;
   object-fit: cover;
-  border: 2px solid #fff;
-  box-shadow: 0 0 4px rgba(0,0,0,0.1);
 }
 
-.review-item__text p {
-  font-size: 14px;
-  color: #333;
-  margin: 0 0 5px;
-  line-height: 1.4;
+.review-content {
+  text-align: left;
 }
 
-.review-item__author {
-  font-size: 13px;
+.review-text {
+  font-size: 1rem;
+  color: rgba(18, 18, 18, 0.9);
+  margin-bottom: 0.4rem;
+  font-style: italic;
+}
+
+.review-author {
+  font-size: 0.85rem;
   color: #888;
   font-style: italic;
-  display: flex;
-  align-items: center;
-  gap: 6px;
+  margin-bottom: 0.3rem;
 }
 
-.rating-stars__container {
-  font-size: 14px;
+.review-author span {
+  color: #444;
+  font-weight: 500;
+}
+
+.stars {
+  font-size: 1rem;
   color: #ffcc00;
-}
-
-.splide__pagination {
-  margin-top: 10px;
-  justify-content: center;
-}
-
-.splide__pagination__page {
-  width: 8px;
-  height: 8px;
-  background-color: #ccc;
-  border-radius: 50%;
-  margin: 0 4px;
-  border: none;
-}
-
-.splide__pagination__page.is-active {
-  background-color: #000;
 }
 
