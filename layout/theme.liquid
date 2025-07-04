@@ -104,38 +104,5 @@ NOTE TO DEVELOPERS: welcome to Impact theme! We hope that you will enjoy editing
         {%- sections 'footer-group' -%}
       {%- endif -%}
     </main>
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        const slides = document.querySelectorAll(".custom-review-slider .slide");
-        const dotsContainer = document.querySelector(".custom-review-slider .dots");
-    
-        if (!slides.length || !dotsContainer) return;
-    
-        slides.forEach((_, i) => {
-          const dot = document.createElement("span");
-          dot.addEventListener("click", () => showSlide(i));
-          dotsContainer.appendChild(dot);
-        });
-    
-        const dots = dotsContainer.querySelectorAll("span");
-        let current = 0;
-    
-        function showSlide(index) {
-          slides.forEach(s => s.classList.remove("active"));
-          dots.forEach(d => d.classList.remove("active"));
-          slides[index].classList.add("active");
-          dots[index].classList.add("active");
-          current = index;
-        }
-    
-        function nextSlide() {
-          current = (current + 1) % slides.length;
-          showSlide(current);
-        }
-    
-        showSlide(0);
-        setInterval(nextSlide, 6000);
-      });
-    </script>
   </body>
 </html>
