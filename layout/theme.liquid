@@ -118,5 +118,18 @@ NOTE TO DEVELOPERS: welcome to Impact theme! We hope that you will enjoy editing
         if (dots[index]) dots[index].classList.add('active');
       });
     </script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        new Splide('#testimonial-carousel', {
+          type       : 'loop',
+          perPage    : 1,
+          autoplay   : true,
+          pauseOnHover: true,
+          arrows     : true,
+          pagination : true,
+          gap        : '1rem',
+        }).mount();
+      });
+    </script>
   </body>
 </html>
