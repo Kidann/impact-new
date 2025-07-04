@@ -126,7 +126,7 @@ NOTE TO DEVELOPERS: welcome to Impact theme! We hope that you will enjoy editing
         const leftArrow = document.querySelector(".arrow.left");
         const rightArrow = document.querySelector(".arrow.right");
     
-        let currentIndex = -3;
+        let currentIndex = 0;
     
         function goToSlide(index) {
           if (index < 0) index = 0;
@@ -171,7 +171,7 @@ NOTE TO DEVELOPERS: welcome to Impact theme! We hope that you will enjoy editing
         });
     
         // Initialize first slide
-        goToSlide(0);
+        goToSlide(-3);
       });
     </script>
   </body>
