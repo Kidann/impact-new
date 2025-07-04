@@ -10232,17 +10232,18 @@ shopify-accelerated-checkout, shopify-accelerated-checkout-cart {
   }
 }
 .comparison-section {
-  background: #2f74b3;
+  background: #d14d21;
   padding: 3rem 1rem;
   text-align: center;
-  font-family: Poppins, sans-serif;
+  font-family: 'Poppins', sans-serif;
+  border-radius: 20px;
 }
 
 .comparison-title {
-  font-size: 2.2rem;
+  font-size: 1.8rem;
   font-weight: 700;
-  margin-bottom: 2rem;
   color: #fff;
+  margin-bottom: 2rem;
 }
 
 .comparison-table {
@@ -10250,28 +10251,28 @@ shopify-accelerated-checkout, shopify-accelerated-checkout-cart {
   max-width: 600px;
   margin: 0 auto;
   border-collapse: collapse;
+  border-radius: 1rem;
   overflow: hidden;
-  border-radius: 16px;
   background: #fff;
-  box-shadow: 0 5px 25px rgba(0,0,0,0.08);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.12);
 }
 
 .comparison-table thead th {
-  background: #f0f4fa;
+  background: #fff5f0;
   padding: 1rem;
   font-weight: 700;
   font-size: 1rem;
-  color: #2f74b3;
+  color: #d14d21;
 }
 
 .comparison-table thead th:last-child {
-  color: #222;
+  color: #333;
 }
 
 .comparison-table td {
   padding: 1rem;
   text-align: center;
-  font-size: 1rem;
+  font-size: 0.95rem;
   font-weight: 500;
   border-top: 1px solid #eee;
 }
@@ -10279,22 +10280,23 @@ shopify-accelerated-checkout, shopify-accelerated-checkout-cart {
 .comparison-table td:first-child {
   text-align: left;
   font-weight: 600;
-  background: #f4f9ff;
+  background: #fff2eb;
 }
 
 .comparison-table tr:nth-child(even) td:first-child {
-  background: #e8f2ff;
+  background: #ffe8de;
 }
 
 .check {
-  color: #34c759;
-  font-size: 1.3rem;
+  color: #38b000;
+  font-size: 1.2rem;
 }
 
 .cross {
-  color: #e74c3c;
-  font-size: 1.3rem;
+  color: #d00000;
+  font-size: 1.2rem;
 }
+
 
 @media (max-width: 600px) {
   .comparison-table td,
