@@ -10543,62 +10543,74 @@ shopify-accelerated-checkout, shopify-accelerated-checkout-cart {
 }
 /* 04/07/25 */
 
-<style>
-.review-card {
-  background: #fdfaf7;
-  padding: 1rem;
-  border-radius: 1rem;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
-  font-family: system-ui, sans-serif;
-  max-width: 400px;
-  margin: auto;
+.carousel-wrapper {
+  max-width: 100%;
+  overflow: hidden;
+  position: relative;
+  padding: 10px 0;
 }
-.review-title {
-  font-size: 1.2rem;
-  font-weight: 700;
-  text-align: center;
-  margin-bottom: 1rem;
-}
-.review-content {
+
+.carousel {
   display: flex;
-  align-items: flex-start;
-  gap: 0.8rem;
+  transition: transform 0.4s ease;
+  will-change: transform;
 }
-.review-avatar {
-  width: 45px;
-  height: 45px;
+
+.slide {
+  min-width: 100%;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
   object-fit: cover;
   flex-shrink: 0;
 }
-.review-text {
-  flex: 1;
+
+.review {
+  text-align: left;
+  font-size: 13px;
 }
-.review-quote {
-  font-style: italic;
-  font-size: 0.9rem;
-  margin: 0;
+
+.review span {
+  font-size: 12px;
+  color: #777;
 }
-.review-name {
-  font-size: 0.8rem;
-  margin: 0.3rem 0 0;
-  color: #888;
-}
-.verified {
-  font-style: italic;
-}
+
 .stars {
-  color: #f4c430;
-  font-size: 1rem;
+  font-size: 14px;
+  color: #ffc107;
+  margin-top: 4px;
 }
-.splide__pagination {
-  margin-top: 0.5rem;
+
+.dots {
+  display: flex;
+  justify-content: center;
+  gap: 6px;
+  margin-top: 8px;
 }
-.splide__pagination__page.is-active {
-  transform: scale(1.4);
-  background: black;
+
+.dots span {
+  width: 6px;
+  height: 6px;
+  background: #ccc;
+  border-radius: 50%;
+  display: inline-block;
+  transition: 0.3s;
 }
-</style>
+
+.dots .active {
+  width: 10px;
+  height: 10px;
+  background: #000;
+}
 
 
 
