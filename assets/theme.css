@@ -10580,10 +10580,10 @@ shopify-accelerated-checkout, shopify-accelerated-checkout-cart {
   background: #fff;
   padding: 1rem;
   border-radius: 1rem;
-  box-shadow:
-    0 8px 20px rgba(0, 0, 0, 0.12),
-    0 4px 6px rgba(0, 0, 0, 0.08);
+  margin-bottom: 2rem; /* plus d'espace pour les dots */
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12); /* ombre + visible */
 }
+
 
 .testimonial-text {
   display: flex;
@@ -10624,9 +10624,6 @@ shopify-accelerated-checkout, shopify-accelerated-checkout-cart {
 
 .carousel-dots {
   margin-top: 0.7rem;
-  display: flex;
-  justify-content: center;
-  margin-top: 1rem; /* Espace entre review et les dots */
 }
 
 .dot {
@@ -10642,6 +10639,17 @@ shopify-accelerated-checkout, shopify-accelerated-checkout-cart {
 .dot.active {
   background-color: #111;
   transform: scale(1.4);
+}
+
+.dots-container {
+  position: relative;
+  z-index: 2;
+  margin-top: -1rem; /* ajuste selon besoin */
+}
+
+.testimonial-wrapper {
+  background: #fcfcfc;
+  padding: 1rem;
 }
 
 
