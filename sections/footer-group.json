@@ -14,27 +14,27 @@
     "footer": {
       "type": "footer",
       "blocks": {
-        "newsletter": {
+        "links_DCjp4P": {
+          "type": "links",
+          "settings": {
+            "menu": "main-menu",
+            "show_menu_title": true,
+            "menu_title": ""
+          }
+        },
+        "newsletter_ib4CAg": {
           "type": "newsletter",
           "settings": {
             "image_width": 150,
-            "heading_size": "h3",
-            "title": "Inscrivez-vous pour recevoir de nouvelles histoires et des offres personnalisées.",
-            "content": ""
-          }
-        },
-        "links": {
-          "type": "links",
-          "settings": {
-            "menu": "footer",
-            "show_menu_title": true,
-            "menu_title": ""
+            "heading_size": "h5",
+            "title": "¡Obtén un 10% de descuento en tu próximo pedido!",
+            "content": "<p>Suscríbete a nuestra lista de correo y recibe un código de descuento del 10% junto con otras ofertas exclusivas y actualizaciones regulares sobre nuestras novedades.</p>"
           }
         }
       },
       "block_order": [
-        "newsletter",
-        "links"
+        "links_DCjp4P",
+        "newsletter_ib4CAg"
       ],
       "settings": {
         "show_social_media": true,
