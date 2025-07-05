@@ -59,6 +59,19 @@
         "input_text_color": ""
       }
     },
+    "custom_liquid_Utmn6x": {
+      "type": "custom-liquid",
+      "name": "Custom Liquid",
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": true,
+        "remove_horizontal_spacing": false,
+        "liquid": "<div style=\"display: flex; align-items: center; background-color: #FAFAFA; padding: 8px 8px; border-radius: 8px; width: fit-content; margin: 10px 0; text-align: left;\">\n  <!-- Estrellas -->\n  <img src=\"https://cdn.trustpilot.net/brand-assets/4.1.0/stars/stars-5.svg\" alt=\"5 estrellas\" style=\"width: 105px; margin-right: 8px;\">\n  \n  <!-- Texto -->\n  <div style=\"color: #4A4A4A; font-size: 11.1px; text-align: left; font-family: 'Poppins', sans-serif;\">\n    <span style=\"font-weight: 400;\">Valorado</span> \n    <span style=\"color: #000000; font-weight: 700;\">4,7</span> \n    <span style=\"font-weight: 400;\">basado en</span> \n    <span style=\"color: #000000; font-weight: 700;\">más de 2900 opiniones</span>\n  </div>\n</div>",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
     "rich_text_HGYf9d": {
       "type": "rich-text",
       "blocks": {
@@ -96,6 +109,7 @@
   "order": [
     "rich_text_cnMxX4",
     "featured-product",
+    "custom_liquid_Utmn6x",
     "rich_text_HGYf9d"
   ]
 }
