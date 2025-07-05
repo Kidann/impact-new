@@ -30,11 +30,20 @@
             "title": "¡Obtén un 10% de descuento en tu próximo pedido!",
             "content": "<p>Suscríbete a nuestra lista de correo y recibe un código de descuento del 10% junto con otras ofertas exclusivas y actualizaciones regulares sobre nuestras novedades.</p>"
           }
+        },
+        "text_7bJiHj": {
+          "type": "text",
+          "settings": {
+            "title": "",
+            "content": "<p><em>Estas declaraciones no han sido evaluadas por la Administración de Alimentos y Medicamentos. Este producto no está destinado a diagnosticar, tratar, curar ni prevenir ninguna enfermedad.</em></p>",
+            "enable_follow_on_shop": false
+          }
         }
       },
       "block_order": [
         "links_DCjp4P",
-        "newsletter_ib4CAg"
+        "newsletter_ib4CAg",
+        "text_7bJiHj"
       ],
       "settings": {
         "show_social_media": true,
