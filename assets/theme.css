@@ -10365,7 +10365,7 @@ shopify-accelerated-checkout, shopify-accelerated-checkout-cart {
   margin-bottom: 1rem;
 }
 
-.carousel-track {
+.cr-track {
   display: flex;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
@@ -10373,35 +10373,35 @@ shopify-accelerated-checkout, shopify-accelerated-checkout-cart {
   scrollbar-width: none;
 }
 
-.carousel-track::-webkit-scrollbar {
+.cr-track::-webkit-scrollbar {
   display: none;
 }
 
-.carousel-slide {
+.cr-slide {
   flex: 0 0 100%;
   scroll-snap-align: start;
   padding: 0 0.5rem;
   box-sizing: border-box;
 }
 
-.testimonial-card {
+.cr-card {
   background: #fff;
   padding: 1rem;
   border-radius: 1rem;
   margin-bottom: 1rem;
-  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.05); /* ombre réduite */
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.05);
   position: relative;
   z-index: 2;
 }
 
-.testimonial-text {
+.cr-text {
   display: flex;
   align-items: flex-start;
   gap: 0.8rem;
   text-align: left;
 }
 
-.testimonial-img {
+.cr-img {
   width: 45px;
   height: 45px;
   border-radius: 50%;
@@ -10409,29 +10409,29 @@ shopify-accelerated-checkout, shopify-accelerated-checkout-cart {
   flex-shrink: 0;
 }
 
-.testimonial-card p {
+.cr-card p {
   margin: 0.4rem 0;
   font-size: 0.95rem;
 }
 
-.separator {
+.cr-separator {
   border: none;
   height: 1px;
   background: #eee;
   margin: 0.8rem 0 0.5rem;
 }
 
-.testimonial-author {
+.cr-author {
   font-size: 0.85rem;
   color: #888;
 }
 
-.stars {
+.cr-stars {
   color: #f5c518;
   font-size: 1rem;
 }
 
-.carousel-dots {
+.cr-dots {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -10442,7 +10442,7 @@ shopify-accelerated-checkout, shopify-accelerated-checkout-cart {
   z-index: 1;
 }
 
-.dot {
+.cr-dot {
   height: 10px;
   width: 10px;
   background-color: #ccc;
@@ -10451,15 +10451,145 @@ shopify-accelerated-checkout, shopify-accelerated-checkout-cart {
   transition: transform 0.3s, background-color 0.3s;
 }
 
-.dot.active {
+.cr-dot.active {
   background-color: #111;
   transform: scale(1.4);
 }
 
 
+
 /* TESTIMONIAL */
 
+.testimonial-container {
+  overflow: hidden;
+  max-width: 420px;
+  margin: auto;
+  position: relative;
+}
 
+.testimonial-slider {
+  display: flex;
+  transition: transform 0.4s ease-in-out;
+  width: 100%;
+}
+
+.testimonial-slide {
+  flex: 0 0 100%; /* assure qu'il prend 100% de largeur */
+  box-sizing: border-box;
+}
+
+
+
+.testimonial-box {
+  background: #f2f2f2;
+  border-radius: 16px;
+  overflow: hidden;
+  text-align: center;
+  padding-bottom: 25px;
+  position: relative;
+}
+
+.testimonial-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
+}
+
+
+.testimonial-body {
+  padding: 10px 20px 20px;
+  position: relative;
+  font-family: 'Inter', 'Segoe UI', sans-serif;
+}
+
+.quote-bubble {
+  position: absolute;
+  top: -20px;
+  right: 20px;
+  background-color: #c44b2f;
+  color: #fff2ec;
+  font-size: 32px;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 50%;
+  font-weight: bold;
+  z-index: 10;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.stars {
+  color: #facc15;
+  font-size: 20px;
+  margin-top: 5px;
+}
+
+.testimonial-title {
+  font-size: 16px;
+  font-weight: 700;
+  margin: 8px 0;
+}
+
+.testimonial-text {
+  font-style: italic;
+  font-size: 14px;
+  margin: 0 0 12px;
+  line-height: 1.5;
+}
+
+.testimonial-divider {
+  border: none;
+  border-top: 1px solid #dcdcdc;
+  margin: 10px 0;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.testimonial-author {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.testimonial-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 12px;
+  gap: 12px;
+}
+
+.arrow {
+  cursor: pointer;
+  font-size: 20px;
+  user-select: none;
+  color: #444;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+
+.dot.active {
+  background-color: #000;
+}
+
+.testimonial-dots {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  align-items: center;
+}
 
 /* faq */
 
