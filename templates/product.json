@@ -67,6 +67,12 @@
             "max_width": 500
           }
         },
+        "liquid_MPPEPe": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "<div style=\"text-align: center; font-family: 'Poppins', sans-serif;\">\n  <div id=\"countdown\" style=\"font-size: 32px; font-weight: 700; color: #1a1a1a; letter-spacing: 1px;\"></div>\n  <div style=\"display: flex; justify-content: center; gap: 36px; margin-top: 4px; font-size: 14px; color: #888888;\">\n    <div>Días</div>\n    <div>Hrs</div>\n    <div>Min</div>\n    <div>Seg</div>\n  </div>\n</div>\n\n<script>\n  function startCountdown(duration) {\n    let timer = duration;\n\n    const countdownEl = document.getElementById('countdown');\n\n    setInterval(() => {\n      const days = Math.floor(timer / (60 * 60 * 24));\n      const hours = Math.floor((timer % (60 * 60 * 24)) / 3600);\n      const minutes = Math.floor((timer % 3600) / 60);\n      const seconds = timer % 60;\n\n      countdownEl.innerHTML =\n        (days < 10 ? \"0\" + days : days) + \":\" +\n        (hours < 10 ? \"0\" + hours : hours) + \":\" +\n        (minutes < 10 ? \"0\" + minutes : minutes) + \":\" +\n        (seconds < 10 ? \"0\" + seconds : seconds);\n\n      timer--;\n\n      if (timer < 0) {\n        timer = duration;\n      }\n    }, 1000);\n  }\n\n  // 17 minutes = 1020 seconds\n  startCountdown(1020);\n</script>"
+          }
+        },
         "liquid_CNaxQp": {
           "type": "liquid",
           "settings": {
@@ -87,6 +93,7 @@
         "kaching_bundles_app_block_GwcqVQ",
         "buy_buttons_x3BD6E",
         "image_PkiPTJ",
+        "liquid_MPPEPe",
         "liquid_CNaxQp",
         "separator_FEKayr"
       ],
