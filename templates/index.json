@@ -52,9 +52,9 @@
       "name": "Custom Liquid",
       "settings": {
         "full_width": true,
-        "remove_vertical_spacing": true,
+        "remove_vertical_spacing": false,
         "remove_horizontal_spacing": true,
-        "liquid": "<style>\n  .image-fullwidth {\n    width: 100vw;\n    margin: 0;\n    padding: 0;\n  }\n\n  .image-fullwidth img {\n    display: block;\n    width: 100%;\n    height: auto;\n    max-width: 100%;\n    margin: 0;\n    padding: 0;\n  }\n</style>\n\n<div class=\"image-fullwidth\">\n  <img src=\"https://cdn.shopify.com/s/files/1/0681/1290/8348/files/8478479.webp?v=1752526751\" alt=\"Masque Double Menton\">\n</div>",
+        "liquid": "<style>\n  .full-bleed-wrapper {\n    position: relative;\n    left: 50%;\n    right: 50%;\n    margin-left: -50vw;\n    margin-right: -50vw;\n    width: 100vw;\n    max-width: 100vw;\n    overflow: hidden;\n  }\n\n  .full-bleed-wrapper img {\n    width: 100%;\n    height: auto;\n    display: block;\n  }\n</style>\n\n<div class=\"full-bleed-wrapper\">\n  <img src=\"https://cdn.shopify.com/s/files/1/0681/1290/8348/files/8478479.webp?v=1752526751\" alt=\"Masque double menton\">\n</div>",
         "background": "",
         "background_gradient": "",
         "text_color": ""
