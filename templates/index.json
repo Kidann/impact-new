@@ -54,7 +54,7 @@
         "full_width": true,
         "remove_vertical_spacing": false,
         "remove_horizontal_spacing": true,
-        "liquid": "<style>\n  .reduced-width-wrapper {\n    width: 90%;\n    margin: -40px auto 0 auto; /* top margin négatif pour remonter l’image */\n    overflow: hidden;\n  }\n\n  .reduced-width-wrapper img {\n    width: 100%;\n    height: auto;\n    display: block;\n    border-radius: 12px;\n  }\n</style>\n\n<div class=\"reduced-width-wrapper\">\n  <img src=\"https://cdn.shopify.com/s/files/1/0681/1290/8348/files/8478479.webp?v=1752526751\" alt=\"Masque double menton\">\n</div>",
+        "liquid": "<style>\n  .reduced-width-wrapper {\n    width: 90%;\n    margin: -70px auto 0 auto; /* top margin négatif pour remonter l’image */\n    overflow: hidden;\n  }\n\n  .reduced-width-wrapper img {\n    width: 100%;\n    height: auto;\n    display: block;\n    border-radius: 12px;\n  }\n</style>\n\n<div class=\"reduced-width-wrapper\">\n  <img src=\"https://cdn.shopify.com/s/files/1/0681/1290/8348/files/8478479.webp?v=1752526751\" alt=\"Masque double menton\">\n</div>",
         "background": "#f4f6f9",
         "background_gradient": "",
         "text_color": ""
