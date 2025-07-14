@@ -65,9 +65,22 @@
       "name": "Custom Liquid",
       "settings": {
         "full_width": true,
-        "remove_vertical_spacing": false,
+        "remove_vertical_spacing": true,
         "remove_horizontal_spacing": false,
         "liquid": "<style>\n  .promo-container {\n    font-family: 'Poppins', sans-serif;\n    text-align: center;\n    padding: 20px 0;\n    background-color: transparent;\n  }\n\n  .cta-button {\n    background-color: #359754;\n    color: #ffffff;\n    font-weight: 700;\n    font-size: 20px;\n    padding: 14px 28px;\n    border: none;\n    border-radius: 14px;\n    cursor: pointer;\n    margin-bottom: 18px;\n    transition: 0.2s ease;\n  }\n\n  .cta-button:hover {\n    background-color: #2f854a;\n  }\n\n  .sale-label {\n    font-size: 15px;\n    font-weight: 600;\n    color: #1f1f8b;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    gap: 6px;\n  }\n\n  .sale-label img {\n    height: 18px;\n  }\n\n  .countdown {\n    font-weight: 600;\n    font-size: 18px;\n    color: #000;\n    margin-top: 6px;\n  }\n</style>\n\n<div class=\"promo-container\">\n  <button class=\"cta-button\">Consigue Mi Mascarilla</button>\n  <div class=\"sale-label\">\n    <img src=\"https://cdn.shopify.com/s/files/1/0765/9818/2217/files/alarme.png?v=1696259339\" alt=\"alarma\">\n    Oferta aniversario 4 años termina en:\n  </div>\n  <div class=\"countdown\" id=\"countdown2\">\n    <span id=\"hours2\">01</span>:<span id=\"minutes2\">48</span>:<span id=\"seconds2\">25</span>\n  </div>\n</div>\n\n\n<script>\n  document.addEventListener(\"DOMContentLoaded\", function () {\n    const CYCLE_DURATION_MS = 6480000; // 1h48\n\n    // ⏳ Sauvegarde le moment de départ dans localStorage\n    let startTime = localStorage.getItem(\"promoStartTime\");\n\n    if (!startTime) {\n      startTime = Date.now();\n      localStorage.setItem(\"promoStartTime\", startTime);\n    } else {\n      startTime = parseInt(startTime);\n    }\n\n    function updateTimer2() {\n      const now = Date.now();\n      const elapsed = now - startTime;\n\n      const remaining = CYCLE_DURATION_MS - (elapsed % CYCLE_DURATION_MS);\n\n      const hours = Math.floor(remaining / (1000 * 60 * 60));\n      const minutes = Math.floor((remaining % (1000 * 60 * 60)) / (1000 * 60));\n      const seconds = Math.floor((remaining % (1000 * 60)) / 1000);\n\n      document.getElementById(\"hours2\").textContent = String(hours).padStart(2, '0');\n      document.getElementById(\"minutes2\").textContent = String(minutes).padStart(2, '0');\n      document.getElementById(\"seconds2\").textContent = String(seconds).padStart(2, '0');\n    }\n\n    updateTimer2();\n    setInterval(updateTimer2, 1000);\n  });\n</script>",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "custom_liquid_jy8eRz": {
+      "type": "custom-liquid",
+      "name": "Custom Liquid",
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": true,
+        "remove_horizontal_spacing": true,
+        "liquid": "<style>\n  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');\n\n  .benefits-box-clean {\n    font-family: 'Poppins', sans-serif;\n    background-color: #ffffff;\n    padding: 30px 20px;\n    text-align: center;\n  }\n\n  .benefits-box-clean h2 {\n    font-size: 18px;\n    font-weight: 700;\n    color: #000;\n    margin-bottom: 24px;\n    line-height: 1.4;\n  }\n\n  .benefits-box-clean h2 .blue {\n    color: #1f1f8b;\n  }\n\n  .benefit-row {\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    gap: 10px;\n    margin: 10px auto;\n  }\n\n  .benefit-row img {\n    width: 16px;\n    height: 16px;\n    flex-shrink: 0;\n  }\n\n  .benefit-row span {\n    display: block;\n    text-align: center;\n    font-size: 14.5px;\n    font-weight: 700;\n    color: #000;\n  }\n\n  .benefit-row .purple {\n    color: #1f1f8b;\n  }\n</style>\n\n<div class=\"benefits-box-clean\">\n  <h2>¿Por qué <span class=\"blue\">NECESITAS</span> una Mascarilla Lumoria?</h2>\n\n  <div class=\"benefit-row\">\n    <img src=\"https://cdn.shopify.com/s/files/1/0650/6790/9369/files/CheckCircle.svg?v=1680531075\" alt=\"check\">\n    <span class=\"purple\">Elimina hasta el 98% de la papada</span>\n  </div>\n\n  <div class=\"benefit-row\">\n    <img src=\"https://cdn.shopify.com/s/files/1/0650/6790/9369/files/CheckCircle.svg?v=1680531075\" alt=\"check\">\n    <span>Resultados visibles al instante</span>\n  </div>\n\n  <div class=\"benefit-row\">\n    <img src=\"https://cdn.shopify.com/s/files/1/0650/6790/9369/files/CheckCircle.svg?v=1680531075\" alt=\"check\">\n    <span>Cada mascarilla puede reutilizarse hasta 10 veces</span>\n  </div>\n\n  <div class=\"benefit-row\">\n    <img src=\"https://cdn.shopify.com/s/files/1/0650/6790/9369/files/CheckCircle.svg?v=1680531075\" alt=\"check\">\n    <span>Más de 32.000 usuarios satisfechos</span>\n  </div>\n</div>",
         "background": "",
         "background_gradient": "",
         "text_color": ""
@@ -79,6 +92,7 @@
     "custom_liquid_Utmn6x",
     "custom_liquid_FTmKcd",
     "custom_liquid_a4JMHM",
-    "custom_liquid_AiYbRf"
+    "custom_liquid_AiYbRf",
+    "custom_liquid_jy8eRz"
   ]
 }
