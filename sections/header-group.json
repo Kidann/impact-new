@@ -47,7 +47,9 @@
     },
     "header": {
       "type": "header",
-      "custom_css": [],
+      "custom_css": [
+        "@media screen and (max-width: 749px) {.header__wrapper, .header-mobile-wrapper {padding-bottom: 0px !important; margin-bottom: 0px !important; }}"
+      ],
       "settings": {
         "enable_sticky": false,
         "hide_on_scroll": true,
