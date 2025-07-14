@@ -46,11 +46,25 @@
         "background_gradient": "",
         "text_color": ""
       }
+    },
+    "custom_liquid_a4JMHM": {
+      "type": "custom-liquid",
+      "name": "Custom Liquid",
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": true,
+        "remove_horizontal_spacing": true,
+        "liquid": "<style>\n  .image-fullwidth {\n    width: 100vw;\n    margin: 0;\n    padding: 0;\n  }\n\n  .image-fullwidth img {\n    display: block;\n    width: 100%;\n    height: auto;\n    max-width: 100%;\n    margin: 0;\n    padding: 0;\n  }\n</style>\n\n<div class=\"image-fullwidth\">\n  <img src=\"https://cdn.shopify.com/s/files/1/0681/1290/8348/files/8478479.webp?v=1752526751\" alt=\"Masque Double Menton\">\n</div>",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
     }
   },
   "order": [
     "rich_text_cnMxX4",
     "custom_liquid_Utmn6x",
-    "custom_liquid_FTmKcd"
+    "custom_liquid_FTmKcd",
+    "custom_liquid_a4JMHM"
   ]
 }
