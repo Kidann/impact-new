@@ -28,7 +28,7 @@
         "full_width": true,
         "remove_vertical_spacing": true,
         "remove_horizontal_spacing": false,
-        "liquid": "<div style=\"display: flex; align-items: center; background-color: #FAFAFA; padding: 8px 8px; border-radius: 8px; width: fit-content; margin: 10px 0; text-align: left;\">\n  <!-- Estrellas -->\n  <img src=\"https://cdn.trustpilot.net/brand-assets/4.1.0/stars/stars-5.svg\" alt=\"5 estrellas\" style=\"width: 105px; margin-right: 8px;\">\n  \n  <!-- Texto -->\n  <div style=\"color: #4A4A4A; font-size: 11.1px; text-align: left; font-family: 'Poppins', sans-serif;\">\n    <span style=\"font-weight: 400;\">Valorado</span> \n    <span style=\"color: #000000; font-weight: 700;\">4,7</span> \n    <span style=\"font-weight: 400;\">basado en</span> \n    <span style=\"color: #000000; font-weight: 700;\">más de 2900 opiniones</span>\n  </div>\n</div>",
+        "liquid": "<div style=\"\n  display: flex;\n  align-items: center;\n  background-color: #E6F1E7; /* vert pâle Trustpilot */\n  padding: 10px 16px;\n  border-radius: 9999px;\n  width: fit-content;\n  margin: 12px 0;\n  font-family: 'Poppins', sans-serif;\n  box-shadow: 0 2px 6px rgba(0,0,0,0.04);\n  gap: 12px;\n\">\n  <!-- Étoiles -->\n  <img src=\"https://cdn.trustpilot.net/brand-assets/4.1.0/stars/stars-5.svg\" alt=\"5 estrellas\" style=\"width: 100px; height: auto; display: block;\">\n\n  <!-- Texte -->\n  <div style=\"font-size: 13px; color: #1f1f8b;\">\n    <span style=\"font-weight: 400;\">Valorado </span>\n    <span style=\"font-weight: 700; color: #000;\">4,7</span>\n    <span style=\"font-weight: 400;\"> basado en </span>\n    <span style=\"font-weight: 700; color: #000;\">más de 8941 opiniones</span>\n  </div>\n</div>",
         "background": "",
         "background_gradient": "",
         "text_color": ""
@@ -54,7 +54,7 @@
         "full_width": true,
         "remove_vertical_spacing": false,
         "remove_horizontal_spacing": true,
-        "liquid": "<style>\n  .reduced-width-wrapper {\n    width: 90%;\n    margin: -20px auto 0 auto; /* top margin négatif pour remonter l’image */\n    overflow: hidden;\n  }\n\n  .reduced-width-wrapper img {\n    width: 100%;\n    height: auto;\n    display: block;\n    border-radius: 12px;\n  }\n</style>\n\n<div class=\"reduced-width-wrapper\">\n  <img src=\"https://cdn.shopify.com/s/files/1/0681/1290/8348/files/8478479.webp?v=1752526751\" alt=\"Masque double menton\">\n</div>",
+        "liquid": "<style>\n  .reduced-width-wrapper {\n    width: 90%;\n    margin: -40px auto 0 auto; /* top margin négatif pour remonter l’image */\n    overflow: hidden;\n  }\n\n  .reduced-width-wrapper img {\n    width: 100%;\n    height: auto;\n    display: block;\n    border-radius: 12px;\n  }\n</style>\n\n<div class=\"reduced-width-wrapper\">\n  <img src=\"https://cdn.shopify.com/s/files/1/0681/1290/8348/files/8478479.webp?v=1752526751\" alt=\"Masque double menton\">\n</div>",
         "background": "",
         "background_gradient": "",
         "text_color": ""
