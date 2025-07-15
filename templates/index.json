@@ -86,17 +86,106 @@
         "text_color": ""
       }
     },
-    "custom_liquid_rcD9Hw": {
-      "type": "custom-liquid",
-      "name": "Custom Liquid",
+    "featured_product_eU3aG4": {
+      "type": "featured-product",
+      "blocks": {
+        "vendor_V79RqW": {
+          "type": "vendor",
+          "settings": {}
+        },
+        "title_dhGcwj": {
+          "type": "title",
+          "settings": {
+            "heading_tag": "h2"
+          }
+        },
+        "badges_yY3U9m": {
+          "type": "badges",
+          "settings": {}
+        },
+        "price_hRFCK9": {
+          "type": "price",
+          "settings": {
+            "show_taxes_notice": false
+          }
+        },
+        "rating_Pfj8i7": {
+          "type": "rating",
+          "settings": {
+            "show_empty": false
+          }
+        },
+        "separator_ji87ee": {
+          "type": "separator",
+          "settings": {}
+        },
+        "description_pFN76w": {
+          "type": "description",
+          "settings": {
+            "collapse_content": false
+          }
+        },
+        "variant_picker_FHtcVx": {
+          "type": "variant_picker",
+          "settings": {
+            "hide_sold_out_variants": false,
+            "stack_blocks": true,
+            "selector_style": "block",
+            "swatch_selector_style": "swatch",
+            "variant_image_options": "",
+            "size_chart_page": ""
+          }
+        },
+        "quantity_selector_bJBC4c": {
+          "type": "quantity_selector",
+          "settings": {}
+        },
+        "buy_buttons_HMYrfc": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_payment_button": true,
+            "show_gift_card_recipient": true,
+            "atc_button_background": "",
+            "atc_button_text_color": "",
+            "payment_button_background": "",
+            "payment_button_text_color": ""
+          }
+        },
+        "pickup_availability_YRpCwt": {
+          "type": "pickup_availability",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "vendor_V79RqW",
+        "title_dhGcwj",
+        "badges_yY3U9m",
+        "price_hRFCK9",
+        "rating_Pfj8i7",
+        "separator_ji87ee",
+        "description_pFN76w",
+        "variant_picker_FHtcVx",
+        "quantity_selector_bJBC4c",
+        "buy_buttons_HMYrfc",
+        "pickup_availability_YRpCwt"
+      ],
+      "name": "Featured product",
       "settings": {
         "full_width": true,
-        "remove_vertical_spacing": false,
-        "remove_horizontal_spacing": false,
-        "liquid": "<p style=\"text-align: center\">Write or copy/paste Liquid code</p>",
+        "product": "el-lumoria™-lift-di-adios-a-tu-papada-desde-ahora",
+        "desktop_media_width": 55,
+        "desktop_media_layout": "carousel_thumbnails_left",
+        "mobile_media_size": "expanded",
+        "mobile_carousel_control": "floating_dots",
+        "enable_video_autoplay": true,
+        "enable_video_looping": false,
+        "enable_image_zoom": true,
+        "max_image_zoom_level": 3,
         "background": "",
         "background_gradient": "",
-        "text_color": ""
+        "text_color": "",
+        "input_background": "rgba(0,0,0,0)",
+        "input_text_color": ""
       }
     }
   },
@@ -107,6 +196,6 @@
     "custom_liquid_a4JMHM",
     "custom_liquid_AiYbRf",
     "custom_liquid_jy8eRz",
-    "custom_liquid_rcD9Hw"
+    "featured_product_eU3aG4"
   ]
 }
