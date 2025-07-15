@@ -201,6 +201,35 @@
         "background_gradient": "",
         "text_color": ""
       }
+    },
+    "video_yRLahd": {
+      "type": "video",
+      "name": "Video",
+      "settings": {
+        "full_width": true,
+        "allow_transparent_header": false,
+        "autoplay": true,
+        "video_size": "auto",
+        "video": "shopify://files/videos/045135ead0fe414296fa966b4e745a12.mp4",
+        "mobile_video": "shopify://files/videos/045135ead0fe414296fa966b4e745a12.mp4",
+        "external_video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+        "text_color": "#ffffff",
+        "overlay_color": "#000000",
+        "overlay_opacity": 0
+      }
+    },
+    "custom_liquid_JqCRAw": {
+      "type": "custom-liquid",
+      "name": "Custom Liquid",
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": true,
+        "liquid": "<div style=\"font-family: inherit; max-width: 600px; margin: 0 auto; padding: 0 20px; display: flex; flex-direction: column; gap: 16px; align-items: center;\">\n\n  <!-- Titre -->\n  <h2 style=\"font-size: 24px; font-weight: 700; text-align: center; color: #1c1d1d;\">\n    3 razones por las que la mascarilla Lumoria™ <span style=\"color: #1f1f8b;\">es perfecta para ti</span>\n  </h2>\n\n  <!-- Bloc 1 -->\n  <div style=\"display: flex; align-items: flex-start; background-color: #f5f5f5; border-radius: 12px; padding: 16px; width: 100%; gap: 16px;\">\n    <div style=\"min-width: 44px; height: 44px; border-radius: 9999px; background-color: #6c63ff; display: flex; align-items: center; justify-content: center;\">\n      <img src=\"https://cdn.shopify.com/s/files/1/0650/6790/9369/files/ic24-insert-emoticon.svg?v=1680536192\" alt=\"emoji\" style=\"width: 22px;\">\n    </div>\n    <div>\n      <p style=\"margin: 0; font-weight: 700;\">1. ¡Sesiones semanales de solo 10 minutos!</p>\n      <p style=\"margin: 4px 0 0;\">3 semanas, una sesión de 10 minutos por semana para una transformación total.</p>\n    </div>\n  </div>\n\n  <!-- Bloc 2 -->\n  <div style=\"display: flex; align-items: flex-start; background-color: #f5f5f5; border-radius: 12px; padding: 16px; width: 100%; gap: 16px;\">\n    <div style=\"min-width: 44px; height: 44px; border-radius: 9999px; background-color: #6c63ff; display: flex; align-items: center; justify-content: center;\">\n      <img src=\"https://cdn.shopify.com/s/files/1/0650/6790/9369/files/Heart.svg?v=1680536192\" alt=\"emoji\" style=\"width: 22px;\">\n    </div>\n    <div>\n      <p style=\"margin: 0; font-weight: 700;\">2. ¡Funciona como magia!</p>\n      <p style=\"margin: 4px 0 0;\"><strong>El 96%</strong> de nuestros clientes nota resultados <strong>desde la primera aplicación</strong>.</p>\n    </div>\n  </div>\n\n  <!-- Bloc 3 -->\n  <div style=\"display: flex; align-items: flex-start; background-color: #f5f5f5; border-radius: 12px; padding: 16px; width: 100%; gap: 16px;\">\n    <div style=\"min-width: 44px; height: 44px; border-radius: 9999px; background-color: #6c63ff; display: flex; align-items: center; justify-content: center;\">\n      <img src=\"https://cdn.shopify.com/s/files/1/0650/6790/9369/files/ic16-lock.svg?v=1680536192\" alt=\"emoji\" style=\"width: 22px;\">\n    </div>\n    <div>\n      <p style=\"margin: 0; font-weight: 700;\">3. ¡Resultados duraderos!</p>\n      <p style=\"margin: 4px 0 0;\">El <strong>92%</strong> de los usuarios notó efectos que duran más de 8 semanas, <strong>manteniendo la piel firme y levantada</strong>.</p>\n    </div>\n  </div>\n\n</div>",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
     }
   },
   "order": [
@@ -212,6 +241,8 @@
     "custom_liquid_jy8eRz",
     "featured_product_eU3aG4",
     "custom_liquid_YR86TC",
-    "custom_liquid_jTVVck"
+    "custom_liquid_jTVVck",
+    "video_yRLahd",
+    "custom_liquid_JqCRAw"
   ]
 }
