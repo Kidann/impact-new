@@ -89,14 +89,10 @@
     "featured_product_eU3aG4": {
       "type": "featured-product",
       "blocks": {
-        "vendor_V79RqW": {
-          "type": "vendor",
-          "settings": {}
-        },
-        "title_dhGcwj": {
-          "type": "title",
+        "liquid_68AcKm": {
+          "type": "liquid",
           "settings": {
-            "heading_tag": "h2"
+            "liquid": "<style>\n  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');\n\n  .lumoria-lift-section {\n    font-family: 'Poppins', sans-serif;\n    font-size: 16px;\n    line-height: 1.4;\n    color: #000;\n    max-width: 500px;\n    margin: 0 auto;\n  }\n\n  .lumoria-lift-section p {\n    margin: 6px 0;\n  }\n\n  .lumoria-lift-section img {\n    vertical-align: middle;\n    margin-right: 6px;\n  }\n\n  .lumoria-lift-section .bold {\n    font-weight: 600;\n  }\n\n  .lumoria-lift-section a {\n    color: #000;\n    text-decoration: underline;\n    font-weight: 500;\n  }\n\n  .review-stars {\n    display: flex;\n    align-items: center;\n    margin: 6px 0;\n  }\n\n  .review-stars img {\n    width: 100px;\n  }\n\n  .review-flag {\n    display: flex;\n    align-items: center;\n    margin: 6px 0;\n  }\n\n  .review-flag img {\n    width: 20px;\n  }\n\n  .frontrow-section img {\n    width: 24px;\n    height: 24px;\n    border-radius: 100px;\n    object-fit: cover;\n    background-color: #eee;\n  }\n\n  .frontrow-section img:nth-of-type(2),\n  .frontrow-section img:nth-of-type(3) {\n    margin-left: -8px;\n  }\n\n  .frontrow-section button {\n    background: none;\n    border: none;\n    font-family: 'Poppins', sans-serif;\n    cursor: pointer;\n    padding: 0;\n    margin-top: 5px;\n  }\n\n  .frontrow-section p {\n    margin: 4px 0;\n  }\n</style>\n\n<div class=\"lumoria-lift-section\">\n  <p><span class=\"bold\">EL LUMORIA™ LIFT :</span> Di adiós a tu papada desde ahora</p>\n\n  <div class=\"review-stars\">\n    <img src=\"https://cdn.shopify.com/s/files/1/0846/5232/7178/files/images_1.png?v=1726587775\" alt=\"Trustpilot\">\n    <span>8941 Reseñas · Excelente</span>\n  </div>\n\n  <div class=\"review-flag\">\n    <img src=\"https://flagcdn.com/es.svg\" alt=\"Bandera España\">\n    <span>La mascarilla N°1 para la papada en España</span>\n  </div>\n\n  <p><span class=\"bold\" style=\"color:#1f1f8b;\">⚕️ Elección de los expertos</span></p>\n  <p><span class=\"bold\">247 clínicos</span> recomiendan esto en <em>FrontrowMD</em> sin compensación.</p>\n  <p><a href=\"#\">Ver opiniones de expertos & más</a></p>\n\n  <div class=\"frontrow-section\">\n    <img src=\"https://assets.app.thefrontrowhealth.com/6ga051ctceywn9jfxyxg03azzwc2\" alt=\"Dr. Keemberly Kim, MD\">\n    <img src=\"https://assets.app.thefrontrowhealth.com/hfrzii3akiksfz8iia0d9xknux7y\" alt=\"Mohs Surgery & Dermatology Center\">\n    <img src=\"https://assets.app.thefrontrowhealth.com/480n19lees6x9id1dvenndczcfcn\" alt=\"Natalie Dudding, NP\">\n    <button onclick=\"openFrontrowModal()\">\n      <p>Ver más clínicos</p>\n    </button>\n  </div>\n</div>"
           }
         },
         "badges_yY3U9m": {
@@ -157,8 +153,7 @@
         }
       },
       "block_order": [
-        "vendor_V79RqW",
-        "title_dhGcwj",
+        "liquid_68AcKm",
         "badges_yY3U9m",
         "price_hRFCK9",
         "rating_Pfj8i7",
@@ -174,9 +169,9 @@
         "full_width": true,
         "product": "el-lumoria™-lift-di-adios-a-tu-papada-desde-ahora",
         "desktop_media_width": 55,
-        "desktop_media_layout": "carousel_thumbnails_left",
-        "mobile_media_size": "expanded",
-        "mobile_carousel_control": "floating_dots",
+        "desktop_media_layout": "grid_highlight",
+        "mobile_media_size": "contained",
+        "mobile_carousel_control": "thumbnails",
         "enable_video_autoplay": true,
         "enable_video_looping": false,
         "enable_image_zoom": true,
