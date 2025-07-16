@@ -334,6 +334,19 @@
         "remove_horizontal_spacing": true,
         "liquid": "<style>\n  .reduced-width-wrapper {\n    width: 90%;\n    margin: -38px auto 0 auto; /* top margin négatif pour remonter l’image */\n    overflow: hidden;\n  }\n\n  .reduced-width-wrapper img {\n    width: 100%;\n    height: auto;\n    display: block;\n    border-radius: 12px;\n  }\n</style>\n\n<div class=\"reduced-width-wrapper\">\n  <img src=\"https://cdn.shopify.com/s/files/1/0681/1290/8348/files/Group_693.png?v=1752707439\" alt=\"Masque double menton\">\n</div>",
         "background": "#f2f4f8",
+        "background_gradient": "linear-gradient(358deg, rgba(255, 255, 255, 1) 50%, rgba(242, 244, 248, 1) 85%)",
+        "text_color": ""
+      }
+    },
+    "custom_liquid_MKeDbX": {
+      "type": "custom-liquid",
+      "name": "Custom Liquid",
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": true,
+        "remove_horizontal_spacing": true,
+        "liquid": "<div style=\"text-align: center; padding: 40px 20px;\">\n  <!-- Título -->\n  <h2 style=\"color: #001c72; font-weight: 700; font-size: 26px; margin-bottom: 5px;\">¿Cómo usarlo?</h2>\n  <h3 style=\"font-size: 24px; font-weight: 700; margin-top: 0;\">3 pasos simples</h3>\n  <p style=\"color: #6e6e6e; font-weight: 600;\">¡Es más fácil de lo que crees!</p>\n\n  <!-- ✅ UN SOLO CONTENEDOR PARA LOS PASOS -->\n  <div style=\"background: #f3f4ff; border-radius: 16px; padding: 25px 20px; max-width: 700px; margin: 20px auto 0 auto;\">\n\n\n    <!-- Paso 1 -->\n    <div style=\"display: flex; align-items: center; margin-bottom: 20px;\">\n      <img src=\"https://cdn.shopify.com/s/files/1/0650/6790/9369/files/image_5.jpg?v=1680622857\" alt=\"Paso 1\" style=\"border-radius: 50%; width: 80px; height: 80px; object-fit: cover; margin-right: 20px;\">\n      <div style=\"text-align: left;\">\n        <div style=\"font-weight: bold; font-size: 14px; color: #000000; background: #eaeaff; display: inline-block; padding: 2px 8px; border-radius: 6px; margin-bottom: 5px;\">1. LIMPIA</div>\n        <p style=\"margin: 0;\">Limpia tu piel y elimina cualquier rastro de maquillaje.</p>\n      </div>\n    </div>\n\n    <!-- Paso 2 -->\n    <div style=\"display: flex; align-items: center; margin-bottom: 20px;\">\n      <img src=\"https://cdn.shopify.com/s/files/1/0650/6790/9369/files/image_5-1.jpg?v=1680622858\" alt=\"Paso 2\" style=\"border-radius: 50%; width: 80px; height: 80px; object-fit: cover; margin-right: 20px;\">\n      <div style=\"text-align: left;\">\n        <div style=\"font-weight: bold; font-size: 14px; color: #000000; background: #eaeaff; display: inline-block; padding: 2px 8px; border-radius: 6px; margin-bottom: 5px;\">2. APLICA</div>\n        <p style=\"margin: 0;\">Aplica la mascarilla una vez por semana durante 5 a 10 minutos.</p>\n      </div>\n    </div>\n\n    <!-- Paso 3 -->\n    <div style=\"display: flex; align-items: center;\">\n      <img src=\"https://cdn.shopify.com/s/files/1/0650/6790/9369/files/image_5-2.jpg?v=1680622856\" alt=\"Paso 3\" style=\"border-radius: 50%; width: 80px; height: 80px; object-fit: cover; margin-right: 20px;\">\n      <div style=\"text-align: left;\">\n        <div style=\"font-weight: bold; font-size: 14px; color: #000000; background: #eaeaff; display: inline-block; padding: 2px 8px; border-radius: 6px; margin-bottom: 5px;\">3. REVITALIZA Y OBSERVA RESULTADOS</div>\n        <p style=\"margin: 0;\">Deja que la silicona médica actúe en el corazón de tus células y disfruta de un momento de bienestar.<br><strong>¡Lifting facial en solo 5 minutos!</strong></p>\n      </div>\n    </div>\n\n  </div>\n</div>",
+        "background": "",
         "background_gradient": "",
         "text_color": ""
       }
@@ -358,6 +371,7 @@
     "custom_liquid_97kBLG",
     "custom_liquid_WFPjQn",
     "custom_liquid_J6crBJ",
-    "custom_liquid_G8ywJk"
+    "custom_liquid_G8ywJk",
+    "custom_liquid_MKeDbX"
   ]
 }
