@@ -243,6 +243,19 @@
         "background_gradient": "",
         "text_color": ""
       }
+    },
+    "custom_html_pAAgHX": {
+      "type": "custom-html",
+      "name": "Custom HTML",
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": true,
+        "remove_horizontal_spacing": true,
+        "html": "<div class=\"carousel-container\">\n  <h2 class=\"carousel-header\">Opiniones destacadas de clientes</h2>\n\n  <div class=\"cr-track\" id=\"carousel\">\n    <div class=\"cr-slide\">\n      <div class=\"cr-card\">\n        <div class=\"cr-text\">\n          <img src=\"https://cdn.shopify.com/s/files/1/0681/1290/8348/files/320x400_1.jpg?v=1751561827\" alt=\"Lucía G.\" class=\"cr-img\">\n          <p>“No pensé que funcionaría tan rápido. En solo dos semanas mi papada se redujo visiblemente. ¡Es como un lifting sin cirugía!”</p>\n        </div>\n        <hr class=\"cr-separator\">\n        <p class=\"cr-author\">Lucía G. – <em>Compradora verificada</em></p>\n        <div class=\"cr-stars\">★★★★★</div>\n      </div>\n    </div>\n\n    <div class=\"cr-slide\">\n      <div class=\"cr-card\">\n        <div class=\"cr-text\">\n          <img src=\"https://cdn.shopify.com/s/files/1/0681/1290/8348/files/320x400.webp?v=1751561827\" alt=\"Carmen M.\" class=\"cr-img\">\n          <p>“Tenía la piel flácida bajo el mentón y nada funcionaba. Probé Lumoria Lift y en tres semanas, ¡parecía otra persona! Lo recomiendo al 100%.”</p>\n        </div>\n        <hr class=\"cr-separator\">\n        <p class=\"cr-author\">Carmen M. – <em>Compradora verificada</em></p>\n        <div class=\"cr-stars\">★★★★★</div>\n      </div>\n    </div>\n\n    <div class=\"cr-slide\">\n      <div class=\"cr-card\">\n        <div class=\"cr-text\">\n          <img src=\"https://cdn.shopify.com/s/files/1/0681/1290/8348/files/images.jpg?v=1751561827\" alt=\"Isabel R.\" class=\"cr-img\">\n          <p>“Lo uso cada noche. No irrita, no molesta y se nota muchísimo. Mi rostro se ve más definido y rejuvenecido. ¡Estoy encantada!”</p>\n        </div>\n        <hr class=\"cr-separator\">\n        <p class=\"cr-author\">Isabel R. – <em>Compradora verificada</em></p>\n        <div class=\"cr-stars\">★★★★★</div>\n      </div>\n    </div>\n  </div>\n\n  <div class=\"cr-dots\">\n    <span class=\"cr-dot active\"></span>\n    <span class=\"cr-dot\"></span>\n    <span class=\"cr-dot\"></span>\n  </div>\n</div>",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
     }
   },
   "order": [
@@ -257,6 +270,7 @@
     "custom_liquid_jTVVck",
     "video_yRLahd",
     "custom_liquid_JqCRAw",
-    "custom_liquid_NU8r36"
+    "custom_liquid_NU8r36",
+    "custom_html_pAAgHX"
   ]
 }
