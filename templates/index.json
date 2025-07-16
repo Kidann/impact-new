@@ -246,6 +246,9 @@
     },
     "custom_html_pAAgHX": {
       "type": "custom-html",
+      "custom_css": [
+        ".cr-stars {color: #ffa500; /* orange */ font-size: 18px; margin-top: 8px;}"
+      ],
       "name": "Custom HTML",
       "settings": {
         "full_width": true,
