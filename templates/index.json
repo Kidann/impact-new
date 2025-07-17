@@ -277,7 +277,7 @@
         "full_width": true,
         "remove_vertical_spacing": true,
         "remove_horizontal_spacing": true,
-        "liquid": "<style>\n  .reduced-width-wrapper {\n    width: 100%;\n    margin: -40px auto 0 auto; /* top margin négatif pour remonter l’image */\n    overflow: hidden;\n  }\n\n  .reduced-width-wrapper img {\n    width: 100%;\n    height: auto;\n    display: block;\n    border-radius: 12px;\n  }\n</style>\n\n<div class=\"reduced-width-wrapper\">\n  <img src=\"https://cdn.shopify.com/s/files/1/0681/1290/8348/files/banniere_2654562.webp?v=1752625447\" alt=\"Mzzsque double menton\">\n</div>",
+        "liquid": "<style>\n  .reduced-width-wrapper {\n    width: 100%;\n    margin: -40px auto 0 auto; /* top margin négatif pour remonter l’image */\n  padding: 0 -10px; /* 👈 padding horizontal de 10px à gauche et droite */\n\n    overflow: hidden;\n  }\n\n  .reduced-width-wrapper img {\n    width: 100%;\n    height: auto;\n    display: block;\n    border-radius: 12px;\n  }\n</style>\n\n<div class=\"reduced-width-wrapper\">\n  <img src=\"https://cdn.shopify.com/s/files/1/0681/1290/8348/files/banniere_2654562.webp?v=1752625447\" alt=\"Mzzsque double menton\">\n</div>",
         "background": "",
         "background_gradient": "",
         "text_color": ""
