@@ -107,20 +107,6 @@
             "product": "{{section.settings.product}}"
           }
         },
-        "image_HirfGf": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/opportunite.jpg",
-            "alignment": "center",
-            "max_width": 500
-          }
-        },
-        "liquid_bzR9Yq": {
-          "type": "liquid",
-          "settings": {
-            "liquid": "<div style=\"text-align: center; font-family: 'Poppins', sans-serif;\">\n  <div id=\"countdown\" style=\"font-size: 32px; font-weight: 700; color: #1a1a1a; letter-spacing: 1px;\"></div>\n  <div style=\"display: flex; justify-content: center; gap: 36px; margin-top: 4px; font-size: 14px; color: #888888;\">\n    <div>Días</div>\n    <div>Hrs</div>\n    <div>Min</div>\n    <div>Seg</div>\n  </div>\n</div>\n\n<script>\n  function startCountdown(duration) {\n    let timer = duration;\n\n    const countdownEl = document.getElementById('countdown');\n\n    setInterval(() => {\n      const days = Math.floor(timer / (60 * 60 * 24));\n      const hours = Math.floor((timer % (60 * 60 * 24)) / 3600);\n      const minutes = Math.floor((timer % 3600) / 60);\n      const seconds = timer % 60;\n\n      countdownEl.innerHTML =\n        (days < 10 ? \"0\" + days : days) + \":\" +\n        (hours < 10 ? \"0\" + hours : hours) + \":\" +\n        (minutes < 10 ? \"0\" + minutes : minutes) + \":\" +\n        (seconds < 10 ? \"0\" + seconds : seconds);\n\n      timer--;\n\n      if (timer < 0) {\n        timer = duration;\n      }\n    }, 1000);\n  }\n\n  // 17 minutes = 1020 seconds\n  startCountdown(1020);\n</script>"
-          }
-        },
         "buy_buttons_HMYrfc": {
           "type": "buy_buttons",
           "settings": {
@@ -151,8 +137,6 @@
         "liquid_aWH7Cn",
         "liquid_68AcKm",
         "kaching_bundles_app_block_k4Yyhz",
-        "image_HirfGf",
-        "liquid_bzR9Yq",
         "buy_buttons_HMYrfc",
         "image_DC3mx6",
         "liquid_iz8Mqd"
@@ -350,6 +334,32 @@
         "background_gradient": "",
         "text_color": ""
       }
+    },
+    "custom_liquid_YRpCKT": {
+      "type": "custom-liquid",
+      "name": "Custom Liquid",
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": true,
+        "remove_horizontal_spacing": false,
+        "liquid": "<style>\n  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');\n\n  .happy-community-title {\n    font-family: 'Poppins', sans-serif;\n    font-size: 28px;\n    font-weight: 700;\n    text-align: center;\n    color: #1f1f8b;\n    background-color: transparent;\n    margin: 0;\n    padding: 0;\n  }\n</style>\n\n<h1 class=\"happy-community-title\">Nuestra Comunidad Feliz</h1>",
+        "background": "",
+        "background_gradient": "linear-gradient(175deg, rgba(255, 255, 255, 1) 50%, rgba(216, 221, 230, 1) 100%)",
+        "text_color": ""
+      }
+    },
+    "custom_liquid_r3af33": {
+      "type": "custom-liquid",
+      "name": "Custom Liquid",
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "liquid": "<div class=\"testimonial-container\">\n  <div class=\"testimonial-slider\">\n    <!-- Avis 1 -->\n    <div class=\"testimonial-slide\">\n      <div class=\"testimonial-box\">\n        <div class=\"testimonial-img-container\">\n          <img class=\"testimonial-img\" src=\"https://cdn.shopify.com/s/files/1/0681/1290/8348/files/selfie_with_product_1.jpg?v=1752711222\" alt=\"Veronica S.\">\n        </div>\n        <div class=\"testimonial-body\">\n          <div class=\"quote-bubble\">❞</div>\n          <div class=\"stars\">★★★★★</div>\n          <h3 class=\"testimonial-title\">100% Lo Recomiendo</h3>\n          <p class=\"testimonial-text\">\n            \"He luchado durante años con el adelgazamiento del cabello, pero después de solo 2 meses tomando estas cápsulas, mi cabello se siente más grueso y se ve saludable por primera vez en años.\"\n          </p>\n          <hr class=\"testimonial-divider\">\n          <p class=\"testimonial-author\"><strong>Veronica S. ~ Cliente verificada</strong></p>\n        </div>\n      </div>\n    </div>\n\n    <!-- Avis 2 -->\n    <div class=\"testimonial-slide\">\n      <div class=\"testimonial-box\">\n        <div class=\"testimonial-img-container\">\n          <img class=\"testimonial-img\" src=\"https://cdn.shopify.com/s/files/1/0681/1290/8348/files/Aromatair1_-_2024-11-05T230921.421.png?v=1752711223\" alt=\"Aria B.\">\n        </div>\n        <div class=\"testimonial-body\">\n          <div class=\"quote-bubble\">❞</div>\n          <div class=\"stars\">★★★★★</div>\n          <h3 class=\"testimonial-title\">Funcionó Perfectamente Para Mí</h3>\n          <p class=\"testimonial-text\">\n            \"Al principio era escéptica, pero después de usarlas de forma constante, mi cabello está visiblemente más lleno y mi cuero cabelludo se siente más saludable. ¡Mi estilista notó la diferencia!\"\n          </p>\n          <hr class=\"testimonial-divider\">\n          <p class=\"testimonial-author\"><strong>Aria B. ~ Cliente verificada</strong></p>\n        </div>\n      </div>\n    </div>\n\n    <!-- Avis 3 -->\n    <div class=\"testimonial-slide\">\n      <div class=\"testimonial-box\">\n        <div class=\"testimonial-img-container\">\n          <img class=\"testimonial-img\" src=\"https://cdn.shopify.com/s/files/1/0681/1290/8348/files/avis_2.png?v=1752711222\" alt=\"Kourtney N.\">\n        </div>\n        <div class=\"testimonial-body\">\n          <div class=\"quote-bubble\">❞</div>\n          <div class=\"stars\">★★★★★</div>\n          <h3 class=\"testimonial-title\">Funciona Muy Bien</h3>\n          <p class=\"testimonial-text\">\n            \"Perder cabello me hacía sentir cohibida, pero después de usar esto durante un mes, veo que están creciendo nuevos cabellos. ¡Y es tan fácil de tomar también!\"\n          </p>\n          <hr class=\"testimonial-divider\">\n          <p class=\"testimonial-author\"><strong>Kourtney N. ~ Cliente verificada</strong></p>\n        </div>\n      </div>\n    </div>\n\n    <!-- Avis 4 -->\n    <div class=\"testimonial-slide\">\n      <div class=\"testimonial-box\">\n        <div class=\"testimonial-img-container\">\n          <img class=\"testimonial-img\" src=\"https://cdn.shopify.com/s/files/1/0681/1290/8348/files/lucas_01_1.jpg?v=1752711221\" alt=\"Lilyana N.\">\n        </div>\n        <div class=\"testimonial-body\">\n          <div class=\"quote-bubble\">❞</div>\n          <div class=\"stars\">★★★★★</div>\n          <h3 class=\"testimonial-title\">No Volveré Atrás</h3>\n          <p class=\"testimonial-text\">\n            \"He probado tantos tratamientos diferentes pero todos empeoraban la caída de mi cabello. ¡Este es el único que funcionó!\"\n          </p>\n          <hr class=\"testimonial-divider\">\n          <p class=\"testimonial-author\"><strong>Lilyana N. ~ Cliente verificada</strong></p>\n        </div>\n      </div>\n    </div>\n\n    <!-- Avis 5 -->\n    <div class=\"testimonial-slide\">\n      <div class=\"testimonial-box\">\n        <div class=\"testimonial-img-container\">\n          <img class=\"testimonial-img\" src=\"https://cdn.shopify.com/s/files/1/0681/1290/8348/files/marionette-lines-softening-bracknell-dermal-filler.jpg?v=1752711220\" alt=\"Valeria L.\">\n        </div>\n        <div class=\"testimonial-body\">\n          <div class=\"quote-bubble\">❞</div>\n          <div class=\"stars\">★★★★★</div>\n          <h3 class=\"testimonial-title\">El Único Producto Que Funciona</h3>\n          <p class=\"testimonial-text\">\n            \"Este es el único que realmente hizo la diferencia. Mi cabello se ve más lleno y mi cuero cabelludo ya no está irritado.\"\n          </p>\n          <hr class=\"testimonial-divider\">\n          <p class=\"testimonial-author\"><strong>Valeria L. ~ Cliente verificada</strong></p>\n        </div>\n      </div>\n    </div>\n  </div>\n\n  <!-- Contrôles -->\n  <div class=\"testimonial-controls\">\n    <span class=\"arrow left\">❮</span>\n    <div class=\"testimonial-dots\">\n      <span class=\"dot active\" data-index=\"0\"></span>\n      <span class=\"dot\" data-index=\"1\"></span>\n      <span class=\"dot\" data-index=\"2\"></span>\n      <span class=\"dot\" data-index=\"3\"></span>\n      <span class=\"dot\" data-index=\"4\"></span>\n    </div>\n    <span class=\"arrow right\">❯</span>\n  </div>\n</div>",
+        "background": "#d8dde6",
+        "background_gradient": "",
+        "text_color": ""
+      }
     }
   },
   "order": [
@@ -372,6 +382,8 @@
     "custom_liquid_WFPjQn",
     "custom_liquid_J6crBJ",
     "custom_liquid_G8ywJk",
-    "custom_liquid_MKeDbX"
+    "custom_liquid_MKeDbX",
+    "custom_liquid_YRpCKT",
+    "custom_liquid_r3af33"
   ]
 }
