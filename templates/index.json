@@ -396,14 +396,21 @@
           "type": "item",
           "settings": {
             "title": "¿Cuánto tiempo hay que usarlas para ver resultados visibles?",
-            "content": "<p><br/>Muchos de nuestros clientes reportan <strong>resultados visibles después de 7 a 10 días</strong> de uso regular.<br/><br/>Para un efecto óptimo, úsala <strong>mínimo 2 veces por semana</strong>.<br/><br/></p>"
+            "content": "<p>Simplemente utiliza las mascarillas Chinology™ una vez por semana durante 5 a 10 minutos en las zonas a tratar.</p><p><strong>¡Los resultados se notan desde la primera sesión</strong>: una piel más suave y la eliminación de la papada de forma fácil y rápida!</p>"
           }
         },
         "item_LENJLN": {
           "type": "item",
           "settings": {
             "title": "¿Son seguras de usar las mascarillas Lumoria™?",
-            "content": "<p><br/>Sí. Las mascarillas están hechas de <strong>silicona médica de alta calidad</strong>, hipoalergénica y sin riesgo para la piel.<br/><br/>Son seguras incluso para pieles sensibles.</p>"
+            "content": "<p><strong>Sí, a diferencia de las cremas faciales y los lifting que pueden dañar tu piel y tener el efecto contrario a largo plazo, las mascarillas de Chinology™ son ecológicas y seguras para tu salud.</strong></p><p>Gracias a la silicona médica, tu papada desaparecerá de forma totalmente natural y te permitirá ahorrar dinero en cremas para la piel.</p>"
+          }
+        },
+        "item_KYVPc3": {
+          "type": "item",
+          "settings": {
+            "title": "¿Lumoria™ es una marca 100% francesa?",
+            "content": "<p><strong>Lumoria™ es una marca 100% francesa que ofrece una amplia selección de productos para cuidarte de forma fácil y eficaz en tu día a día.</strong></p><p>Nuestros productos son utilizados cada día por más de 32.000 mujeres en Francia.</p><p>Con Lumoria™ tienes la garantía de un producto de calidad profesional y un servicio de atención al cliente ultrarrápido disponible 24/7 para responder a todas tus preguntas.</p>"
           }
         }
       },
@@ -413,7 +420,8 @@
         "item_JyzhPE",
         "item_AyN9q4",
         "item_F3DLHj",
-        "item_LENJLN"
+        "item_LENJLN",
+        "item_KYVPc3"
       ],
       "name": "FAQ",
       "settings": {
