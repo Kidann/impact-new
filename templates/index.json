@@ -360,6 +360,83 @@
         "background_gradient": "",
         "text_color": ""
       }
+    },
+    "faq_KLwKYL": {
+      "type": "faq",
+      "blocks": {
+        "item_66b7QX": {
+          "type": "item",
+          "settings": {
+            "title": "¿Son compatibles las mascarillas Lumoria™ con todo tipo de piel?",
+            "content": "<p><br/>La silicona médica se <strong>adapta automáticamente a tu piel</strong>, por lo que las mascarillas Lumoria™ son compatibles con todas las mujeres y tipos de piel.<br/><br/>Para obtener los mejores resultados, <strong>recomendamos aplicarla dos veces por semana</strong> para conseguir resultados aún más visibles.</p>"
+          }
+        },
+        "item_TMQTXH": {
+          "type": "item",
+          "settings": {
+            "title": "¿Cuántas veces se puede reutilizar una mascarilla Lumoria™?",
+            "content": "<p>Cada mascarilla Lumoria™ se puede reutilizar <strong>hasta 15 veces</strong>, siempre que se limpie </p><p>correctamente después de cada uso.<br/>Gracias a su diseño duradero, puedes ahorrar mientras obtienes resultados reales.</p>"
+          }
+        },
+        "item_JyzhPE": {
+          "type": "item",
+          "settings": {
+            "title": "¿Cómo funcionan las mascarillas Lumoria™?",
+            "content": "<p>Las mascarillas Lumoria™ utilizan <strong>compresión y calor corporal natural</strong> para reafirmar la piel del mentón y del cuello.</p><p><br/>Mejoran la circulación sanguínea y ayudan a reducir la apariencia del doble mentón con el uso regular.</p>"
+          }
+        },
+        "item_AyN9q4": {
+          "type": "item",
+          "settings": {
+            "title": "¿Es cara la mascarilla Lumoria™?",
+            "content": "<p><br/>¡Para nada! Lumoria™ es una <strong>solución económica</strong> comparada con tratamientos estéticos costosos.<br/><br/>Una sola mascarilla reutilizable puede ofrecer <strong>semanas de uso y resultados visibles</strong> por una fracción del precio.</p>"
+          }
+        },
+        "item_F3DLHj": {
+          "type": "item",
+          "settings": {
+            "title": "¿Cuánto tiempo hay que usarlas para ver resultados visibles?",
+            "content": "<p><br/>Muchos de nuestros clientes reportan <strong>resultados visibles después de 7 a 10 días</strong> de uso regular.<br/><br/>Para un efecto óptimo, úsala <strong>mínimo 2 veces por semana</strong>.<br/><br/></p>"
+          }
+        },
+        "item_LENJLN": {
+          "type": "item",
+          "settings": {
+            "title": "¿Son seguras de usar las mascarillas Lumoria™?",
+            "content": "<p><br/>Sí. Las mascarillas están hechas de <strong>silicona médica de alta calidad</strong>, hipoalergénica y sin riesgo para la piel.<br/><br/>Son seguras incluso para pieles sensibles.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "item_66b7QX",
+        "item_TMQTXH",
+        "item_JyzhPE",
+        "item_AyN9q4",
+        "item_F3DLHj",
+        "item_LENJLN"
+      ],
+      "name": "FAQ",
+      "settings": {
+        "full_width": true,
+        "subheading": "",
+        "title": "Preguntas frecuentes",
+        "content": "",
+        "team_avatar_width": 160,
+        "support_hours": "Our customer support is available Monday to Friday: 8am-8:30pm.",
+        "answer_time": "Average answer time: 24h",
+        "button_text": "",
+        "button_url": "",
+        "text_position": "center",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "button_background": "",
+        "button_text_color": "",
+        "accordion_background": "",
+        "accordion_text_color": ""
+      }
     }
   },
   "order": [
@@ -384,6 +461,7 @@
     "custom_liquid_G8ywJk",
     "custom_liquid_MKeDbX",
     "custom_liquid_YRpCKT",
-    "custom_liquid_r3af33"
+    "custom_liquid_r3af33",
+    "faq_KLwKYL"
   ]
 }
