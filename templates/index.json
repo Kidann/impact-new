@@ -174,7 +174,7 @@
         "full_width": true,
         "remove_vertical_spacing": true,
         "remove_horizontal_spacing": true,
-        "liquid": "<style>\n  .reduced-width-wrapper {\n    width: 100%;\n    margin: -40px auto 0 auto; /* top margin négatif pour remonter l’image */\n    overflow: hidden;\n    padding: 0; /* pas de padding horizontal ni vertical */\n  }\n\n  .reduced-width-wrapper img {\n    width: 100%;\n    height: auto;\n    display: block;\n    border-radius: 12px;\n  }\n</style>\n\n<div class=\"reduced-width-wrapper\">\n  <img src=\"https://cdn.shopify.com/s/files/1/0681/1290/8348/files/banniere_definitive_2.png?v=1752621026\" alt=\"Masque double menton\">\n</div>",
+        "liquid": "<style>\n  .reduced-width-wrapper {\n    width: 100vw; /* prend toute la largeur de la fenêtre */\n    margin: 0;\n    padding: 0;\n    overflow: hidden;\n  }\n\n  .reduced-width-wrapper img {\n    width: 100%;\n    height: auto;\n    display: block;\n    border-radius: 0;\n    object-fit: cover; /* l'image couvre toute la zone */\n    min-height: 200px; /* pour garder un minimum de hauteur */\n  }\n</style>\n\n<div class=\"reduced-width-wrapper\">\n  <img src=\"https://cdn.shopify.com/s/files/1/0681/1290/8348/files/banniere_definitive_2.png?v=1752621026\" alt=\"Masque double menton\">\n</div>",
         "background": "",
         "background_gradient": "",
         "text_color": ""
